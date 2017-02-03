@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/adventure/.gradle/caches/modules-2/files-2.1/org.androidannotations/androidannotations-api/3.3.2/7d6149d856b880bbd676047aacb8446a758fbbdb/androidannotations-api-3.3.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="7d6149d856b880bbd676047aacb8446a758fbbdb">
+        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/debug/androidannotations-api-3.3.2_ce04d836924de810bfcaf53662bb521f9b29bb76.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
+        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-25.0.1_faaf1c03d450fc505433ac1f7f5b557395df036a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.0.1_8d8c1d670a64ed89b6c7fff1fcadb25d1c0fe70f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
+        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.0.1_226a5db68a83e728f7cbdcdf87d12bef2ddbbf24.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.0.1_0fbf751619376aa9da4ae218f4311f8e18c7dc16.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.0.1_337cd30eaded9038582f8e4e0b80734059b4956c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/exploded-aar/com.android.support/design/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
+        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/debug/com.android.support-design-25.0.1_c0ceda5d74bedd19b67450ebc7961f073152a981.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.0.1_9d53efbd5080de4195a7a13b9d4ae7f9ae7ac410.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_caed94f61eb38de8e2b38be1084b1c320fb8b1a3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_e4c1c1e24b741b5e0fc28ce26dfa8a598e52d115.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/adventure/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.11.0/840897fcd7223a8143f1d9b6f69714e7be34fd50/okio-1.11.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="840897fcd7223a8143f1d9b6f69714e7be34fd50">
+        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/debug/okio-1.11.0_b750112445f7dd4e983e1357f9a5e6163ac528fc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/exploded-aar/com.android.support/support-compat/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.0.1_f99fb150f561fd6770f9ad60d101688c80cca39d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_b3171505e5e70851898e48b5832e166d27c600f4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/adventure/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.0.1/support-annotations-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
+        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/debug/support-annotations-25.0.1_9240a77857fcb940060ab3af7b8bbe8f70fff874.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/exploded-aar/com.android.support/support-v4/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.0.1_ab6f82c5e26692c454b19b454e1abf6bb35da6bb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/exploded-aar/com.android.support/transition/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
+        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/debug/com.android.support-transition-25.0.1_146fb6de149bf0f22584fd232305f4c2ef7c2a89.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.0.1_7f798b43ec1d687d5742ac9d3e980709fb6a18f7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/exploded-aar/com.android.support/support-fragment/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_3925799dc4ca33b0182052ede38c840f20c87be9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/adventure/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.6.0/69edde9fc4b01c9fd51d25b83428837478c27254/okhttp-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
+        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/debug/okhttp-3.6.0_46705ec9a61af89c88ac7d7a1bc32e7fc593ce49.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.0.1_80e200030e84bba24963b8ee68b5df3d18f65645.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.0.1/jars/libs/internal_impl-25.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/debug/internal_impl-25.0.1_f34d1337196cd321500358696ff0e1758eddfd5b.jar" />
+    </item>
+
+</items>

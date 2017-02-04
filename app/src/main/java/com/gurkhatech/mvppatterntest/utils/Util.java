@@ -2,6 +2,8 @@ package com.gurkhatech.mvppatterntest.utils;
 
 import android.content.Context;
 import android.graphics.Color;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.support.annotation.ColorInt;
 import android.util.Log;
 import android.widget.Toast;
@@ -19,11 +21,13 @@ public class Util {
 public static void toast ( String s, Context c ) {
     Toast.makeText ( c, s, Toast.LENGTH_LONG ).show ();
 }
-static void log ( String s ) {
-    log ( "datatest",s );
+
+public static void log ( String s ) {
+    log ( "datatest", s );
 }
+
 private static void log ( String s, String text ) {
-    Log.i ( s,text );
+    Log.i ( s, text );
 }
 
 @ColorInt
@@ -35,4 +39,10 @@ public static int getComplimentaryColor ( @ColorInt int color ) {
     );
 }
 
+public static boolean isInternetConnected ( Context context ) {
+    ConnectivityManager connectivityManager
+            = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+    NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+    return activeNetworkInfo != null && activeNetworkInfo.isConnected();
+}
 }

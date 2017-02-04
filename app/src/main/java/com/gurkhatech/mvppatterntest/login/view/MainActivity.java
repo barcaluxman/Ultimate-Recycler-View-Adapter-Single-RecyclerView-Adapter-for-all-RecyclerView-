@@ -8,6 +8,7 @@ import android.widget.EditText;
 
 import com.gurkhatech.mvppatterntest.BuildConfig;
 import com.gurkhatech.mvppatterntest.R;
+import com.gurkhatech.mvppatterntest.colorlist.ColorsListActivity_;
 import com.gurkhatech.mvppatterntest.login.presenter.LogInPresenter;
 import com.gurkhatech.mvppatterntest.orientationinfo.view.HomeActivity_;
 import com.gurkhatech.mvppatterntest.utils.Util;
@@ -42,6 +43,8 @@ public void onCreate ( Bundle savedInstanceState, PersistableBundle persistentSt
         email.setText ( getString ( R.string.dummy_email ) );
         password.setText ( getString ( R.string.dummy_password ) );
     }
+
+
 }
 
 
@@ -50,6 +53,8 @@ public void showLogInFailed ( ) {
     dialog.dismiss ();
 
     Util.toast ( getString ( R.string.login_failed ), this );
+    ColorsListActivity_.intent ( this ).start ();
+
 }
 
 @Override

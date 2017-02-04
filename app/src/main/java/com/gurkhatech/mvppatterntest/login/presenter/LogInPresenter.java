@@ -1,7 +1,7 @@
 package com.gurkhatech.mvppatterntest.login.presenter;
 
-import com.gurkhatech.mvppatterntest.login.view.ILogInView;
 import com.gurkhatech.mvppatterntest.login.model.LoginModel;
+import com.gurkhatech.mvppatterntest.login.view.ILogInView;
 
 /**
  * Created by adventure on 2/2/17.
@@ -16,9 +16,6 @@ private ILogInView view;
 private LoginModel model;
 
 
-public static LogInPresenter getInstance(ILogInView logInView){
-    return new LogInPresenter ( logInView);
-}
 private LogInPresenter ( ILogInView view ) {
     this ( view, new LoginModel () );
 }
@@ -26,6 +23,10 @@ private LogInPresenter ( ILogInView view ) {
 private LogInPresenter ( ILogInView view, LoginModel model ) {
     this.view = view;
     this.model = model;
+}
+
+public static LogInPresenter getInstance ( ILogInView logInView ) {
+    return new LogInPresenter ( logInView );
 }
 
 @Override
@@ -43,6 +44,5 @@ public void onSuccess ( ) {
 @Override
 public void onError ( ) {
     view.showLogInFailed ();
-
 }
 }

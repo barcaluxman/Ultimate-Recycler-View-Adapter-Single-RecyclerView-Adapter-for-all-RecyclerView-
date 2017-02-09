@@ -8,6 +8,8 @@ import android.support.annotation.ColorInt;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.gurkhatech.mvppatterntest.R;
+
 /**
  * Created by adventure on 2/2/17.
  * erlaxmanbhattarai@gmail.com
@@ -23,7 +25,7 @@ public static void toast ( String s, Context c ) {
 }
 
 public static void log ( String s ) {
-    log ( "datatest", s );
+    log ( MyApplication.getInstance ().getString( R.string.default_log_filter), s );
 }
 
 private static void log ( String s, String text ) {

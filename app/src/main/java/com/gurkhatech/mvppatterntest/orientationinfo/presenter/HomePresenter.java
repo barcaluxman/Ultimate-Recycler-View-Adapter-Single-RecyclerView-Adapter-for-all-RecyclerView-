@@ -21,7 +21,7 @@ public class HomePresenter implements IHomePresenter, IOrientationListener {
 private IHomeView homeView;
 private HomeModel model;
 
-public HomePresenter ( IHomeView homeView ) {
+private HomePresenter ( IHomeView homeView ) {
     this ( homeView, new HomeModel () );
 }
 

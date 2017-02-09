@@ -14,6 +14,7 @@ public class LogInPresenter implements ILoginPresenter, OnLoginFinishedListener 
 
 private ILogInView view;
 private LoginModel model;
+private static LogInPresenter logInPresenter;
 
 
 private LogInPresenter ( ILogInView view ) {
@@ -26,7 +27,10 @@ private LogInPresenter ( ILogInView view, LoginModel model ) {
 }
 
 public static LogInPresenter getInstance ( ILogInView logInView ) {
-    return new LogInPresenter ( logInView );
+    if(logInPresenter==null){
+        logInPresenter = new LogInPresenter ( logInView );
+    }
+    return logInPresenter;
 }
 
 @Override

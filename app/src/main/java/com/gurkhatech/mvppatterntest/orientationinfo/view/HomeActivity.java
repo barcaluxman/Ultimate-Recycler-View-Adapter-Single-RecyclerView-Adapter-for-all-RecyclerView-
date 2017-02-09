@@ -1,24 +1,35 @@
 package com.gurkhatech.mvppatterntest.orientationinfo.view;
 
 import android.content.Context;
+import android.os.Bundle;
 import android.support.annotation.ColorInt;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 import com.gurkhatech.mvppatterntest.R;
 import com.gurkhatech.mvppatterntest.orientationinfo.presenter.HomePresenter;
+import com.gurkhatech.mvppatterntest.utils.Util;
 
-import org.androidannotations.annotations.Background;
-import org.androidannotations.annotations.EActivity;
-import org.androidannotations.annotations.UiThread;
-import org.androidannotations.annotations.ViewById;
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.OnClick;
 
-@EActivity(R.layout.activity_home)
 public class HomeActivity extends AppCompatActivity implements IHomeView {
 
-@ViewById
+@BindView(R.id.homeText)
 TextView homeText;
 
+@OnClick(R.id.homeText)
+public void goToRx ( ) {
+    Util.log ( "textView clicked" );
+}
+
+@Override
+public void onCreate ( Bundle savedInstanceState ) {
+    super.onCreate ( savedInstanceState );
+    setContentView ( R.layout.activity_home );
+    ButterKnife.bind ( this );
+}
 
 @Override
 protected void onResume ( ) {
@@ -34,7 +45,6 @@ public Context getContext ( ) {
 }
 
 @Override
-@UiThread
 public void showScreenOrientationInfo ( String info ) {
     homeText.setText ( info );
 
@@ -52,7 +62,6 @@ public void setTextColor ( @ColorInt int color ) {
 }
 
 @Override
-@Background
 public void displayFromBG ( ) {
     for (int i = 0 ; i < 912345678 ; i++) {
         if (i % 100000 == 0) {

@@ -10,5 +10,4 @@ package com.gurkhatech.mvppatterntest.colorlist.view;
 public interface IColorView {
 
 void setText ( String text );
-
 }

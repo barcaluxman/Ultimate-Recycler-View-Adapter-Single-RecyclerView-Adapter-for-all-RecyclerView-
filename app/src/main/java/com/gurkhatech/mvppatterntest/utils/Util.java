@@ -8,6 +8,7 @@ import android.support.annotation.ColorInt;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.gurkhatech.mvppatterntest.BuildConfig;
 import com.gurkhatech.mvppatterntest.R;
 
 /**
@@ -23,13 +24,16 @@ public class Util {
 public static void toast ( String s, Context c ) {
     Toast.makeText ( c, s, Toast.LENGTH_LONG ).show ();
 }
+public static void toast ( String s ) {
+    Toast.makeText ( MyApplication.getInstance (), s, Toast.LENGTH_LONG ).show ();
+}
 
 public static void log ( String s ) {
-    log ( MyApplication.getInstance ().getString( R.string.default_log_filter), s );
+    log ( MyApplication.getInstance ().getString ( R.string.default_log_filter ), s );
 }
 
 private static void log ( String s, String text ) {
-    Log.i ( s, text );
+    if(BuildConfig.DEBUG)Log.d ( s, text );
 }
 
 @ColorInt
@@ -43,8 +47,9 @@ public static int getComplimentaryColor ( @ColorInt int color ) {
 
 public static boolean isInternetConnected ( Context context ) {
     ConnectivityManager connectivityManager
-            = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
-    NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
-    return activeNetworkInfo != null && activeNetworkInfo.isConnected();
+            = (ConnectivityManager) context.getSystemService ( Context.CONNECTIVITY_SERVICE );
+    NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo ();
+    return activeNetworkInfo != null && activeNetworkInfo.isConnected ();
 }
+
 }

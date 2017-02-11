@@ -52,7 +52,7 @@ public void onCreate ( Bundle savedInstanceState ) {
 public void showLogInFailed ( ) {
     dialog.dismiss ();
 
-    Util.toast ( getString ( R.string.login_failed ), this );
+    Util.toast ( getString ( R.string.login_failed ) );
     startActivity ( new Intent ( this, ColorsListActivity.class ) );
 
 }
@@ -60,7 +60,7 @@ public void showLogInFailed ( ) {
 @Override
 public void navigateToHome ( ) {
     dialog.dismiss ();
-    Util.toast ( getString ( R.string.login_success ), this );
+    Util.toast ( getString ( R.string.login_success ) );
     startActivity ( new Intent ( this, HomeActivity.class ) );
 
 }

@@ -31,9 +31,7 @@ private OKHttpSingleton ( ) {
 }
 
 public static OKHttpSingleton getInstance ( ) {
-    if (okHttpSingleton == null) {
-        okHttpSingleton = new OKHttpSingleton ();
-    }
+    okHttpSingleton= (okHttpSingleton == null) ?new OKHttpSingleton ():okHttpSingleton;
     return okHttpSingleton;
 }
 public OkHttpClient getClient ( ) {

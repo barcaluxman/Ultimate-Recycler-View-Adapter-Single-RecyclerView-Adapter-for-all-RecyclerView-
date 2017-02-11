@@ -13,18 +13,18 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".login.view.MainActivity">
-
         </activity>
         <activity android:name=".orientationinfo.view.HomeActivity"/>
         <activity android:name=".colorlist.view.ColorsListActivity">
+        </activity>
+        <activity android:name=".rximplementation.view.RxActivity">
+        </activity>
+        <activity android:name=".githubList.view.GithubListActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
-        </activity>
-        <activity android:name=".rximplementation.view.RxActivity">
-
         </activity>
     </application>
 

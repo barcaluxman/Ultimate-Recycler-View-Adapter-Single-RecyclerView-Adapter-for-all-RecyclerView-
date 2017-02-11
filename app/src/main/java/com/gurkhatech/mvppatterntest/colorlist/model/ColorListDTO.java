@@ -23,26 +23,6 @@ ArrayList < ColorDTO > getColors ( ) {
     return colors;
 }
 
-@SuppressWarnings("WeakerAccess")
-class ColorDTO {
-
-    @SerializedName("colorName")
-    @Expose
-    String colorName;
-
-
-    @SerializedName("hexValue")
-    @Expose
-    String hexValue;
-
-    String getHexValue ( ) {
-        return hexValue;
-    }
-
-    String getColorName ( ) {
-        return colorName;
-    }
-}
 }
 
 

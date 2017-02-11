@@ -9,7 +9,7 @@ import android.widget.EditText;
 import com.gurkhatech.mvppatterntest.R;
 import com.gurkhatech.mvppatterntest.githubList.model.GithubUserDTO;
 import com.gurkhatech.mvppatterntest.githubList.presenter.GithubListPresenter;
-import com.gurkhatech.mvppatterntest.utils.Util;
+import com.gurkhatech.mvppatterntest.githubList.view.modules.GithubListActivityComponent;
 
 import java.util.List;
 
@@ -26,19 +26,19 @@ EditText userInput;
 @BindView(R.id.userList)
 RecyclerView userList;
 
-GithubUserListAdapter githubUserListAdapter = GithubUserListAdapter.getInstance ();
-GithubListPresenter githubListPresenter = GithubListPresenter.getInstance ( this );
+
+GithubUserListAdapter githubUserListAdapter;
 
 LinearLayoutManager linearLayoutManager;
 
+GithubListActivityComponent githubListActivityComponent;
+GithubListPresenter githubListPresenter = GithubListPresenter.getInstance ( this );
 
 @Override
 protected void onCreate ( Bundle savedInstanceState ) {
     super.onCreate ( savedInstanceState );
     setContentView ( R.layout.activity_github_list );
     ButterKnife.bind ( this );
-    Util.log ( "app started" );
-    initList ();
 }
 
 @Override
@@ -49,7 +49,7 @@ protected void onDestroy ( ) {
 
 @Override
 public void setList ( List < GithubUserDTO > data ) {
-githubUserListAdapter.setData ( data );
+    githubUserListAdapter.setData ( data );
 }
 
 @OnClick(R.id.search)
@@ -61,6 +61,7 @@ public void triggerSearch ( ) {
 @Override
 public void initList ( ) {
     linearLayoutManager = new LinearLayoutManager ( this );
+    githubUserListAdapter = githubListActivityComponent.githubUserListAdapter ();
     userList.setLayoutManager ( linearLayoutManager );
     userList.setAdapter ( githubUserListAdapter );
 

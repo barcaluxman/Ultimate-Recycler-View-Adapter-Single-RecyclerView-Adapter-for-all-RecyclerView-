@@ -4,10 +4,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
-import com.bumptech.glide.Glide;
 import com.bumptech.glide.RequestManager;
 import com.gurkhatech.mvppatterntest.R;
-import com.gurkhatech.mvppatterntest.githubList.constants.GithubApp;
 import com.gurkhatech.mvppatterntest.githubList.model.GithubUserDTO;
 
 import java.util.ArrayList;
@@ -20,7 +18,7 @@ import java.util.List;
  * copyright reserved
  * gurkhatech.com
  */
-class GithubUserListAdapter extends RecyclerView.Adapter < GitHubUserListViewHolder > {
+public class GithubUserListAdapter extends RecyclerView.Adapter < GitHubUserListViewHolder > {
 private static GithubUserListAdapter githubUserListAdapter;
 private List < GithubUserDTO > data;
 
@@ -30,13 +28,19 @@ private List < GithubUserDTO > data;
 private GithubUserDTO temp;
 private RequestManager glideRequestManager;
 
-private GithubUserListAdapter ( ) {
+private GithubUserListAdapter ( RequestManager manager ) {
     this.data = new ArrayList <> ();
-    glideRequestManager = Glide.with ( GithubApp.getInstance () );
+    glideRequestManager = manager;
 }
 
-public static GithubUserListAdapter getInstance ( ) {
-    githubUserListAdapter = ( githubUserListAdapter == null ) ? new GithubUserListAdapter () : githubUserListAdapter;
+/**
+ * We could have not asked for context and get it from application,
+ * But glide handles the the image loading process and copes well with
+ * activity or fragment life cycle so we are using activity's context instead
+ * of fragment context
+ */
+public static GithubUserListAdapter getInstance ( RequestManager manager ) {
+    githubUserListAdapter = ( githubUserListAdapter == null ) ? new GithubUserListAdapter ( manager ) : githubUserListAdapter;
     return githubUserListAdapter;
 }
 
@@ -56,12 +60,12 @@ public void onBindViewHolder ( GitHubUserListViewHolder holder, int position ) {
     holder.userName.setText ( temp.getUserName () );
     holder.profileUrl.setText ( temp.getProfileUrl () );
     holder.reposUrl.setText ( temp.getRepoUrl () );
-    glideRequestManager.load ( temp.getAvatarUrl () ).into ( holder.avatar );
+    glideRequestManager.load ( temp.getAvatarUrl () ).thumbnail ( 0.3f ).into ( holder.avatar );
 
 }
 
 @Override
 public int getItemCount ( ) {
-    return (this.data==null)?0:data.size ();
+    return ( this.data == null ) ? 0 : data.size ();
 }
 }

@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 import com.gurkhatech.mvppatterntest.BuildConfig;
 import com.gurkhatech.mvppatterntest.R;
+import com.gurkhatech.mvppatterntest.githubList.constants.GithubApp;
 
 /**
  * Created by adventure on 2/2/17.
@@ -24,16 +25,17 @@ public class Util {
 public static void toast ( String s, Context c ) {
     Toast.makeText ( c, s, Toast.LENGTH_LONG ).show ();
 }
+
 public static void toast ( String s ) {
-    Toast.makeText ( MyApplication.getInstance (), s, Toast.LENGTH_LONG ).show ();
+    Toast.makeText ( GithubApp.getInstance (), s, Toast.LENGTH_LONG ).show ();
 }
 
 public static void log ( String s ) {
-    log ( MyApplication.getInstance ().getString ( R.string.default_log_filter ), s );
+    log ( GithubApp.getInstance ().getString ( R.string.default_log_filter ), s );
 }
 
 private static void log ( String s, String text ) {
-    if(BuildConfig.DEBUG)Log.d ( s, text );
+    if (BuildConfig.DEBUG) Log.d ( s, text );
 }
 
 @ColorInt

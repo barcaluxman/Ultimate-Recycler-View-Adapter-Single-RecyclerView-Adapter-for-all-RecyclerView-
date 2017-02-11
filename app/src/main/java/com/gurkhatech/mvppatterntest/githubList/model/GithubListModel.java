@@ -1,6 +1,7 @@
 package com.gurkhatech.mvppatterntest.githubList.model;
 
-import com.gurkhatech.mvppatterntest.githubList.constants.GitHubRestClientStandAlone;
+import com.gurkhatech.mvppatterntest.githubList.constants.GithubApp;
+import com.gurkhatech.mvppatterntest.githubList.constants.modules.OkHttpSynchronous;
 import com.gurkhatech.mvppatterntest.utils.Util;
 
 import java.util.ArrayList;
@@ -18,17 +19,16 @@ import retrofit2.Call;
 
 public class GithubListModel implements IGithubListModel {
 private Call < GithubUserListDTO > userListCall;
-private GithubAPIService apiService = GitHubRestClientStandAlone.getInstance ().getGithubAPIService ();
+private GithubAPIService apiService = GithubApp.getInstance ().getGithubAPIService ();
 
 @Override
 public List < GithubUserDTO > getUserList ( String name ) {
     userListCall = apiService.searchGitHubUsers ( name );
     List < GithubUserDTO > userList;
-    try{
-        //noinspection ConstantConditions
-        userList = ( (GithubUserListDTO) GitHubRestClientStandAlone.getInstance ().synchronousCall ( userListCall ) ).getList ();
-    }catch (Exception e){
-        userList = new ArrayList <> (  );
+    try {
+        userList = ( (GithubUserListDTO) OkHttpSynchronous.getInstance ().synchronousCall ( userListCall ) ).getList ();
+    } catch (Exception e) {
+        userList = new ArrayList <> ();
         Util.log ( e.getMessage () );
     }
     return userList;

@@ -1,10 +1,8 @@
 package com.gurkhatech.mvppatterntest.githubList.presenter;
 
-import com.gurkhatech.mvppatterntest.githubList.constants.GithubApp;
 import com.gurkhatech.mvppatterntest.githubList.model.GithubListModel;
 import com.gurkhatech.mvppatterntest.githubList.model.IGithubListModel;
 import com.gurkhatech.mvppatterntest.githubList.view.IGithubListView;
-import com.gurkhatech.mvppatterntest.utils.Util;
 
 /**
  * Created by adventure on 2/9/17.
@@ -27,7 +25,8 @@ private GithubListPresenter ( IGithubListView view ) {
 }
 
 public static GithubListPresenter getInstance ( IGithubListView view ) {
-    githubListPresenter = ( githubListPresenter == null ) ? new GithubListPresenter ( view ) : githubListPresenter;
+    githubListPresenter = ( githubListPresenter == null ) ?
+            new GithubListPresenter ( view ) : githubListPresenter;
     return githubListPresenter;
 }
 

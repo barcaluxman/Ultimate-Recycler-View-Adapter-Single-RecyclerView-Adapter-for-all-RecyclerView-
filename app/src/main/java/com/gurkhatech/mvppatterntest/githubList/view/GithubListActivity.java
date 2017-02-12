@@ -10,7 +10,6 @@ import com.gurkhatech.mvppatterntest.R;
 import com.gurkhatech.mvppatterntest.githubList.model.GithubUserDTO;
 import com.gurkhatech.mvppatterntest.githubList.presenter.GithubListPresenter;
 import com.gurkhatech.mvppatterntest.githubList.view.modules.DaggerGithubListActivityComponent;
-import com.gurkhatech.mvppatterntest.githubList.view.modules.GithubListActivityComponent;
 import com.gurkhatech.mvppatterntest.githubList.view.modules.GithubListActivityModule;
 
 import java.util.List;
@@ -26,17 +25,16 @@ public class GithubListActivity extends AppCompatActivity implements IGithubList
 @BindView(R.id.userInput)
 EditText userInput;
 
-
 @BindView(R.id.userList)
 RecyclerView userList;
 
 @Inject
 GithubUserListAdapter githubUserListAdapter;
-GithubListPresenter githubListPresenter = GithubListPresenter.getInstance ( this );
 
 @Inject
 LinearLayoutManager linearLayoutManager;
-GithubListActivityComponent githubListActivityComponent;
+
+GithubListPresenter githubListPresenter = GithubListPresenter.getInstance ( this );
 
 
 @Override
@@ -45,7 +43,7 @@ protected void onCreate ( Bundle savedInstanceState ) {
     setContentView ( R.layout.activity_github_list );
     ButterKnife.bind ( this );
 
-     DaggerGithubListActivityComponent.builder ()
+    DaggerGithubListActivityComponent.builder ()
             .githubListActivityModule ( new GithubListActivityModule ( this ) )
             .build ().inject ( this );
     initList ();
@@ -71,8 +69,6 @@ public void triggerSearch ( ) {
 
 @Override
 public void initList ( ) {
-    // linearLayoutManager = githubListActivityComponent.linearLayoutManager ();
-    //githubUserListAdapter = GithubUserListAdapter.getInstance ( Glide.with ( this ) );
     userList.setLayoutManager ( linearLayoutManager );
     userList.setAdapter ( githubUserListAdapter );
 

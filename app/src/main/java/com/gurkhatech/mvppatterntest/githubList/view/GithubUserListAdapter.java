@@ -11,6 +11,8 @@ import com.gurkhatech.mvppatterntest.githubList.model.GithubUserDTO;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.inject.Inject;
+
 /**
  * Created by adventure on 2/10/17.
  * erlaxmanbhattarai@gmail.com
@@ -27,8 +29,8 @@ private List < GithubUserDTO > data;
 @SuppressWarnings("FieldCanBeLocal")
 private GithubUserDTO temp;
 private RequestManager glideRequestManager;
-
-private GithubUserListAdapter ( RequestManager manager ) {
+@Inject
+public GithubUserListAdapter ( RequestManager manager ) {
     this.data = new ArrayList <> ();
     glideRequestManager = manager;
 }

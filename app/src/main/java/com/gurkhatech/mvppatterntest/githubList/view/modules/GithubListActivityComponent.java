@@ -19,13 +19,5 @@ import dagger.Component;
 @GithubListActivityScope
 @Component(modules = { GithubListActivityModule.class, GlideActivityModule.class })
 public interface GithubListActivityComponent {
-
-GithubUserListAdapter githubUserListAdapter ( );
-
-RequestManager requestManager ( );
-
-LinearLayoutManager linearLayoutManager ( );
-
 void inject( GithubListActivity activity);
-
 }

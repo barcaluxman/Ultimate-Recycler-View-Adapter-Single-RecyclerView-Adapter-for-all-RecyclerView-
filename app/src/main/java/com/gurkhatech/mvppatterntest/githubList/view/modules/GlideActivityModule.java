@@ -27,10 +27,4 @@ RequestManager requestManager ( GithubListActivity activity ) {
     return Glide.with ( activity );
 }
 
-
-
-@Provides
-GithubUserListAdapter githubUserListAdapter ( RequestManager manager ) {
-    return GithubUserListAdapter.getInstance ( manager );
-}
 }

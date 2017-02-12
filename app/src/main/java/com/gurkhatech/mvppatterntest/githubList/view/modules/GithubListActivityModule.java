@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.support.v7.widget.LinearLayoutManager;
 
 import com.bumptech.glide.RequestManager;
+import com.gurkhatech.mvppatterntest.githubList.view.GithubListActivity;
 import com.gurkhatech.mvppatterntest.githubList.view.GithubUserListAdapter;
 
 import dagger.Module;
@@ -19,23 +20,23 @@ import dagger.Provides;
 
 @Module
 public class GithubListActivityModule {
-private final Activity githubListActivity;
+private final GithubListActivity githubListActivity;
 
 
-public GithubListActivityModule ( Activity activity ) {
+public GithubListActivityModule ( GithubListActivity activity ) {
     this.githubListActivity = activity;
 
 }
 
 @Provides
 @GithubListActivityScope
-Activity activity ( ) {
+GithubListActivity activity ( ) {
     return this.githubListActivity;
 }
 
 @Provides
 @GithubListActivityScope
-LinearLayoutManager linearLayoutManager(Activity activity){
+LinearLayoutManager linearLayoutManager(GithubListActivity activity){
     return  new LinearLayoutManager ( activity );
 }
 }

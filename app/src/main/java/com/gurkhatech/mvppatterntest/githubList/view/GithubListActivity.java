@@ -7,10 +7,12 @@ import android.support.v7.widget.RecyclerView;
 import android.widget.EditText;
 
 import com.gurkhatech.mvppatterntest.R;
-import com.gurkhatech.mvppatterntest.githubList.model.GithubUserDTO;
+import com.gurkhatech.mvppatterntest.githubList.model.dtos.GithubUserDTO;
+import com.gurkhatech.mvppatterntest.githubList.GithubListContract;
 import com.gurkhatech.mvppatterntest.githubList.presenter.GithubListPresenter;
-import com.gurkhatech.mvppatterntest.githubList.view.modules.DaggerGithubListActivityComponent;
-import com.gurkhatech.mvppatterntest.githubList.view.modules.GithubListActivityModule;
+import com.gurkhatech.mvppatterntest.githubList.view.di.DaggerGithubListActivityComponent;
+import com.gurkhatech.mvppatterntest.githubList.view.di.GithubListActivityModule;
+import com.gurkhatech.mvppatterntest.githubList.view.viewcomponents.GithubUserListAdapter;
 
 import java.util.List;
 
@@ -20,7 +22,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class GithubListActivity extends AppCompatActivity implements IGithubListView {
+public class GithubListActivity extends AppCompatActivity implements GithubListContract.IGithubListView {
 
 @BindView(R.id.userInput)
 EditText userInput;
@@ -46,8 +48,6 @@ protected void onCreate ( Bundle savedInstanceState ) {
     DaggerGithubListActivityComponent.builder ()
             .githubListActivityModule ( new GithubListActivityModule ( this ) )
             .build ().inject ( this );
-    initList ();
-
 }
 
 @Override
@@ -68,14 +68,19 @@ public void triggerSearch ( ) {
 }
 
 @Override
-public void initList ( ) {
-    userList.setLayoutManager ( linearLayoutManager );
+public String getUserInput ( ) {
+    return userInput.getText ().toString ();
+}
+
+@Override
+public void setAdapter ( ) {
     userList.setAdapter ( githubUserListAdapter );
 
 }
 
 @Override
-public String getUserInput ( ) {
-    return userInput.getText ().toString ();
+public void setLayoutManager ( ) {
+    userList.setLayoutManager ( linearLayoutManager );
+
 }
 }

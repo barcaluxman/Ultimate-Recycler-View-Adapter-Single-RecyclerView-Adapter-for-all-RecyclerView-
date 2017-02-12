@@ -1,7 +1,11 @@
 package com.gurkhatech.mvppatterntest.githubList.model;
 
-import com.gurkhatech.mvppatterntest.githubList.constants.GithubApp;
-import com.gurkhatech.mvppatterntest.githubList.constants.modules.OkHttpSynchronous;
+import com.gurkhatech.mvppatterntest.githubList.model.dtos.GithubUserDTO;
+import com.gurkhatech.mvppatterntest.githubList.model.dtos.GithubUserListDTO;
+import com.gurkhatech.mvppatterntest.githubList.utils.GithubAPIService;
+import com.gurkhatech.mvppatterntest.githubList.utils.GithubApp;
+import com.gurkhatech.mvppatterntest.githubList.utils.di.OkHttpSynchronous;
+import com.gurkhatech.mvppatterntest.githubList.GithubListContract;
 import com.gurkhatech.mvppatterntest.utils.Util;
 
 import java.util.ArrayList;
@@ -17,7 +21,7 @@ import retrofit2.Call;
  * gurkhatech.com
  */
 
-public class GithubListModel implements IGithubListModel {
+public class GithubListModel implements GithubListContract.IGithubListModel {
 private Call < GithubUserListDTO > userListCall;
 private GithubAPIService apiService = GithubApp.getInstance ().getGithubAPIService ();
 

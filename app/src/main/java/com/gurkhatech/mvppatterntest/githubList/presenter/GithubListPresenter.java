@@ -1,8 +1,7 @@
 package com.gurkhatech.mvppatterntest.githubList.presenter;
 
+import com.gurkhatech.mvppatterntest.githubList.GithubListContract;
 import com.gurkhatech.mvppatterntest.githubList.model.GithubListModel;
-import com.gurkhatech.mvppatterntest.githubList.model.IGithubListModel;
-import com.gurkhatech.mvppatterntest.githubList.view.IGithubListView;
 
 /**
  * Created by adventure on 2/9/17.
@@ -12,19 +11,19 @@ import com.gurkhatech.mvppatterntest.githubList.view.IGithubListView;
  * gurkhatech.com
  */
 
-public class GithubListPresenter implements IGithubListPresenter {
+public class GithubListPresenter implements GithubListContract.IGithubListPresenter {
 
 private static GithubListPresenter githubListPresenter;
 
-private IGithubListView githubListView;
-private IGithubListModel githubListModel;
+private GithubListContract.IGithubListView githubListView;
+private GithubListContract.IGithubListModel githubListModel;
 
-private GithubListPresenter ( IGithubListView view ) {
+private GithubListPresenter ( GithubListContract.IGithubListView view ) {
     this.githubListView = view;
     this.githubListModel = new GithubListModel ();
 }
 
-public static GithubListPresenter getInstance ( IGithubListView view ) {
+public static GithubListPresenter getInstance ( GithubListContract.IGithubListView view ) {
     githubListPresenter = ( githubListPresenter == null ) ?
             new GithubListPresenter ( view ) : githubListPresenter;
     return githubListPresenter;
@@ -32,6 +31,8 @@ public static GithubListPresenter getInstance ( IGithubListView view ) {
 
 @Override
 public void searchUser ( ) {
+    githubListView.setLayoutManager ();
+    githubListView.setAdapter ();
     githubListView.setList ( githubListModel.getUserList ( githubListView.getUserInput () ) );
 
 }

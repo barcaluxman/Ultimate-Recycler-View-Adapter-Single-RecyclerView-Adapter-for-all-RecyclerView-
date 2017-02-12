@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 import com.gurkhatech.mvppatterntest.BuildConfig;
 import com.gurkhatech.mvppatterntest.R;
-import com.gurkhatech.mvppatterntest.githubList.constants.GithubApp;
+import com.gurkhatech.mvppatterntest.githubList.utils.GithubApp;
 
 /**
  * Created by adventure on 2/2/17.

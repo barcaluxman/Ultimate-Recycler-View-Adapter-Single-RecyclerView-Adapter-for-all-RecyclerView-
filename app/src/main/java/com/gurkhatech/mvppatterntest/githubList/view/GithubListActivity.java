@@ -64,7 +64,7 @@ public void setList ( List < GithubUserDTO > data ) {
 @OnClick(R.id.search)
 @Override
 public void triggerSearch ( ) {
-    githubListPresenter.searchUser ( userInput.getText ().toString () );
+    githubListPresenter.searchUser ();
 }
 
 @Override
@@ -72,5 +72,10 @@ public void initList ( ) {
     userList.setLayoutManager ( linearLayoutManager );
     userList.setAdapter ( githubUserListAdapter );
 
+}
+
+@Override
+public String getUserInput ( ) {
+    return userInput.getText ().toString ();
 }
 }

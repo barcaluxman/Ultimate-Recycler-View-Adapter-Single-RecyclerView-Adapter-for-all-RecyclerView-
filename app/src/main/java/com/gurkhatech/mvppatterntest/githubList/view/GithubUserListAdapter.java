@@ -29,6 +29,7 @@ private List < GithubUserDTO > data;
 @SuppressWarnings("FieldCanBeLocal")
 private GithubUserDTO temp;
 private RequestManager glideRequestManager;
+@SuppressWarnings("WeakerAccess")
 @Inject
 public GithubUserListAdapter ( RequestManager manager ) {
     this.data = new ArrayList <> ();

@@ -31,8 +31,8 @@ public static GithubListPresenter getInstance ( IGithubListView view ) {
 }
 
 @Override
-public void searchUser ( String name ) {
-    githubListView.setList ( githubListModel.getUserList ( name ) );
+public void searchUser ( ) {
+    githubListView.setList ( githubListModel.getUserList ( githubListView.getUserInput () ) );
 
 }
 

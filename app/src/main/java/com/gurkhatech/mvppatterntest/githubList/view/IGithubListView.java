@@ -16,4 +16,5 @@ public interface IGithubListView  {
 void setList( List<GithubUserDTO> data);
 void triggerSearch();
 void initList();
+String getUserInput();
 }

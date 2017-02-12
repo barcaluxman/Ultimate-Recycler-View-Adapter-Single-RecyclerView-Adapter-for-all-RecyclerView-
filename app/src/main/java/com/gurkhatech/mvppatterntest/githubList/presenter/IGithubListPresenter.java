@@ -9,7 +9,7 @@ package com.gurkhatech.mvppatterntest.githubList.presenter;
  */
 
 interface IGithubListPresenter {
-void searchUser ( String name );
+void searchUser (  );
 void disconnect();
 
 }

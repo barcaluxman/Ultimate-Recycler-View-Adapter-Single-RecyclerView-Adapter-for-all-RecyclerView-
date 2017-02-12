@@ -19,7 +19,6 @@ TextView userName;
 @BindView ( R.id.profileUrl )
 TextView profileUrl;
 @BindView ( R.id.reposUrl )
-
 TextView reposUrl;
     GitHubUserListViewHolder ( View itemView ) {
         super ( itemView );

@@ -4,7 +4,7 @@ import android.app.Activity;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.RequestManager;
-import com.gurkhatech.mvppatterntest.githubList.view.GithubListActivity;
+import com.gurkhatech.mvppatterntest.githubList.view.GithubUserListAdapter;
 
 import dagger.Module;
 import dagger.Provides;
@@ -18,11 +18,18 @@ import dagger.Provides;
  */
 
 @Module(includes = { GithubListActivityModule.class })
-public class GlideActivityModule {
+class GlideActivityModule {
 
 @Provides
 @GithubListActivityScope
 RequestManager requestManager ( Activity activity ) {
     return Glide.with ( activity );
+}
+
+
+
+@Provides
+GithubUserListAdapter githubUserListAdapter ( RequestManager manager ) {
+    return GithubUserListAdapter.getInstance ( manager );
 }
 }

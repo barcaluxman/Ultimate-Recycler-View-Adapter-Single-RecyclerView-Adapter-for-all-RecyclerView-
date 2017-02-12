@@ -19,7 +19,9 @@ import dagger.Component;
 public interface GithubListActivityComponent {
 
 GithubUserListAdapter githubUserListAdapter ( );
-RequestManager requestManager();
-LinearLayoutManager linearLayoutManager();
+
+RequestManager requestManager ( );
+
+LinearLayoutManager linearLayoutManager ( );
 
 }

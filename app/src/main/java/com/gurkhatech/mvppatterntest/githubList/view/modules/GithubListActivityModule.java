@@ -17,7 +17,7 @@ import dagger.Provides;
  * gurkhatech.com
  */
 
-@Module(includes = {GlideActivityModule.class})
+@Module
 public class GithubListActivityModule {
 private final Activity githubListActivity;
 
@@ -33,11 +33,6 @@ Activity activity ( ) {
     return this.githubListActivity;
 }
 
-@Provides
-@GithubListActivityScope
-GithubUserListAdapter githubUserListAdapter ( RequestManager manager ) {
-    return GithubUserListAdapter.getInstance ( manager );
-}
 @Provides
 @GithubListActivityScope
 LinearLayoutManager linearLayoutManager(Activity activity){

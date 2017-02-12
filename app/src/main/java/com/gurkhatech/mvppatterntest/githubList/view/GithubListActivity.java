@@ -6,10 +6,13 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.EditText;
 
+import com.bumptech.glide.Glide;
 import com.gurkhatech.mvppatterntest.R;
 import com.gurkhatech.mvppatterntest.githubList.model.GithubUserDTO;
 import com.gurkhatech.mvppatterntest.githubList.presenter.GithubListPresenter;
+import com.gurkhatech.mvppatterntest.githubList.view.modules.DaggerGithubListActivityComponent;
 import com.gurkhatech.mvppatterntest.githubList.view.modules.GithubListActivityComponent;
+import com.gurkhatech.mvppatterntest.githubList.view.modules.GithubListActivityModule;
 
 import java.util.List;
 
@@ -28,17 +31,24 @@ RecyclerView userList;
 
 
 GithubUserListAdapter githubUserListAdapter;
+GithubListPresenter githubListPresenter = GithubListPresenter.getInstance ( this );
+
 
 LinearLayoutManager linearLayoutManager;
-
 GithubListActivityComponent githubListActivityComponent;
-GithubListPresenter githubListPresenter = GithubListPresenter.getInstance ( this );
+
 
 @Override
 protected void onCreate ( Bundle savedInstanceState ) {
     super.onCreate ( savedInstanceState );
     setContentView ( R.layout.activity_github_list );
     ButterKnife.bind ( this );
+
+    githubListActivityComponent = DaggerGithubListActivityComponent.builder ()
+            .githubListActivityModule ( new GithubListActivityModule ( this ) )
+            .build ();
+    initList ();
+
 }
 
 @Override
@@ -60,8 +70,8 @@ public void triggerSearch ( ) {
 
 @Override
 public void initList ( ) {
-    linearLayoutManager = new LinearLayoutManager ( this );
-    githubUserListAdapter = githubListActivityComponent.githubUserListAdapter ();
+    linearLayoutManager = githubListActivityComponent.linearLayoutManager ();
+    githubUserListAdapter = GithubUserListAdapter.getInstance ( Glide.with ( this ) );
     userList.setLayoutManager ( linearLayoutManager );
     userList.setAdapter ( githubUserListAdapter );
 

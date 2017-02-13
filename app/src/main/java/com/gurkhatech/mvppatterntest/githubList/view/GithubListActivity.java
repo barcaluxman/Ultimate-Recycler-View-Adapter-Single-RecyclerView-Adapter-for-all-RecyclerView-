@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 import com.gurkhatech.mvppatterntest.R;
 import com.gurkhatech.mvppatterntest.githubList.GithubListContract;
@@ -13,6 +14,7 @@ import com.gurkhatech.mvppatterntest.githubList.presenter.GithubListPresenter;
 import com.gurkhatech.mvppatterntest.githubList.view.di.DaggerGithubListActivityComponent;
 import com.gurkhatech.mvppatterntest.githubList.view.di.GithubListActivityModule;
 import com.gurkhatech.mvppatterntest.githubList.view.viewcomponents.GithubUserListAdapter;
+import com.gurkhatech.mvppatterntest.utils.Util;
 
 import java.util.List;
 
@@ -29,6 +31,8 @@ EditText userInput;
 
 @BindView(R.id.userList)
 RecyclerView userList;
+@BindView(R.id.search)
+ImageView search;
 
 @Inject
 GithubUserListAdapter githubUserListAdapter;
@@ -48,7 +52,7 @@ protected void onCreate ( Bundle savedInstanceState ) {
     DaggerGithubListActivityComponent.builder ()
             .githubListActivityModule ( new GithubListActivityModule ( this ) )
             .build ().inject ( this );
-    userList.setLayoutManager ( linearLayoutManager);
+    userList.setLayoutManager ( linearLayoutManager );
     userList.setAdapter ( githubUserListAdapter );
 
 
@@ -65,9 +69,36 @@ public void setData ( List < GithubUserDTO > data ) {
     githubUserListAdapter.setData ( data );
 }
 
+@Override
+public void enableSearchButton ( boolean enable ) {
+    userInput.setClickable ( enable );
+    search.setClickable ( enable );
+    userInput.setEnabled ( enable );
+    search.setEnabled ( enable );
+}
+
+@Override
+public void showNetworkError ( ) {
+    Util.log ( "Network Error" );
+
+}
+
+@Override
+public void showNoDataError ( ) {
+    Util.log ( "No data found" );
+
+}
+
 
 @OnClick(R.id.search)
 public void triggerSearch ( ) {
-    githubListPresenter.searchUser (userInput.getText ().toString ());
+    githubListPresenter.searchUser ( userInput.getText ().toString () );
+    Util.log ( "search Clicked" );
+}
+
+@Override
+protected void onResume ( ) {
+    super.onResume ();
+    githubListPresenter.enableSearch ( true );
 }
 }

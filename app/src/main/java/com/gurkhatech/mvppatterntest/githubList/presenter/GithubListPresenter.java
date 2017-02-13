@@ -4,6 +4,9 @@ import android.support.annotation.NonNull;
 
 import com.gurkhatech.mvppatterntest.githubList.GithubListContract;
 import com.gurkhatech.mvppatterntest.githubList.model.GithubListModel;
+import com.gurkhatech.mvppatterntest.githubList.model.dtos.GithubUserDTO;
+
+import java.util.List;
 
 /**
  * Created by adventure on 2/9/17.
@@ -33,13 +36,35 @@ public static GithubListPresenter getInstance ( GithubListContract.View view ) {
 
 @Override
 public void searchUser ( @NonNull String userName ) {
-    githubListView.setData ( githubListModel.getUserList ( userName ) );
+    githubListModel.makeAsyncRequest ( userName, this );
+    enableSearch ( false );
 
+}
+
+@Override
+public void loadData ( List < GithubUserDTO > data ) {
+    githubListView.setData ( data );
 }
 
 @Override
 public void disconnect ( ) {
     githubListModel.cancelNetworkCall ();
 
+}
+
+@Override
+public void enableSearch ( boolean enable ) {
+    githubListView.enableSearchButton ( enable );
+
+}
+
+@Override
+public void alertNetworkError ( ) {
+githubListView.showNetworkError ();
+}
+
+@Override
+public void alertNoDataFound ( ) {
+githubListView.showNoDataError ();
 }
 }

@@ -1,17 +1,13 @@
 package com.gurkhatech.mvppatterntest.githubList.model;
 
-import com.gurkhatech.mvppatterntest.githubList.model.dtos.GithubUserDTO;
+import com.gurkhatech.mvppatterntest.githubList.GithubListContract;
 import com.gurkhatech.mvppatterntest.githubList.model.dtos.GithubUserListDTO;
 import com.gurkhatech.mvppatterntest.githubList.utils.GithubAPIService;
 import com.gurkhatech.mvppatterntest.githubList.utils.GithubApp;
-import com.gurkhatech.mvppatterntest.githubList.utils.di.OkHttpSynchronous;
-import com.gurkhatech.mvppatterntest.githubList.GithubListContract;
-import com.gurkhatech.mvppatterntest.utils.Util;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 /**
  * Created by adventure on 2/9/17.
@@ -26,16 +22,27 @@ private Call < GithubUserListDTO > userListCall;
 private GithubAPIService apiService = GithubApp.getInstance ().getGithubAPIService ();
 
 @Override
-public List < GithubUserDTO > getUserList ( String name ) {
+public void makeAsyncRequest ( String name, final GithubListContract.Presenter presenter ) {
     userListCall = apiService.searchGitHubUsers ( name );
-    List < GithubUserDTO > userList;
-    try {
-        userList = ( (GithubUserListDTO) OkHttpSynchronous.getInstance ().synchronousCall ( userListCall ) ).getList ();
-    } catch (Exception e) {
-        userList = new ArrayList <> ();
-        Util.log ( e.getMessage () );
-    }
-    return userList;
+    userListCall.enqueue ( new Callback < GithubUserListDTO > () {
+        @Override
+        public void onResponse ( Call < GithubUserListDTO > call, Response < GithubUserListDTO > response ) {
+            try {
+                presenter.loadData ( response.body ().getList () );
+            } catch (Exception ignored) {
+                presenter.alertNoDataFound ();
+            }
+            presenter.enableSearch ( true );
+
+        }
+
+        @Override
+        public void onFailure ( Call < GithubUserListDTO > call, Throwable t ) {
+
+            presenter.enableSearch ( true );
+            presenter.alertNetworkError ();
+        }
+    } );
 
 }
 

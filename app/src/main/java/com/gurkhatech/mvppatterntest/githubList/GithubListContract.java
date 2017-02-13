@@ -16,17 +16,32 @@ public interface GithubListContract {
 interface Presenter {
     void searchUser ( String userName );
 
+    void loadData ( List < GithubUserDTO > data );
+
     void disconnect ( );
+
+    void enableSearch ( boolean enable );
+
+    void alertNetworkError ( );
+
+    void alertNoDataFound ( );
 
 }
 
 interface View {
     void setData ( List < GithubUserDTO > data );
 
+    void enableSearchButton ( boolean enable );
+
+    void showNetworkError ( );
+
+    void showNoDataError ( );
+
 }
 
 interface Model {
-    List < GithubUserDTO > getUserList ( String name );
+
+    void makeAsyncRequest ( String name, Presenter presenter );
 
     void cancelNetworkCall ( );
 

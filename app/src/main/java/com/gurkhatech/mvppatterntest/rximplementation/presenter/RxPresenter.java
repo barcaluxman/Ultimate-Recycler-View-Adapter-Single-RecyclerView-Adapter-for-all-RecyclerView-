@@ -66,6 +66,7 @@ public Runnable setUpRx ( ) {
             } );
 
 
+
             Observable < String > zipped = Observable.concat ( onlineDataObservable, onlineDataObservableHI );
             zipped.observeOn ( AndroidSchedulers.mainThread () )
                     .subscribeOn ( Schedulers.newThread () )
@@ -80,6 +81,7 @@ public Runnable setUpRx ( ) {
 
                             Util.log ( value );
                             rxView.displayText ( value );
+
 
                         }
 

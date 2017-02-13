@@ -7,8 +7,8 @@ import android.support.v7.widget.RecyclerView;
 import android.widget.EditText;
 
 import com.gurkhatech.mvppatterntest.R;
-import com.gurkhatech.mvppatterntest.githubList.model.dtos.GithubUserDTO;
 import com.gurkhatech.mvppatterntest.githubList.GithubListContract;
+import com.gurkhatech.mvppatterntest.githubList.model.dtos.GithubUserDTO;
 import com.gurkhatech.mvppatterntest.githubList.presenter.GithubListPresenter;
 import com.gurkhatech.mvppatterntest.githubList.view.di.DaggerGithubListActivityComponent;
 import com.gurkhatech.mvppatterntest.githubList.view.di.GithubListActivityModule;
@@ -22,7 +22,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class GithubListActivity extends AppCompatActivity implements GithubListContract.IGithubListView {
+public class GithubListActivity extends AppCompatActivity implements GithubListContract.View {
 
 @BindView(R.id.userInput)
 EditText userInput;
@@ -48,6 +48,10 @@ protected void onCreate ( Bundle savedInstanceState ) {
     DaggerGithubListActivityComponent.builder ()
             .githubListActivityModule ( new GithubListActivityModule ( this ) )
             .build ().inject ( this );
+    userList.setLayoutManager ( linearLayoutManager);
+    userList.setAdapter ( githubUserListAdapter );
+
+
 }
 
 @Override
@@ -57,30 +61,13 @@ protected void onDestroy ( ) {
 }
 
 @Override
-public void setList ( List < GithubUserDTO > data ) {
+public void setData ( List < GithubUserDTO > data ) {
     githubUserListAdapter.setData ( data );
 }
 
+
 @OnClick(R.id.search)
-@Override
 public void triggerSearch ( ) {
-    githubListPresenter.searchUser ();
-}
-
-@Override
-public String getUserInput ( ) {
-    return userInput.getText ().toString ();
-}
-
-@Override
-public void setAdapter ( ) {
-    userList.setAdapter ( githubUserListAdapter );
-
-}
-
-@Override
-public void setLayoutManager ( ) {
-    userList.setLayoutManager ( linearLayoutManager );
-
+    githubListPresenter.searchUser (userInput.getText ().toString ());
 }
 }

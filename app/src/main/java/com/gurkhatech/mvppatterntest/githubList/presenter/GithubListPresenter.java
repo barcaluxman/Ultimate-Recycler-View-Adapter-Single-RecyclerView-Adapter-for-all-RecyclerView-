@@ -1,5 +1,7 @@
 package com.gurkhatech.mvppatterntest.githubList.presenter;
 
+import android.support.annotation.NonNull;
+
 import com.gurkhatech.mvppatterntest.githubList.GithubListContract;
 import com.gurkhatech.mvppatterntest.githubList.model.GithubListModel;
 
@@ -11,29 +13,27 @@ import com.gurkhatech.mvppatterntest.githubList.model.GithubListModel;
  * gurkhatech.com
  */
 
-public class GithubListPresenter implements GithubListContract.IGithubListPresenter {
+public class GithubListPresenter implements GithubListContract.Presenter {
 
 private static GithubListPresenter githubListPresenter;
 
-private GithubListContract.IGithubListView githubListView;
-private GithubListContract.IGithubListModel githubListModel;
+private GithubListContract.View githubListView;
+private GithubListContract.Model githubListModel;
 
-private GithubListPresenter ( GithubListContract.IGithubListView view ) {
+private GithubListPresenter ( GithubListContract.View view ) {
     this.githubListView = view;
     this.githubListModel = new GithubListModel ();
 }
 
-public static GithubListPresenter getInstance ( GithubListContract.IGithubListView view ) {
+public static GithubListPresenter getInstance ( GithubListContract.View view ) {
     githubListPresenter = ( githubListPresenter == null ) ?
             new GithubListPresenter ( view ) : githubListPresenter;
     return githubListPresenter;
 }
 
 @Override
-public void searchUser ( ) {
-    githubListView.setLayoutManager ();
-    githubListView.setAdapter ();
-    githubListView.setList ( githubListModel.getUserList ( githubListView.getUserInput () ) );
+public void searchUser ( @NonNull String userName ) {
+    githubListView.setData ( githubListModel.getUserList ( userName ) );
 
 }
 

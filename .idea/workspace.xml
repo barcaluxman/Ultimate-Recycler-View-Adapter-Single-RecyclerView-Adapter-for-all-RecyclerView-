@@ -10,41 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d9b5a36-6db7-4136-9f8a-fc5c4c6d9829" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/GithubListContract.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/model/IGithubListModel.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/presenter/IGithubListPresenter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/view/IGithubListView.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/constants/GitHubRestClientStandAlone.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/utils/GitHubRestClientStandAlone.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/constants/GithubApp.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/utils/GithubApp.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/constants/GithubListConstants.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/utils/GithubListConstants.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/constants/modules/ContextModule.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/utils/di/ContextModule.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/constants/modules/GithubApiServiceModule.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/utils/di/GithubApiServiceModule.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/constants/modules/GithubAppListComponent.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/utils/di/GithubAppListComponent.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/constants/modules/GlideModule.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/utils/di/GlideModule.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/constants/modules/NetworkModule.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/utils/di/NetworkModule.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/constants/modules/OkHttpSynchronous.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/utils/di/OkHttpSynchronous.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/model/GitHubRepoItemDTO.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/model/dtos/GitHubRepoItemDTO.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/model/GitHubRepoListDTO.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/model/dtos/GitHubRepoListDTO.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/model/GithubAPIService.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/utils/GithubAPIService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/model/GithubUserDTO.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/model/dtos/GithubUserDTO.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/model/GithubUserListDTO.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/model/dtos/GithubUserListDTO.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/view/GitHubUserListViewHolder.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/view/viewcomponents/GitHubUserListViewHolder.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/view/GithubUserListAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/view/viewcomponents/GithubUserListAdapter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/view/modules/GithubListActivityComponent.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/view/di/GithubListActivityComponent.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/view/modules/GithubListActivityModule.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/view/di/GithubListActivityModule.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/view/modules/GithubListActivityScope.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/view/di/GithubListActivityScope.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/view/modules/GlideActivityModule.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/view/di/GlideActivityModule.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/view/viewcomponents/CustomRecyclerViewAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/fileSnapshotsToTreeSnapshotsIndex.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.14.1/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/GithubListContract.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/GithubListContract.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/model/GithubListModel.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/model/GithubListModel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/presenter/GithubListPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/presenter/GithubListPresenter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/view/GithubListActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/view/GithubListActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/Util.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/Util.java" />
     </list>
     <ignored path="MVPPatternTest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -77,38 +53,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GithubListActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/view/GithubListActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-360">
-              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GithubListModel.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GithubListModel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/model/GithubListModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+            <state relative-caret-position="348">
+              <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1451#1452#0" expanded="true" />
-                <element signature="e#1481#1482#0" expanded="true" />
+                <element signature="e#1440#1441#0" expanded="true" />
+                <element signature="e#1470#1471#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GithubAPIService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/utils/GithubAPIService.java">
+      <file leaf-file-name="ContextModule.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/utils/di/ContextModule.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="390">
+              <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+              <folding>
+                <element signature="e#389#390#0" expanded="true" />
+                <element signature="e#419#420#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -116,11 +83,36 @@
       <file leaf-file-name="GithubListPresenter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/presenter/GithubListPresenter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            <state relative-caret-position="441">
+              <caret line="34" column="53" selection-start-line="34" selection-start-column="53" selection-end-line="34" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GithubListActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/view/GithubListActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="394">
+              <caret line="69" column="25" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="25" />
+              <folding>
+                <element signature="e#1958#1959#0" expanded="true" />
+                <element signature="e#2004#2005#0" expanded="true" />
+                <element signature="e#2060#2061#0" expanded="true" />
+                <element signature="e#2133#2134#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GitHubUserListViewHolder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/view/viewcomponents/GitHubUserListViewHolder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -128,8 +120,8 @@
       <file leaf-file-name="GithubListContract.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/GithubListContract.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="858">
-              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="648">
+              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -137,22 +129,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GitHubRepoItemDTO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/model/dtos/GitHubRepoItemDTO.java">
+      <file leaf-file-name="CustomRecyclerViewAdapter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/view/viewcomponents/CustomRecyclerViewAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GitHubRepoListDTO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/model/dtos/GitHubRepoListDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="284">
+              <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#706#707#0" expanded="true" />
+                <element signature="e#722#723#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -160,8 +146,8 @@
       <file leaf-file-name="GithubApp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/utils/GithubApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+            <state relative-caret-position="336">
+              <caret line="36" column="15" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1900,7 +1886,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/constants/GitHubOKHttpSingleton.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/colorlist/constants/RestClientStandAlone.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/colorlist/model/ColorListDTO.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/colorlist/model/ColorDTO.java" />
@@ -1937,7 +1922,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/view/modules/GlideActivityModule.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/view/modules/GithubListActivityComponent.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/view/IGithubListView.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/view/GithubListActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/model/IGithubListModel.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/presenter/GithubListContract.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/model/GithubListModel.java" />
@@ -1947,16 +1931,17 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/model/GithubUserListDTO.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/model/GitHubRepoListDTO.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/utils/GithubAPIService.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/presenter/GithubListPresenter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/GithubListContract.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/utils/GithubApp.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/model/dtos/GithubUserListDTO.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/view/viewcomponents/CustomRecyclerViewAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/presenter/GithubListPresenter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/GithubListContract.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/view/GithubListActivity.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1920" />
-    <option name="y" value="27" />
+    <option name="y" value="-1053" />
     <option name="width" value="1920" />
     <option name="height" value="1053" />
   </component>
@@ -2106,6 +2091,144 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="githubList" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MVPPatternTest" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mvppatterntest" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="githubList" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MVPPatternTest" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mvppatterntest" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="githubList" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="viewcomponents" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MVPPatternTest" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mvppatterntest" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="githubList" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="presenter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MVPPatternTest" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mvppatterntest" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="githubList" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MVPPatternTest" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mvppatterntest" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="githubList" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dtos" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2546,8 +2669,8 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1920" y="27" width="1920" height="1053" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="-1053" width="1920" height="1053" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -2566,10 +2689,10 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921812" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.031893004" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.110082306" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16666667" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6347737" sideWeight="0.40213904" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22780749" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22780749" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921812" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -2601,13 +2724,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/colorlist/model/ColorDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/colorlist/model/ColorListDTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -2800,17 +2916,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/utils/di/ContextModule.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
-          <folding>
-            <element signature="e#449#450#0" expanded="false" />
-            <element signature="e#473#474#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/login/presenter/LogInPresenter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -2848,9 +2953,9 @@
         <state relative-caret-position="251">
           <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#659#660#0" expanded="true" />
-            <element signature="e#697#698#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#659#660#0" expanded="false" />
+            <element signature="e#697#698#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2878,11 +2983,11 @@
         <state relative-caret-position="706">
           <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#580#581#0" expanded="true" />
-            <element signature="e#618#619#0" expanded="true" />
-            <element signature="e#688#689#0" expanded="true" />
-            <element signature="e#725#726#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#580#581#0" expanded="false" />
+            <element signature="e#618#619#0" expanded="false" />
+            <element signature="e#688#689#0" expanded="false" />
+            <element signature="e#725#726#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2919,39 +3024,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/view/viewcomponents/GitHubUserListViewHolder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/view/GithubListActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-360">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/utils/GithubAPIService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/presenter/GithubListPresenter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2979,26 +3056,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/GithubListContract.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/utils/GithubApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/model/dtos/GithubUserListDTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -3007,14 +3064,88 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/model/GithubListModel.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/utils/di/ContextModule.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+        <state relative-caret-position="390">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+          <folding>
+            <element signature="e#389#390#0" expanded="true" />
+            <element signature="e#419#420#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/utils/GithubApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="36" column="15" selection-start-line="36" selection-start-column="15" selection-end-line="36" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1451#1452#0" expanded="true" />
-            <element signature="e#1481#1482#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/model/GithubListModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1440#1441#0" expanded="true" />
+            <element signature="e#1470#1471#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/view/viewcomponents/GitHubUserListViewHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/view/viewcomponents/CustomRecyclerViewAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#706#707#0" expanded="true" />
+            <element signature="e#722#723#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/presenter/GithubListPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="34" column="53" selection-start-line="34" selection-start-column="53" selection-end-line="34" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/GithubListContract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/view/GithubListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="69" column="25" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="25" />
+          <folding>
+            <element signature="e#1958#1959#0" expanded="true" />
+            <element signature="e#2004#2005#0" expanded="true" />
+            <element signature="e#2060#2061#0" expanded="true" />
+            <element signature="e#2133#2134#0" expanded="true" />
           </folding>
         </state>
       </provider>

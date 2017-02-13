@@ -21,7 +21,7 @@ import retrofit2.Call;
  * gurkhatech.com
  */
 
-public class GithubListModel implements GithubListContract.IGithubListModel {
+public class GithubListModel implements GithubListContract.Model {
 private Call < GithubUserListDTO > userListCall;
 private GithubAPIService apiService = GithubApp.getInstance ().getGithubAPIService ();
 

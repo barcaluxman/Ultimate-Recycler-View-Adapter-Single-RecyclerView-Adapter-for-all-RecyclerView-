@@ -13,26 +13,19 @@ import java.util.List;
  */
 // This interface class basically just sums up what this group of MVP does .
 public interface GithubListContract {
-interface IGithubListPresenter {
-    void searchUser ( );
+interface Presenter {
+    void searchUser ( String userName );
 
     void disconnect ( );
 
 }
 
-interface IGithubListView {
-    void setList ( List < GithubUserDTO > data );
+interface View {
+    void setData ( List < GithubUserDTO > data );
 
-    void triggerSearch ( );
-
-    String getUserInput ( );
-
-    void setAdapter ( );
-
-    void setLayoutManager ( );
 }
 
-interface IGithubListModel {
+interface Model {
     List < GithubUserDTO > getUserList ( String name );
 
     void cancelNetworkCall ( );

@@ -14,7 +14,7 @@ import java.util.List;
  * gurkhatech.com
  */
 
-public class GithubListPresenter implements GithubListContract.Presenter {
+class GithubListPresenter implements GithubListContract.Presenter {
 
 private static GithubListPresenter githubListPresenter;
 
@@ -26,7 +26,7 @@ private GithubListPresenter ( GithubListContract.View view ) {
     this.githubListModel = new GithubListModel ();
 }
 
-public static GithubListPresenter getInstance ( GithubListContract.View view ) {
+static GithubListPresenter getInstance ( GithubListContract.View view ) {
     githubListPresenter = ( githubListPresenter == null ) ?
             new GithubListPresenter ( view ) : githubListPresenter;
     return githubListPresenter;

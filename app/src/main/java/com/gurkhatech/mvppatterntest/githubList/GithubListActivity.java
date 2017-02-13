@@ -27,6 +27,7 @@ import butterknife.OnClick;
 public class GithubListActivity extends AppCompatActivity implements GithubListContract.View {
 
 private static AppDaggerComponent appDaggerComponent;
+
 @BindView(R.id.userInput)
 EditText userInput;
 @BindView(R.id.userList)

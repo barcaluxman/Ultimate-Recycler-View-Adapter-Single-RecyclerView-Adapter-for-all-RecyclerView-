@@ -12,7 +12,7 @@ import java.util.List;
  * gurkhatech.com
  */
 // This interface class basically just sums up what this group of MVP does .
-public interface GithubListContract {
+interface GithubListContract {
 interface Presenter {
     void searchUser ( String userName );
 

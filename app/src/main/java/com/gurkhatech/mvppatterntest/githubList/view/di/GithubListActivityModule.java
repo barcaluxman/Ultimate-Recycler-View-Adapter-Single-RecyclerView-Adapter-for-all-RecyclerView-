@@ -1,5 +1,6 @@
 package com.gurkhatech.mvppatterntest.githubList.view.di;
 
+import android.content.Context;
 import android.support.v7.widget.LinearLayoutManager;
 
 import com.gurkhatech.mvppatterntest.githubList.view.GithubListActivity;
@@ -17,23 +18,23 @@ import dagger.Provides;
 
 @Module
 public class GithubListActivityModule {
-private final GithubListActivity githubListActivity;
+private final Context githubListActivity;
 
 
-public GithubListActivityModule ( GithubListActivity activity ) {
+public GithubListActivityModule ( Context activity ) {
     this.githubListActivity = activity;
 
 }
 
 @Provides
 @GithubListActivityScope
-GithubListActivity activity ( ) {
+Context activity ( ) {
     return this.githubListActivity;
 }
 
 @Provides
 @GithubListActivityScope
-LinearLayoutManager linearLayoutManager ( GithubListActivity activity ) {
+LinearLayoutManager linearLayoutManager ( Context activity ) {
     return new LinearLayoutManager ( activity );
 }
 }

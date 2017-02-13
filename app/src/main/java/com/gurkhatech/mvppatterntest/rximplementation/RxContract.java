@@ -8,14 +8,14 @@ package com.gurkhatech.mvppatterntest.rximplementation;
  * gurkhatech.com
  */
 
-public interface RxContract {
-public interface View {
+interface RxContract {
+interface View {
 
-    void displayText(String s);
+    void displayText ( String s );
 }
 
 
-public interface Presenter {
+interface Presenter {
 
     Runnable setUpRx ( );
 

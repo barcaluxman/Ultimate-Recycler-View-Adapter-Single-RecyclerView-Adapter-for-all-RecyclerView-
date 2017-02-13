@@ -5,8 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 import com.gurkhatech.mvppatterntest.R;
-import com.gurkhatech.mvppatterntest.rximplementation.RxContract;
-import com.gurkhatech.mvppatterntest.rximplementation.RxPresenter;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -25,12 +23,13 @@ public void onCreate ( Bundle savedInstanceState ) {
     super.onCreate ( savedInstanceState );
     setContentView ( R.layout.activity_rx );
     ButterKnife.bind ( this );
-    }
+}
 
 @Override
 protected void onResume ( ) {
     super.onResume ();
     presenter.callAMethod ( presenter.sayHi () );
+    presenter.callAMethod ( presenter.sayHello () );
     presenter.callAMethod ( presenter.setUpRx () );
 
 }

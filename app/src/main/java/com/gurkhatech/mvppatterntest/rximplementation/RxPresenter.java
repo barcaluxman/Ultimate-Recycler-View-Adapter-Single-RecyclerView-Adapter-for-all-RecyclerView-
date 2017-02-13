@@ -19,7 +19,7 @@ import io.reactivex.schedulers.Schedulers;
  * gurkhatech.com
  */
 
-public class RxPresenter implements RxContract.Presenter {
+class RxPresenter implements RxContract.Presenter {
 
 private static RxPresenter presenter;
 private String temp = "";
@@ -30,7 +30,7 @@ private RxPresenter ( RxContract.View view ) {
 }
 
 
-public static RxPresenter getInstance ( RxContract.View view ) {
+static RxPresenter getInstance ( RxContract.View view ) {
     if (presenter == null) {
         presenter = new RxPresenter ( view );
     }

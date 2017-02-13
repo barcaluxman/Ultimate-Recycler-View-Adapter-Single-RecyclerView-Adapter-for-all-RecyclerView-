@@ -8,5 +8,6 @@ package com.gurkhatech.mvppatterntest.rximplementation;
  * gurkhatech.com
  */
 
-public class RxModel {
+@SuppressWarnings("unused")
+public class RxModel {  // currently as we do not deal with data Model is empty
 }

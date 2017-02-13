@@ -1,9 +1,10 @@
 package com.gurkhatech.mvppatterntest.githubList;
 
-import com.gurkhatech.mvppatterntest.githubList.dtos.GithubUserListDTO;
-import com.gurkhatech.mvppatterntest.githubList.utils.GithubAPIService;
-import com.gurkhatech.mvppatterntest.githubList.utils.GithubApp;
+import com.gurkhatech.mvppatterntest.githubList.view.viewcomponents.dtos.GithubUserListDTO;
+import com.gurkhatech.mvppatterntest.utils.GithubAPIService;
 import com.gurkhatech.mvppatterntest.utils.Util;
+
+import javax.inject.Inject;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -18,8 +19,16 @@ import retrofit2.Response;
  */
 
 public class GithubListModel implements GithubListContract.Model {
+
+
+@SuppressWarnings("WeakerAccess")
+@Inject
+public GithubAPIService apiService;
 private Call < GithubUserListDTO > userListCall;
-private GithubAPIService apiService = GithubApp.getInstance ().getGithubAPIService ();
+GithubListModel ( ) {
+    GithubListActivity.getDaggerComponent ().injectGithubListModel ( this );
+
+}
 
 @Override
 public void makeAsyncRequest ( String name, final GithubListContract.Presenter presenter ) {

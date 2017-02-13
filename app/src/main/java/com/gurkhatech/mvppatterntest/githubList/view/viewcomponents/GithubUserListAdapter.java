@@ -6,12 +6,14 @@ import android.view.ViewGroup;
 
 import com.bumptech.glide.RequestManager;
 import com.gurkhatech.mvppatterntest.R;
-import com.gurkhatech.mvppatterntest.githubList.dtos.GithubUserDTO;
+import com.gurkhatech.mvppatterntest.githubList.view.viewcomponents.dtos.GithubUserDTO;
+import com.gurkhatech.mvppatterntest.githubList.view.viewcomponents.viewholders.GitHubUserListViewHolder;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.inject.Inject;
+
+import static com.gurkhatech.mvppatterntest.utils.GithubListConstants.THUMBNIL_FACTOR;
 
 /**
  * Created by adventure on 2/10/17.
@@ -21,7 +23,6 @@ import javax.inject.Inject;
  * gurkhatech.com
  */
 public class GithubUserListAdapter extends RecyclerView.Adapter < GitHubUserListViewHolder > {
-private static GithubUserListAdapter githubUserListAdapter;
 private List < GithubUserDTO > data;
 
 // if we convert it into local multiple instance of same object
@@ -32,8 +33,8 @@ private RequestManager glideRequestManager;
 
 @SuppressWarnings("WeakerAccess")
 @Inject
-public GithubUserListAdapter ( RequestManager manager ) {
-    this.data = new ArrayList <> ();
+public GithubUserListAdapter ( RequestManager manager, List < GithubUserDTO > data ) {
+    this.data = data;
     glideRequestManager = manager;
 }
 
@@ -43,10 +44,7 @@ public GithubUserListAdapter ( RequestManager manager ) {
  * activity or fragment life cycle so we are using activity's context instead
  * of fragment context
  */
-public static GithubUserListAdapter getInstance ( RequestManager manager ) {
-    githubUserListAdapter = ( githubUserListAdapter == null ) ? new GithubUserListAdapter ( manager ) : githubUserListAdapter;
-    return githubUserListAdapter;
-}
+
 
 public void setData ( List < GithubUserDTO > data ) {
     this.data = data;
@@ -64,7 +62,7 @@ public void onBindViewHolder ( GitHubUserListViewHolder holder, int position ) {
     holder.userName.setText ( temp.getUserName () );
     holder.profileUrl.setText ( temp.getProfileUrl () );
     holder.reposUrl.setText ( temp.getRepoUrl () );
-    glideRequestManager.load ( temp.getAvatarUrl () ).thumbnail ( 0.3f ).into ( holder.avatar );
+    glideRequestManager.load ( temp.getAvatarUrl () ).thumbnail (THUMBNIL_FACTOR ).into ( holder.avatar );
 
 }
 

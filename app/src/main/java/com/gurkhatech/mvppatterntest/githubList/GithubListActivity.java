@@ -8,11 +8,13 @@ import android.widget.EditText;
 import android.widget.ImageView;
 
 import com.gurkhatech.mvppatterntest.R;
-import com.gurkhatech.mvppatterntest.githubList.dtos.GithubUserDTO;
-import com.gurkhatech.mvppatterntest.githubList.view.di.DaggerGithubListActivityComponent;
-import com.gurkhatech.mvppatterntest.githubList.view.di.GithubListActivityModule;
 import com.gurkhatech.mvppatterntest.githubList.view.viewcomponents.GithubUserListAdapter;
+import com.gurkhatech.mvppatterntest.githubList.view.viewcomponents.dtos.GithubUserDTO;
+import com.gurkhatech.mvppatterntest.utils.MyApplication;
 import com.gurkhatech.mvppatterntest.utils.Util;
+import com.gurkhatech.mvppatterntest.utils.di.AppDaggerComponent;
+import com.gurkhatech.mvppatterntest.utils.di.ContextModule;
+import com.gurkhatech.mvppatterntest.utils.di.DaggerAppDaggerComponent;
 
 import java.util.List;
 
@@ -24,36 +26,34 @@ import butterknife.OnClick;
 
 public class GithubListActivity extends AppCompatActivity implements GithubListContract.View {
 
+private static AppDaggerComponent appDaggerComponent;
 @BindView(R.id.userInput)
 EditText userInput;
-
 @BindView(R.id.userList)
 RecyclerView userList;
 @BindView(R.id.search)
 ImageView search;
-
 @Inject
 GithubUserListAdapter githubUserListAdapter;
-
 @Inject
 LinearLayoutManager linearLayoutManager;
-
 GithubListPresenter githubListPresenter = GithubListPresenter.getInstance ( this );
 
+public static AppDaggerComponent getDaggerComponent ( ) {
+
+    return appDaggerComponent == null ? MyApplication.getInstance ().getComponent () : appDaggerComponent;
+
+}
 
 @Override
 protected void onCreate ( Bundle savedInstanceState ) {
     super.onCreate ( savedInstanceState );
     setContentView ( R.layout.activity_github_list );
     ButterKnife.bind ( this );
-
-    DaggerGithubListActivityComponent.builder ()
-            .githubListActivityModule ( new GithubListActivityModule ( getBaseContext () ) )
-            .build ().injectGithubListActivity ( this );
+    appDaggerComponent = DaggerAppDaggerComponent.builder ().contextModule ( new ContextModule ( this ) ).build ();
+    appDaggerComponent.injectGithubListActivity ( this );
     userList.setLayoutManager ( linearLayoutManager );
     userList.setAdapter ( githubUserListAdapter );
-
-
 }
 
 @Override
@@ -86,7 +86,6 @@ public void showNoDataError ( ) {
     Util.log ( "No data found" );
 
 }
-
 
 @OnClick(R.id.search)
 public void triggerSearch ( ) {

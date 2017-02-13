@@ -25,6 +25,7 @@ public class GithubListModel implements GithubListContract.Model {
 @Inject
 public GithubAPIService apiService;
 private Call < GithubUserListDTO > userListCall;
+
 GithubListModel ( ) {
     GithubListActivity.getDaggerComponent ().injectGithubListModel ( this );
 
@@ -32,6 +33,7 @@ GithubListModel ( ) {
 
 @Override
 public void makeAsyncRequest ( String name, final GithubListContract.Presenter presenter ) {
+    injectModel ();
     userListCall = apiService.searchGitHubUsers ( name );
     userListCall.enqueue ( new Callback < GithubUserListDTO > () {
         @Override
@@ -59,5 +61,13 @@ public void makeAsyncRequest ( String name, final GithubListContract.Presenter p
 @Override
 public void cancelNetworkCall ( ) {
     userListCall.cancel ();
+
 }
+
+@Override
+public void injectModel ( ) {
+
+
+}
+
 }

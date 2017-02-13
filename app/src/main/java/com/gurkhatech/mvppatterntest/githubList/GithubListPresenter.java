@@ -22,8 +22,13 @@ private GithubListContract.View githubListView;
 private GithubListContract.Model githubListModel;
 
 private GithubListPresenter ( GithubListContract.View view ) {
+    this ( view, new GithubListModel () );
+}
+
+@SuppressWarnings("WeakerAccess")
+public GithubListPresenter ( GithubListContract.View view, GithubListContract.Model model ) {
     this.githubListView = view;
-    this.githubListModel = new GithubListModel ();
+    this.githubListModel = model;
 }
 
 static GithubListPresenter getInstance ( GithubListContract.View view ) {
@@ -58,11 +63,11 @@ public void enableSearch ( boolean enable ) {
 
 @Override
 public void alertNetworkError ( ) {
-githubListView.showNetworkError ();
+    githubListView.showNetworkError ();
 }
 
 @Override
 public void alertNoDataFound ( ) {
-githubListView.showNoDataError ();
+    githubListView.showNoDataError ();
 }
 }

@@ -45,6 +45,8 @@ interface Model {
 
     void cancelNetworkCall ( );
 
+     void injectModel();
+
 }
 
 }

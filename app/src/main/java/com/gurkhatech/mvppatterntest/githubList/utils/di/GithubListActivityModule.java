@@ -1,4 +1,4 @@
-package com.gurkhatech.mvppatterntest.githubList.view.di;
+package com.gurkhatech.mvppatterntest.githubList.utils.di;
 
 import android.support.v7.widget.LinearLayoutManager;
 
@@ -26,13 +26,11 @@ public GithubListActivityModule ( GithubListActivity activity ) {
 }
 
 @Provides
-@GithubListActivityScope
 GithubListActivity activity ( ) {
     return this.githubListActivity;
 }
 
 @Provides
-@GithubListActivityScope
 LinearLayoutManager linearLayoutManager ( GithubListActivity activity ) {
     return new LinearLayoutManager ( activity );
 }

@@ -1,4 +1,4 @@
-package com.gurkhatech.mvppatterntest.githubList.model.dtos;
+package com.gurkhatech.mvppatterntest.githubList.dtos;
 
 import android.support.annotation.NonNull;
 

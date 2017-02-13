@@ -1,9 +1,9 @@
 package com.gurkhatech.mvppatterntest.githubList.utils;
 
-import com.gurkhatech.mvppatterntest.githubList.model.dtos.GitHubRepoItemDTO;
-import com.gurkhatech.mvppatterntest.githubList.model.dtos.GitHubRepoListDTO;
-import com.gurkhatech.mvppatterntest.githubList.model.dtos.GithubUserDTO;
-import com.gurkhatech.mvppatterntest.githubList.model.dtos.GithubUserListDTO;
+import com.gurkhatech.mvppatterntest.githubList.dtos.GitHubRepoItemDTO;
+import com.gurkhatech.mvppatterntest.githubList.dtos.GitHubRepoListDTO;
+import com.gurkhatech.mvppatterntest.githubList.dtos.GithubUserDTO;
+import com.gurkhatech.mvppatterntest.githubList.dtos.GithubUserListDTO;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

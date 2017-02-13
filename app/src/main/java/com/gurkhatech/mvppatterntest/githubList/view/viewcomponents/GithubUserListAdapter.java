@@ -6,7 +6,7 @@ import android.view.ViewGroup;
 
 import com.bumptech.glide.RequestManager;
 import com.gurkhatech.mvppatterntest.R;
-import com.gurkhatech.mvppatterntest.githubList.model.dtos.GithubUserDTO;
+import com.gurkhatech.mvppatterntest.githubList.dtos.GithubUserDTO;
 
 import java.util.ArrayList;
 import java.util.List;

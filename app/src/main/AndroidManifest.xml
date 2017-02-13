@@ -19,7 +19,7 @@
         </activity>
         <activity android:name=".rximplementation.view.RxActivity">
         </activity>
-        <activity android:name=".githubList.view.GithubListActivity">
+        <activity android:name=".githubList.GithubListActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

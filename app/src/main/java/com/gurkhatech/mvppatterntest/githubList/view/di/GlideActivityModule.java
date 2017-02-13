@@ -2,7 +2,7 @@ package com.gurkhatech.mvppatterntest.githubList.view.di;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.RequestManager;
-import com.gurkhatech.mvppatterntest.githubList.view.GithubListActivity;
+import com.gurkhatech.mvppatterntest.githubList.GithubListActivity;
 
 import dagger.Module;
 import dagger.Provides;

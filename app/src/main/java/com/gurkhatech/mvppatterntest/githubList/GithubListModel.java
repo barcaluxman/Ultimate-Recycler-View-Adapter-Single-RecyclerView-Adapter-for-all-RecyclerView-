@@ -1,7 +1,6 @@
-package com.gurkhatech.mvppatterntest.githubList.model;
+package com.gurkhatech.mvppatterntest.githubList;
 
-import com.gurkhatech.mvppatterntest.githubList.GithubListContract;
-import com.gurkhatech.mvppatterntest.githubList.model.dtos.GithubUserListDTO;
+import com.gurkhatech.mvppatterntest.githubList.dtos.GithubUserListDTO;
 import com.gurkhatech.mvppatterntest.githubList.utils.GithubAPIService;
 import com.gurkhatech.mvppatterntest.githubList.utils.GithubApp;
 

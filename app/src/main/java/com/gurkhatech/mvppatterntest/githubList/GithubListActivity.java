@@ -1,4 +1,4 @@
-package com.gurkhatech.mvppatterntest.githubList.view;
+package com.gurkhatech.mvppatterntest.githubList;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -8,9 +8,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 
 import com.gurkhatech.mvppatterntest.R;
-import com.gurkhatech.mvppatterntest.githubList.GithubListContract;
-import com.gurkhatech.mvppatterntest.githubList.model.dtos.GithubUserDTO;
-import com.gurkhatech.mvppatterntest.githubList.presenter.GithubListPresenter;
+import com.gurkhatech.mvppatterntest.githubList.dtos.GithubUserDTO;
 import com.gurkhatech.mvppatterntest.githubList.view.di.DaggerGithubListActivityComponent;
 import com.gurkhatech.mvppatterntest.githubList.view.di.GithubListActivityModule;
 import com.gurkhatech.mvppatterntest.githubList.view.viewcomponents.GithubUserListAdapter;

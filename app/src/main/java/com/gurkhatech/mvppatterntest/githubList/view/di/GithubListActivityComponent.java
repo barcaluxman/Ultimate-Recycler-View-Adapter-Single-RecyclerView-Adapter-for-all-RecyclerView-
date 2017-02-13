@@ -1,6 +1,6 @@
 package com.gurkhatech.mvppatterntest.githubList.view.di;
 
-import com.gurkhatech.mvppatterntest.githubList.view.GithubListActivity;
+import com.gurkhatech.mvppatterntest.githubList.GithubListActivity;
 
 import dagger.Component;
 

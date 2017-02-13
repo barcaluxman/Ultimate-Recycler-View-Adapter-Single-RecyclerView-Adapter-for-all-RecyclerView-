@@ -26,13 +26,11 @@ public GithubListActivityModule ( GithubListActivity activity ) {
 }
 
 @Provides
-@GithubListActivityScope
 GithubListActivity activity ( ) {
     return this.githubListActivity;
 }
 
 @Provides
-@GithubListActivityScope
 LinearLayoutManager linearLayoutManager ( GithubListActivity activity ) {
     return new LinearLayoutManager ( activity );
 }

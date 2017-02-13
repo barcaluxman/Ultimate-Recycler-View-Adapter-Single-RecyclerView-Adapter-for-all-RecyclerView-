@@ -48,8 +48,8 @@ protected void onCreate ( Bundle savedInstanceState ) {
     ButterKnife.bind ( this );
 
     DaggerGithubListActivityComponent.builder ()
-            .githubListActivityModule ( new GithubListActivityModule ( this ) )
-            .build ().inject ( this );
+            .githubListActivityModule ( new GithubListActivityModule ( getBaseContext () ) )
+            .build ().injectGithubListActivity ( this );
     userList.setLayoutManager ( linearLayoutManager );
     userList.setAdapter ( githubUserListAdapter );
 

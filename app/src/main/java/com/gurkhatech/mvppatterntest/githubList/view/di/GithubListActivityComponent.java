@@ -1,6 +1,7 @@
 package com.gurkhatech.mvppatterntest.githubList.view.di;
 
 import com.gurkhatech.mvppatterntest.githubList.GithubListActivity;
+import com.gurkhatech.mvppatterntest.githubList.GithubListModel;
 
 import dagger.Component;
 
@@ -13,7 +14,8 @@ import dagger.Component;
  */
 @SuppressWarnings("WeakerAccess")
 @GithubListActivityScope
-@Component(modules = { GithubListActivityModule.class, GlideActivityModule.class })
+@Component(modules = { ContextModule.class, GlideModule.class,GithubApiServiceModule.class })
 public interface GithubListActivityComponent {
-void inject ( GithubListActivity activity );
+void injectGithubListActivity ( GithubListActivity activity );
+void injectGithubListModel( GithubListModel model);
 }

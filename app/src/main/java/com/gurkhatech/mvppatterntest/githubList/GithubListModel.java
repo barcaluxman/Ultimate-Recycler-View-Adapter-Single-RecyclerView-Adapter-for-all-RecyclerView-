@@ -3,6 +3,7 @@ package com.gurkhatech.mvppatterntest.githubList;
 import com.gurkhatech.mvppatterntest.githubList.dtos.GithubUserListDTO;
 import com.gurkhatech.mvppatterntest.githubList.utils.GithubAPIService;
 import com.gurkhatech.mvppatterntest.githubList.utils.GithubApp;
+import com.gurkhatech.mvppatterntest.utils.Util;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -29,6 +30,7 @@ public void makeAsyncRequest ( String name, final GithubListContract.Presenter p
             try {
                 presenter.loadData ( response.body ().getList () );
             } catch (Exception ignored) {
+                Util.log ( ignored.getMessage () );
                 presenter.alertNoDataFound ();
             }
             presenter.enableSearch ( true );

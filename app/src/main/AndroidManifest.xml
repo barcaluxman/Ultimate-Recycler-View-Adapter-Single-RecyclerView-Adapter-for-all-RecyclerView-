@@ -6,7 +6,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
-        android:name=".githubList.utils.GithubApp"
+        android:name=".utils.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -17,9 +17,9 @@
         <activity android:name=".orientationinfo.view.HomeActivity"/>
         <activity android:name=".colorlist.view.ColorsListActivity">
         </activity>
-        <activity android:name=".rximplementation.view.RxActivity">
+        <activity android:name=".rximplementation.RxActivity">
         </activity>
-        <activity android:name=".githubList.view.GithubListActivity">
+        <activity android:name=".githubList.GithubListActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

@@ -1,4 +1,4 @@
-package com.gurkhatech.mvppatterntest.githubList.view.viewcomponents;
+package com.gurkhatech.mvppatterntest.githubList.components.adapters;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -6,8 +6,8 @@ import android.view.ViewGroup;
 
 import com.bumptech.glide.RequestManager;
 import com.gurkhatech.mvppatterntest.R;
-import com.gurkhatech.mvppatterntest.githubList.view.viewcomponents.dtos.GithubUserDTO;
-import com.gurkhatech.mvppatterntest.githubList.view.viewcomponents.viewholders.GitHubUserListViewHolder;
+import com.gurkhatech.mvppatterntest.githubList.components.dtos.GithubUserDTO;
+import com.gurkhatech.mvppatterntest.githubList.components.viewholders.GitHubUserListViewHolder;
 
 import java.util.List;
 
@@ -33,7 +33,7 @@ private RequestManager glideRequestManager;
 
 @SuppressWarnings("WeakerAccess")
 @Inject
-public GithubUserListAdapter ( RequestManager manager, List < GithubUserDTO > data ) {
+public GithubUserListAdapter ( RequestManager manager, List< GithubUserDTO > data ) {
     this.data = data;
     glideRequestManager = manager;
 }
@@ -62,7 +62,7 @@ public void onBindViewHolder ( GitHubUserListViewHolder holder, int position ) {
     holder.userName.setText ( temp.getUserName () );
     holder.profileUrl.setText ( temp.getProfileUrl () );
     holder.reposUrl.setText ( temp.getRepoUrl () );
-    glideRequestManager.load ( temp.getAvatarUrl () ).thumbnail (THUMBNIL_FACTOR ).into ( holder.avatar );
+    glideRequestManager.load ( temp.getAvatarUrl () ).thumbnail ( THUMBNIL_FACTOR ).into ( holder.avatar );
 
 }
 

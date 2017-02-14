@@ -1,6 +1,4 @@
 apply plugin: 'com.android.application'
-apply plugin: 'android-apt'
-apply plugin: 'com.jakewharton.butterknife'
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
@@ -49,10 +47,10 @@ dependencies {
 
     //Code generator
     compile "com.google.dagger:dagger:$rootProject.ext.daggerVersion"
-    apt "com.google.dagger:dagger-compiler:$rootProject.ext.daggerVersion"
+    annotationProcessor "com.google.dagger:dagger-compiler:$rootProject.ext.daggerVersion"
 
     compile "com.jakewharton:butterknife:$rootProject.ext.butterKnifeVersion"
-    apt "com.jakewharton:butterknife-compiler:$rootProject.ext.butterKnifeVersion"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.ext.butterKnifeVersion"
 
     //Network
     compile "com.squareup.okhttp3:okhttp:$rootProject.ext.okHttpVersion"

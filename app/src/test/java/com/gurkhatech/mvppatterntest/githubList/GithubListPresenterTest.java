@@ -1,6 +1,6 @@
 package com.gurkhatech.mvppatterntest.githubList;
 
-import com.gurkhatech.mvppatterntest.githubList.view.viewcomponents.dtos.GithubUserDTO;
+import com.gurkhatech.mvppatterntest.githubList.components.dtos.GithubUserDTO;
 
 import org.junit.After;
 import org.junit.Before;
@@ -22,13 +22,12 @@ import static org.mockito.Mockito.verify;
 public class GithubListPresenterTest {
 
 @Mock
+List < GithubUserDTO > data;
+@Mock
 private GithubListContract.View view;
-
 private GithubListContract.Presenter presenter;
 @Mock
 private GithubListContract.Model model;
-
-@Mock List< GithubUserDTO > data;
 
 @Before
 public void setUp ( ) throws Exception {
@@ -45,9 +44,8 @@ public void tearDown ( ) throws Exception {
 
 @Test
 public void enableSearch ( ) throws Exception {
-    presenter.enableSearch ( true );
-    verify ( view ).enableSearchButton ( true );
-
+    presenter.enableSearch ( false );
+    verify ( view ).enableSearchButton ( false );
 }
 
 @Test
@@ -65,24 +63,27 @@ public void disconnect ( ) throws Exception {
 @Test
 public void searchUser ( ) throws Exception {
     presenter.searchUser ( "" );
-    verify ( model ).makeAsyncRequest ( "",presenter );
+    verify ( model ).makeAsyncRequest ( "", presenter );
 }
+
 @Test
-public void  noDataFoundError() throws  Exception{
+public void noDataFoundError ( ) throws Exception {
     presenter.alertNoDataFound ();
     verify ( view ).showNoDataError ();
 }
 
 @Test
-public void disableSearch() throws Exception{
+public void disableSearch ( ) throws Exception {
     presenter.enableSearch ( false );
     verify ( view ).enableSearchButton ( false );
 
 }
+
 @Test
-public void dataLoading() throws Exception{
+public void dataLoading ( ) throws Exception {
     presenter.loadData ( data );
     verify ( view ).setData ( data );
 
 }
+
 }

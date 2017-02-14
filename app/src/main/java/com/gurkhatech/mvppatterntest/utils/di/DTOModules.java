@@ -1,6 +1,6 @@
 package com.gurkhatech.mvppatterntest.utils.di;
 
-import com.gurkhatech.mvppatterntest.githubList.view.viewcomponents.dtos.GithubUserDTO;
+import com.gurkhatech.mvppatterntest.githubList.components.dtos.GithubUserDTO;
 
 import java.util.ArrayList;
 import java.util.List;

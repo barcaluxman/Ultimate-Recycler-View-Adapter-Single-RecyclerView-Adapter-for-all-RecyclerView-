@@ -8,8 +8,8 @@ import android.widget.EditText;
 import android.widget.ImageView;
 
 import com.gurkhatech.mvppatterntest.R;
-import com.gurkhatech.mvppatterntest.githubList.view.viewcomponents.GithubUserListAdapter;
-import com.gurkhatech.mvppatterntest.githubList.view.viewcomponents.dtos.GithubUserDTO;
+import com.gurkhatech.mvppatterntest.githubList.components.adapters.GithubUserListAdapter;
+import com.gurkhatech.mvppatterntest.githubList.components.dtos.GithubUserDTO;
 import com.gurkhatech.mvppatterntest.utils.MyApplication;
 import com.gurkhatech.mvppatterntest.utils.Util;
 import com.gurkhatech.mvppatterntest.utils.di.AppDaggerComponent;

@@ -1,4 +1,4 @@
-package com.gurkhatech.mvppatterntest.githubList.view.viewcomponents.viewholders;
+package com.gurkhatech.mvppatterntest.githubList.components.viewholders;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;

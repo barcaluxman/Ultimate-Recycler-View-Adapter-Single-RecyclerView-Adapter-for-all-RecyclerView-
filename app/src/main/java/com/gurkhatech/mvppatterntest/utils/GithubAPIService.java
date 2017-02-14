@@ -1,7 +1,7 @@
 package com.gurkhatech.mvppatterntest.utils;
 
-import com.gurkhatech.mvppatterntest.githubList.view.viewcomponents.dtos.GithubUserDTO;
-import com.gurkhatech.mvppatterntest.githubList.view.viewcomponents.dtos.GithubUserListDTO;
+import com.gurkhatech.mvppatterntest.githubList.components.dtos.GithubUserDTO;
+import com.gurkhatech.mvppatterntest.githubList.components.dtos.GithubUserListDTO;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

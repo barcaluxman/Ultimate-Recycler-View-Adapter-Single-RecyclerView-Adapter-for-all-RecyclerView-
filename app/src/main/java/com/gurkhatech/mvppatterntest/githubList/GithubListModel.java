@@ -1,6 +1,6 @@
 package com.gurkhatech.mvppatterntest.githubList;
 
-import com.gurkhatech.mvppatterntest.githubList.view.viewcomponents.dtos.GithubUserListDTO;
+import com.gurkhatech.mvppatterntest.githubList.components.dtos.GithubUserListDTO;
 import com.gurkhatech.mvppatterntest.utils.GithubAPIService;
 import com.gurkhatech.mvppatterntest.utils.Util;
 

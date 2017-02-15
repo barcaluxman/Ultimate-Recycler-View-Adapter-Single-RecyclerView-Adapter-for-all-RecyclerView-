@@ -1,7 +1,6 @@
 package com.gurkhatech.mvppatterntest.githubList.components.adapters;
 
 import android.support.v7.widget.RecyclerView;
-import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
 import com.bumptech.glide.RequestManager;
@@ -33,7 +32,7 @@ private RequestManager glideRequestManager;
 
 @SuppressWarnings("WeakerAccess")
 @Inject
-public GithubUserListAdapter ( RequestManager manager, List< GithubUserDTO > data ) {
+public GithubUserListAdapter ( RequestManager manager, List < GithubUserDTO > data ) {
     this.data = data;
     glideRequestManager = manager;
 }
@@ -53,7 +52,9 @@ public void setData ( List < GithubUserDTO > data ) {
 
 @Override
 public GitHubUserListViewHolder onCreateViewHolder ( ViewGroup parent, int viewType ) {
-    return new GitHubUserListViewHolder ( LayoutInflater.from ( parent.getContext () ).inflate ( R.layout.item_github_use_list, parent, false ) );
+    //return new GitHubUserListViewHolder ( LayoutInflater.from ( parent.getContext () ).inflate ( R.layout.item_github_use_list, parent, false ) );
+
+    return Random.getViewHolderFromResId ( R.layout.item_github_use_list, parent );
 }
 
 @Override

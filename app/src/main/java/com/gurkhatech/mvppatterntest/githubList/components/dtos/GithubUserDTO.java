@@ -3,6 +3,7 @@ package com.gurkhatech.mvppatterntest.githubList.components.dtos;
 import android.support.annotation.NonNull;
 
 import com.google.gson.annotations.SerializedName;
+import com.gurkhatech.mvppatterntest.githubList.components.adapters.gurkh.lib.GurkhaDTO;
 
 /**
  * Created by adventure on 2/9/17.
@@ -12,7 +13,7 @@ import com.google.gson.annotations.SerializedName;
  * gurkhatech.com
  */
 
-public class GithubUserDTO {
+public class GithubUserDTO extends GurkhaDTO{
 
 
 @SerializedName("login")

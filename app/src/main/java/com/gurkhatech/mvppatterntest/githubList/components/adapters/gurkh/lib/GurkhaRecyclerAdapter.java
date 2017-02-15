@@ -12,7 +12,7 @@ import android.support.v7.widget.RecyclerView;
 
 public abstract class GurkhaRecyclerAdapter < G extends RecyclerView.ViewHolder > extends RecyclerView.Adapter < GurkhaViewHolder > {
 
-public abstract GurkhaDTO addToMap ( GurkhaMap.GurkhaMapDTO dto );
+public abstract GurkhaDTO addToMap ( GurkhaMapDTO dto );
 
 
 }

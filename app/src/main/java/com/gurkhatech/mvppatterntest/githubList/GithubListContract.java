@@ -1,5 +1,7 @@
 package com.gurkhatech.mvppatterntest.githubList;
 
+import com.gurkhatech.mvppatterntest.githubList.components.adapters.gurkh.lib.GurkhaMap;
+import com.gurkhatech.mvppatterntest.githubList.components.adapters.gurkh.lib.GurkhaMapDTO;
 import com.gurkhatech.mvppatterntest.githubList.components.dtos.GithubUserDTO;
 
 import java.util.List;
@@ -29,7 +31,8 @@ interface Presenter {
 }
 
 interface View {
-    void setData ( List < GithubUserDTO > data );
+    //void setData ( List < GithubUserDTO > data );
+    void setData ( GurkhaMapDTO data );
 
     void enableSearchButton ( boolean enable );
 

@@ -9,14 +9,12 @@ import android.widget.ImageView;
 
 import com.gurkhatech.mvppatterntest.R;
 import com.gurkhatech.mvppatterntest.githubList.components.adapters.GithubUserListAdapter;
-import com.gurkhatech.mvppatterntest.githubList.components.dtos.GithubUserDTO;
+import com.gurkhatech.mvppatterntest.githubList.components.adapters.gurkh.lib.GurkhaMapDTO;
 import com.gurkhatech.mvppatterntest.utils.MyApplication;
 import com.gurkhatech.mvppatterntest.utils.Util;
 import com.gurkhatech.mvppatterntest.utils.di.AppDaggerComponent;
 import com.gurkhatech.mvppatterntest.utils.di.ContextModule;
 import com.gurkhatech.mvppatterntest.utils.di.DaggerAppDaggerComponent;
-
-import java.util.List;
 
 import javax.inject.Inject;
 
@@ -63,9 +61,18 @@ protected void onDestroy ( ) {
     githubListPresenter.disconnect ();
 }
 
+/*
 @Override
 public void setData ( List < GithubUserDTO > data ) {
     githubUserListAdapter.setData ( data );
+}
+*/
+
+
+@Override
+public void setData ( GurkhaMapDTO data ) {
+    githubUserListAdapter.addToMap ( data );
+
 }
 
 @Override

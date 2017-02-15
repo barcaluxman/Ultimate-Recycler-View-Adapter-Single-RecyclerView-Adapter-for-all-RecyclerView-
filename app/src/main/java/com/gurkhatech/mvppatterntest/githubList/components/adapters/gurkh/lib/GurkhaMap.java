@@ -22,7 +22,7 @@ import java.util.Map;
 public class GurkhaMap {
 
 
-private HashMap< Integer, Class > dataIdAndViewHolder;
+private HashMap < Integer, Class > dataIdAndViewHolder;
 private HashMap < Integer, GurkhaDTO > dataIdAndDTO;
 
 @LayoutRes
@@ -30,7 +30,7 @@ public Integer getResIdFromDTO ( GurkhaDTO dto ) {
     return invertIDDTO ( dataIdAndDTO ).get ( dto );
 }
 
-private Map< GurkhaDTO, Integer > invertIDDTO ( Map < Integer, GurkhaDTO > map ) {
+private Map < GurkhaDTO, Integer > invertIDDTO ( Map < Integer, GurkhaDTO > map ) {
     Map < GurkhaDTO, Integer > inverted = new HashMap <> ();
     for (Map.Entry < Integer, GurkhaDTO > entry : map.entrySet ()) {
         inverted.put ( entry.getValue (), entry.getKey () );
@@ -41,7 +41,7 @@ private Map< GurkhaDTO, Integer > invertIDDTO ( Map < Integer, GurkhaDTO > map )
 @SuppressWarnings("TryWithIdenticalCatches")
 public GurkhaViewHolder getViewHolderFromResId ( @LayoutRes Integer layoutRes, ViewGroup parent ) {
     Class < ? > c = dataIdAndViewHolder.get ( layoutRes );
-    Constructor< ? > cons = null;
+    Constructor < ? > cons = null;
     try {
         cons = c.getConstructor ( View.class );
     } catch (NoSuchMethodException e) {
@@ -78,29 +78,5 @@ public GurkhaDTO putData ( GurkhaMapDTO gurkhaMapDTO ) {
     return gurkhaMapDTO.getDto ();
 }
 
-public class GurkhaMapDTO{
-    @LayoutRes
-    private  Integer resId;
-    private GurkhaDTO dto;
-    private Class viewHolderClass;
-
-    public GurkhaMapDTO ( Integer resId, GurkhaDTO dto, Class viewHolderClass ) {
-        this.resId = resId;
-        this.dto = dto;
-        this.viewHolderClass = viewHolderClass;
-    }
-
-    Integer getResId ( ) {
-        return resId;
-    }
-
-    public GurkhaDTO getDto ( ) {
-        return dto;
-    }
-
-    Class getViewHolder ( ) {
-        return viewHolderClass;
-    }
-}
 
 }

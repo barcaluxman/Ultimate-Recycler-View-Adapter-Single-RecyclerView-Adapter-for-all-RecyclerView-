@@ -3,11 +3,12 @@ package com.gurkhatech.mvppatterntest.githubList;
 import android.support.annotation.NonNull;
 
 import com.gurkhatech.mvppatterntest.R;
-import com.gurkhatech.mvppatterntest.githubList.components.adapters.gurkh.lib.GurkhaMapDTO;
+import com.gurkhatech.mvppatterntest.githubList.components.adapters.gurkha.lib.GurkhaComboDTO;
 import com.gurkhatech.mvppatterntest.githubList.components.dtos.GithubUserDTO;
 import com.gurkhatech.mvppatterntest.githubList.components.viewholders.GitHubUserListViewHolder;
 import com.gurkhatech.mvppatterntest.githubList.components.viewholders.GitHubUserListViewHolderAlter;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -50,16 +51,19 @@ public void searchUser ( @NonNull String userName ) {
 
 @Override
 public void loadData ( List < GithubUserDTO > data ) {
+    List < GurkhaComboDTO > fullData = new ArrayList <> ();
     for (int i = 0 ; i < data.size () ; i++) {
-        if(data.get ( i ).getUserName ().startsWith ( "lax" )){
 
-            githubListView.setData ( new GurkhaMapDTO ( R.layout.item_github_use_list, data.get ( i ), GitHubUserListViewHolder.class ) );
-        }else {
-            githubListView.setData ( new GurkhaMapDTO ( R.layout.item_github_use_list_alter, data.get ( i ), GitHubUserListViewHolderAlter.class ) );
+        if (data.get ( i ).getUserName ().length () > 10) {
+            fullData.add ( new GurkhaComboDTO ( R.layout.item_github_use_list, data.get ( i ), GitHubUserListViewHolder.class ) );
+        }
+        else {
+            fullData.add ( new GurkhaComboDTO ( R.layout.item_github_use_list_alter, data.get ( i ), GitHubUserListViewHolderAlter.class ) );
 
         }
     }
-    //githubListView.setData ( data );
+    githubListView.setData ( fullData );
+
 }
 
 @Override

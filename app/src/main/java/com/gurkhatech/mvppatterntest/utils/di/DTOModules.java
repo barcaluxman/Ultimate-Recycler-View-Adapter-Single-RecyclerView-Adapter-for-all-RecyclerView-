@@ -1,8 +1,6 @@
 package com.gurkhatech.mvppatterntest.utils.di;
 
-import com.gurkhatech.mvppatterntest.githubList.components.adapters.gurkh.lib.GurkhaDTO;
-import com.gurkhatech.mvppatterntest.githubList.components.adapters.gurkh.lib.GurkhaMap;
-import com.gurkhatech.mvppatterntest.githubList.components.dtos.GithubUserDTO;
+import com.gurkhatech.mvppatterntest.githubList.components.adapters.gurkha.lib.GurkhaComboDTO;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,13 +18,9 @@ import dagger.Provides;
 
 @Module
 public class DTOModules {
-@Provides
-public List<GurkhaDTO> githubUserDTOList(){
-    return new ArrayList <> (  );
-}
 
 @Provides
-public GurkhaMap gurkhaMap(){
-    return new GurkhaMap ();
+public  List< GurkhaComboDTO > gurkhaMap(){
+    return new ArrayList <> ();
 }
 }

@@ -9,7 +9,7 @@ import android.widget.ImageView;
 
 import com.gurkhatech.mvppatterntest.R;
 import com.gurkhatech.mvppatterntest.githubList.components.adapters.GithubUserListAdapter;
-import com.gurkhatech.mvppatterntest.githubList.components.dtos.GithubUserDTO;
+import com.gurkhatech.mvppatterntest.githubList.components.adapters.gurkha.lib.GurkhaComboDTO;
 import com.gurkhatech.mvppatterntest.utils.MyApplication;
 import com.gurkhatech.mvppatterntest.utils.Util;
 import com.gurkhatech.mvppatterntest.utils.di.AppDaggerComponent;
@@ -40,6 +40,7 @@ GithubUserListAdapter githubUserListAdapter;
 LinearLayoutManager linearLayoutManager;
 GithubListPresenter githubListPresenter = GithubListPresenter.getInstance ( this );
 
+
 public static AppDaggerComponent getDaggerComponent ( ) {
 
     return appDaggerComponent == null ? MyApplication.getInstance ().getComponent () : appDaggerComponent;
@@ -55,6 +56,10 @@ protected void onCreate ( Bundle savedInstanceState ) {
     appDaggerComponent.injectGithubListActivity ( this );
     userList.setLayoutManager ( linearLayoutManager );
     userList.setAdapter ( githubUserListAdapter );
+
+
+
+
 }
 
 @Override
@@ -63,9 +68,18 @@ protected void onDestroy ( ) {
     githubListPresenter.disconnect ();
 }
 
+/*
 @Override
 public void setData ( List < GithubUserDTO > data ) {
     githubUserListAdapter.setData ( data );
+}
+*/
+
+
+@Override
+public void setData ( List<GurkhaComboDTO > data ) {
+    githubUserListAdapter.replaceData ( data );
+
 }
 
 @Override

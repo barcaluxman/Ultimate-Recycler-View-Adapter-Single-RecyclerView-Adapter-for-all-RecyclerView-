@@ -1,18 +1,15 @@
 package com.gurkhatech.mvppatterntest.githubList.components.adapters;
 
-import android.support.v7.widget.RecyclerView;
+import android.support.annotation.NonNull;
 import android.view.ViewGroup;
 
-import com.bumptech.glide.RequestManager;
-import com.gurkhatech.mvppatterntest.R;
-import com.gurkhatech.mvppatterntest.githubList.components.dtos.GithubUserDTO;
-import com.gurkhatech.mvppatterntest.githubList.components.viewholders.GitHubUserListViewHolder;
+import com.gurkhatech.mvppatterntest.githubList.components.adapters.gurkha.lib.GurkhaComboDTO;
+import com.gurkhatech.mvppatterntest.githubList.components.adapters.gurkha.lib.GurkhaRecyclerAdapter;
+import com.gurkhatech.mvppatterntest.githubList.components.adapters.gurkha.lib.GurkhaViewHolder;
 
 import java.util.List;
 
 import javax.inject.Inject;
-
-import static com.gurkhatech.mvppatterntest.utils.GithubListConstants.THUMBNIL_FACTOR;
 
 /**
  * Created by adventure on 2/10/17.
@@ -21,54 +18,41 @@ import static com.gurkhatech.mvppatterntest.utils.GithubListConstants.THUMBNIL_F
  * copyright reserved
  * gurkhatech.com
  */
-public class GithubUserListAdapter extends RecyclerView.Adapter < GitHubUserListViewHolder > {
-private List < GithubUserDTO > data;
+public class GithubUserListAdapter extends GurkhaRecyclerAdapter {
 
-// if we convert it into local multiple instance of same object
-//will be created
-@SuppressWarnings("FieldCanBeLocal")
-private GithubUserDTO temp;
-private RequestManager glideRequestManager;
+private List < GurkhaComboDTO > data;
 
 @SuppressWarnings("WeakerAccess")
 @Inject
-public GithubUserListAdapter ( RequestManager manager, List < GithubUserDTO > data ) {
+public GithubUserListAdapter ( List < GurkhaComboDTO > data ) {
     this.data = data;
-    glideRequestManager = manager;
-}
-
-/**
- * We could have not asked for context and get it from application,
- * But glide handles the the image loading process and copes well with
- * activity or fragment life cycle so we are using activity's context instead
- * of fragment context
- */
-
-
-public void setData ( List < GithubUserDTO > data ) {
-    this.data = data;
-    notifyDataSetChanged ();
 }
 
 @Override
-public GitHubUserListViewHolder onCreateViewHolder ( ViewGroup parent, int viewType ) {
-    //return new GitHubUserListViewHolder ( LayoutInflater.from ( parent.getContext () ).inflate ( R.layout.item_github_use_list, parent, false ) );
-
-    return Random.getViewHolderFromResId ( R.layout.item_github_use_list, parent );
+public GurkhaViewHolder onCreateViewHolder ( ViewGroup parent, int viewType ) {
+    return getViewHolderFromResId ( viewType, parent, getViewHolderClassByLayoutID ( this.data, viewType ) );
 }
 
 @Override
-public void onBindViewHolder ( GitHubUserListViewHolder holder, int position ) {
-    temp = data.get ( position );
-    holder.userName.setText ( temp.getUserName () );
-    holder.profileUrl.setText ( temp.getProfileUrl () );
-    holder.reposUrl.setText ( temp.getRepoUrl () );
-    glideRequestManager.load ( temp.getAvatarUrl () ).thumbnail ( THUMBNIL_FACTOR ).into ( holder.avatar );
+public void onBindViewHolder ( GurkhaViewHolder holder, int position ) {
+    holder.bindView ( this.data.get ( position ).getGurkhaDto () );
+}
 
+@Override
+public int getItemViewType ( int position ) {
+    return this.data.get ( position ).getResId ();
 }
 
 @Override
 public int getItemCount ( ) {
     return ( this.data == null ) ? 0 : data.size ();
 }
+
+@Override
+public void replaceData ( @NonNull List < GurkhaComboDTO > gurkhaMap ) {
+    this.data = gurkhaMap;
+    notifyDataSetChanged ();
+
+}
+
 }

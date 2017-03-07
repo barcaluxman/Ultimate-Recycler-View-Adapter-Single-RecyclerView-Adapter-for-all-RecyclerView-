@@ -33,7 +33,7 @@ interface View {
     //void setData ( List < GithubUserDTO > data );
     void setData ( List<GurkhaComboDTO > data );
 
-    void enableSearchButton ( boolean enable );
+    void setEnableSearchButton ( boolean enable );
 
     void showNetworkError ( );
 

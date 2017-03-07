@@ -34,6 +34,8 @@ EditText userInput;
 RecyclerView userList;
 @BindView(R.id.search)
 ImageView search;
+
+
 @Inject
 GithubUserListAdapter githubUserListAdapter;
 @Inject
@@ -57,9 +59,6 @@ protected void onCreate ( Bundle savedInstanceState ) {
     userList.setLayoutManager ( linearLayoutManager );
     userList.setAdapter ( githubUserListAdapter );
 
-
-
-
 }
 
 @Override
@@ -68,22 +67,14 @@ protected void onDestroy ( ) {
     githubListPresenter.disconnect ();
 }
 
-/*
 @Override
-public void setData ( List < GithubUserDTO > data ) {
-    githubUserListAdapter.setData ( data );
-}
-*/
-
-
-@Override
-public void setData ( List<GurkhaComboDTO > data ) {
+public void setData ( List < GurkhaComboDTO > data ) {
     githubUserListAdapter.replaceData ( data );
 
 }
 
 @Override
-public void enableSearchButton ( boolean enable ) {
+public void setEnableSearchButton ( boolean enable ) {
     userInput.setClickable ( enable );
     search.setClickable ( enable );
     userInput.setEnabled ( enable );

@@ -50,7 +50,7 @@ public GitHubUserListViewHolder ( View itemView ) {
 public void bindView ( GurkhaDTO data ) {
     GithubUserDTO userDTO = (GithubUserDTO) data;
     assert this.avatar != null;
-    requestManager.load ( userDTO.getAvatarUrl () ).thumbnail ( THUMBNIL_FACTOR ).into ( this.avatar );
+    requestManager.load ( userDTO.getAvatarUrl () ).placeholder ( R.mipmap.ic_launcher ).thumbnail ( THUMBNIL_FACTOR ).into ( this.avatar );
     assert userName != null;
     userName.setText ( userDTO.getUserName () );
     assert reposUrl != null;

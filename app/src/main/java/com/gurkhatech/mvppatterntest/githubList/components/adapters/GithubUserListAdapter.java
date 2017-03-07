@@ -54,5 +54,4 @@ public void replaceData ( @NonNull List < GurkhaComboDTO > gurkhaMap ) {
     notifyDataSetChanged ();
 
 }
-
 }

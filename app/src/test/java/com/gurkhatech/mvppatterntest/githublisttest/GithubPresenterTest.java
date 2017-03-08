@@ -4,8 +4,10 @@ import com.gurkhatech.mvppatterntest.githubList.components.dtos.GithubUserDTO;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.mockito.Mock;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -16,51 +18,56 @@ import java.util.List;
  * gurkhatech.com
  */
 public class GithubPresenterTest {
+    //given
+    @Mock
+    GithubContract.View mockView;
+    @Mock
+    GithubContract.Model mockModel;
+    //when
     
-    GithubContract.View view = new MockView ();
-    GithubContract.Model model = new MockModel ();
+    @Mock
+    GithubContract.Presenter mockPresenter;
     
     @Test
     public void shouldDisplayUsersToScreen ( ) {
-        
         //given
         GithubContract.View view = new MockView ();
-        GithubContract.Model model = new MockModel ();
-        
-        
-        //when
-        
+        GithubContract.Model model = new GithubContract.Model () {
+            @Override
+            public List < GithubUserDTO > getUsers ( ) {
+                return Arrays.asList ( new GithubUserDTO (), new GithubUserDTO (), new GithubUserDTO () );
+            }
+        };
         GithubContract.Presenter presenter = new GithubPresenter ( view, model );
         presenter.loadUsers ();
-        
         //then
-        
         Assert.assertEquals ( true, ( (MockView) view ).called );
         Assert.assertEquals ( true, ( (MockView) view ).enoughItems );
-        
+        Assert.assertEquals ( false, ( (MockView) view ).error );
     }
     
     
     @Test
     public void shouldHandleNoUsersFound ( ) {
         //given
-        GithubContract.View view = new MockView ();
-        GithubContract.Model model = new MockModel ();
-    
-    
+        final GithubContract.View view = new MockView ();
+        GithubContract.Model model = new GithubContract.Model () {
+            @Override
+            public List < GithubUserDTO > getUsers ( ) {
+                return Collections.emptyList ();
+            }
+        };
+        
         //when
-    
         GithubContract.Presenter presenter = new GithubPresenter ( view, model );
         presenter.loadUsers ();
-    
+        
         //then
-    
-        Assert.assertEquals ( false, ( (MockView) view ).error );
+        Assert.assertEquals ( true, ( (MockView) ( view ) ).error );
         
     }
     
     private class MockView implements GithubContract.View {
-        
         boolean called;
         boolean enoughItems;
         boolean error;
@@ -69,7 +76,6 @@ public class GithubPresenterTest {
         public void displayUsers ( List < GithubUserDTO > userList ) {
             called = true;
             if (userList.size () > 2) enoughItems = true;
-            
         }
         
         @Override
@@ -78,11 +84,4 @@ public class GithubPresenterTest {
         }
     }
     
-    private class MockModel implements GithubContract.Model {
-        
-        @Override
-        public List < GithubUserDTO > getUsers ( ) {
-            return  Arrays.asList ( new GithubUserDTO (), new GithubUserDTO (), new GithubUserDTO () );
-        }
-    }
 }

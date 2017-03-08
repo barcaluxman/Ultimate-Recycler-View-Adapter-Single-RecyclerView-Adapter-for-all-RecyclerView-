@@ -29,7 +29,6 @@ public class GithubPresenter implements GithubContract.Presenter {
         
         if (userList != null) {
             if (userList.size () > 0) {
-                
                 view.displayUsers ( userList );
             }else {
                 view.displayNoUsers ();

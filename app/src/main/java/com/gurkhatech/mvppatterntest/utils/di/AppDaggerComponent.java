@@ -2,10 +2,10 @@ package com.gurkhatech.mvppatterntest.utils.di;
 
 import com.gurkhatech.mvppatterntest.githubList.GithubListActivity;
 import com.gurkhatech.mvppatterntest.githubList.GithubListModel;
-import com.gurkhatech.mvppatterntest.githubList.components.viewholders.GitHubUserListViewHolder;
-import com.gurkhatech.mvppatterntest.githubList.components.viewholders.GitHubUserListViewHolderAlter;
-import com.gurkhatech.mvppatterntest.githublisttest.GithubModel;
-import com.gurkhatech.mvppatterntest.githublisttest.GithubView;
+import com.gurkhatech.mvppatterntest.githubUsersList.components.viewholders.GitHubUserListViewHolder;
+import com.gurkhatech.mvppatterntest.githubUsersList.components.viewholders.GitHubUserListViewHolderAlter;
+import com.gurkhatech.mvppatterntest.githubUsersList.GithubModel;
+import com.gurkhatech.mvppatterntest.githubUsersList.GithubView;
 
 import dagger.Component;
 

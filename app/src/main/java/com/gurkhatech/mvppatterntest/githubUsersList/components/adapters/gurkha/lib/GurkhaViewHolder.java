@@ -1,4 +1,4 @@
-package com.gurkhatech.mvppatterntest.githubList.components.adapters.gurkha.lib;
+package com.gurkhatech.mvppatterntest.githubUsersList.components.adapters.gurkha.lib;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;

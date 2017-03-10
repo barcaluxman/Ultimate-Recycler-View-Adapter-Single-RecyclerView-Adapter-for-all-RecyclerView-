@@ -1,10 +1,10 @@
-package com.gurkhatech.mvppatterntest.githublisttest;
+package com.gurkhatech.mvppatterntest.githubUsersList;
 
 import android.content.Context;
 
 import com.gurkhatech.mvppatterntest.R;
-import com.gurkhatech.mvppatterntest.githubList.components.dtos.GithubUserListDTO;
-import com.gurkhatech.mvppatterntest.githublisttest.GithubContract.Model;
+import com.gurkhatech.mvppatterntest.githubUsersList.components.dtos.GithubUserListDTO;
+import com.gurkhatech.mvppatterntest.githubUsersList.GithubContract.Model;
 import com.gurkhatech.mvppatterntest.utils.GithubAPIService;
 import com.gurkhatech.mvppatterntest.utils.Util;
 

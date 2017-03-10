@@ -1,13 +1,12 @@
-package com.gurkhatech.mvppatterntest.githublisttest;
+package com.gurkhatech.mvppatterntest.githubUsersList;
 
 import android.support.annotation.DrawableRes;
 
-import com.gurkhatech.mvppatterntest.githubList.components.adapters.gurkha.lib.GurkhaComboDTO;
-import com.gurkhatech.mvppatterntest.githubList.components.dtos.GithubUserDTO;
+import com.gurkhatech.mvppatterntest.githubUsersList.components.adapters.gurkha.lib.GurkhaComboDTO;
+import com.gurkhatech.mvppatterntest.githubUsersList.components.dtos.GithubUserDTO;
 
 import org.junit.Assert;
 import org.junit.Test;
-import org.mockito.Mock;
 
 import java.util.Arrays;
 import java.util.Collections;

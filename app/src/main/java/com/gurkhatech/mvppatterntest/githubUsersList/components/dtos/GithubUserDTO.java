@@ -1,9 +1,9 @@
-package com.gurkhatech.mvppatterntest.githubList.components.dtos;
+package com.gurkhatech.mvppatterntest.githubUsersList.components.dtos;
 
 import android.support.annotation.NonNull;
 
 import com.google.gson.annotations.SerializedName;
-import com.gurkhatech.mvppatterntest.githubList.components.adapters.gurkha.lib.GurkhaDTO;
+import com.gurkhatech.mvppatterntest.githubUsersList.components.adapters.gurkha.lib.GurkhaDTO;
 
 /**
  * Created by adventure on 2/9/17.

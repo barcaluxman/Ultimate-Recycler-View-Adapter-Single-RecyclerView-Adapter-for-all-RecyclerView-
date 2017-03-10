@@ -1,12 +1,12 @@
-package com.gurkhatech.mvppatterntest.githublisttest;
+package com.gurkhatech.mvppatterntest.githubUsersList;
 
 import android.support.annotation.DrawableRes;
 
 import com.gurkhatech.mvppatterntest.R;
-import com.gurkhatech.mvppatterntest.githubList.components.adapters.gurkha.lib.GurkhaComboDTO;
-import com.gurkhatech.mvppatterntest.githubList.components.dtos.GithubUserDTO;
-import com.gurkhatech.mvppatterntest.githubList.components.viewholders.GitHubUserListViewHolder;
-import com.gurkhatech.mvppatterntest.githubList.components.viewholders.GitHubUserListViewHolderAlter;
+import com.gurkhatech.mvppatterntest.githubUsersList.components.adapters.gurkha.lib.GurkhaComboDTO;
+import com.gurkhatech.mvppatterntest.githubUsersList.components.dtos.GithubUserDTO;
+import com.gurkhatech.mvppatterntest.githubUsersList.components.viewholders.GitHubUserListViewHolder;
+import com.gurkhatech.mvppatterntest.githubUsersList.components.viewholders.GitHubUserListViewHolderAlter;
 
 import java.util.ArrayList;
 import java.util.List;

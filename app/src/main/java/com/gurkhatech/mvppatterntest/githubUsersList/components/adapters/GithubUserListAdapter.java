@@ -1,11 +1,11 @@
-package com.gurkhatech.mvppatterntest.githubList.components.adapters;
+package com.gurkhatech.mvppatterntest.githubUsersList.components.adapters;
 
 import android.support.annotation.NonNull;
 import android.view.ViewGroup;
 
-import com.gurkhatech.mvppatterntest.githubList.components.adapters.gurkha.lib.GurkhaComboDTO;
-import com.gurkhatech.mvppatterntest.githubList.components.adapters.gurkha.lib.GurkhaRecyclerAdapter;
-import com.gurkhatech.mvppatterntest.githubList.components.adapters.gurkha.lib.GurkhaViewHolder;
+import com.gurkhatech.mvppatterntest.githubUsersList.components.adapters.gurkha.lib.GurkhaComboDTO;
+import com.gurkhatech.mvppatterntest.githubUsersList.components.adapters.gurkha.lib.GurkhaRecyclerAdapter;
+import com.gurkhatech.mvppatterntest.githubUsersList.components.adapters.gurkha.lib.GurkhaViewHolder;
 
 import java.util.List;
 

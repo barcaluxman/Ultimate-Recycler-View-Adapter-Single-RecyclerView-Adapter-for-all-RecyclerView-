@@ -17,7 +17,7 @@ import retrofit2.Call;
  * gurkhatech.com
  */
 
-public class OkHttpSynchronous {
+class OkHttpSynchronous {
 private static OkHttpSynchronous synchronous;
 public static OkHttpSynchronous getInstance(){
     synchronous = synchronous != null ? synchronous : new OkHttpSynchronous ();

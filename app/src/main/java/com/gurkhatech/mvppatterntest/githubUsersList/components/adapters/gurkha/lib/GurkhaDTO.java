@@ -1,4 +1,4 @@
-package com.gurkhatech.mvppatterntest.githubList.components.adapters.gurkha.lib;
+package com.gurkhatech.mvppatterntest.githubUsersList.components.adapters.gurkha.lib;
 
 /**
  * Created by adventure on 2/14/17.

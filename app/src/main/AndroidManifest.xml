@@ -13,10 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".rximplementation.RxActivity"/>
-        <activity android:name=".githubList.GithubListActivity">
-
-        </activity>
-        <activity android:name=".githublisttest.GithubView">
+        <activity android:name=".githubUsersList.GithubView">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,4 +1,4 @@
-package com.gurkhatech.mvppatterntest.githubList.components.viewholders;
+package com.gurkhatech.mvppatterntest.githubUsersList.components.viewholders;
 
 import android.support.annotation.Nullable;
 import android.view.View;
@@ -8,9 +8,9 @@ import android.widget.TextView;
 import com.bumptech.glide.RequestManager;
 import com.gurkhatech.mvppatterntest.R;
 import com.gurkhatech.mvppatterntest.githubList.GithubListActivity;
-import com.gurkhatech.mvppatterntest.githubList.components.adapters.gurkha.lib.GurkhaDTO;
-import com.gurkhatech.mvppatterntest.githubList.components.adapters.gurkha.lib.GurkhaViewHolder;
-import com.gurkhatech.mvppatterntest.githubList.components.dtos.GithubUserDTO;
+import com.gurkhatech.mvppatterntest.githubUsersList.components.adapters.gurkha.lib.GurkhaDTO;
+import com.gurkhatech.mvppatterntest.githubUsersList.components.adapters.gurkha.lib.GurkhaViewHolder;
+import com.gurkhatech.mvppatterntest.githubUsersList.components.dtos.GithubUserDTO;
 
 import javax.inject.Inject;
 
@@ -20,29 +20,27 @@ import butterknife.ButterKnife;
 import static com.gurkhatech.mvppatterntest.utils.GithubListConstants.THUMBNIL_FACTOR;
 
 
-public class GitHubUserListViewHolder extends GurkhaViewHolder {
+public class GitHubUserListViewHolderAlter extends GurkhaViewHolder {
 
-@Nullable
-@BindView(R.id.avatar)
-ImageView avatar;
 @Nullable
 @BindView(R.id.userName)
 TextView userName;
+@Nullable
+@BindView(R.id.avatar)
+ImageView avatar;
 @Nullable
 @BindView(R.id.profileUrl)
 TextView profileUrl;
 @Nullable
 @BindView(R.id.reposUrl)
 TextView reposUrl;
-
-
 @Inject
 RequestManager requestManager;
 
-public GitHubUserListViewHolder ( View itemView ) {
+public GitHubUserListViewHolderAlter ( View itemView ) {
     super ( itemView );
     ButterKnife.bind ( this, itemView );
-    GithubListActivity.getDaggerComponent ().injectUserViewHolder ( this );
+    GithubListActivity.getDaggerComponent ().injectUserViewHolderAlter ( this );
 
 }
 
@@ -50,13 +48,14 @@ public GitHubUserListViewHolder ( View itemView ) {
 public void bindView ( GurkhaDTO data ) {
     GithubUserDTO userDTO = (GithubUserDTO) data;
     assert this.avatar != null;
-    requestManager.load ( userDTO.getAvatarUrl () ).placeholder ( R.mipmap.ic_launcher ).thumbnail ( THUMBNIL_FACTOR ).into ( this.avatar );
+    requestManager.load ( userDTO.getAvatarUrl () ).thumbnail ( THUMBNIL_FACTOR ).into ( this.avatar );
     assert userName != null;
     userName.setText ( userDTO.getUserName () );
     assert reposUrl != null;
     reposUrl.setText ( userDTO.getRepoUrl () );
     assert profileUrl != null;
     profileUrl.setText ( userDTO.getProfileUrl () );
+
 }
 
 }

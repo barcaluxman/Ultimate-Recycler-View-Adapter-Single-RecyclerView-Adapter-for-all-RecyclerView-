@@ -1,4 +1,4 @@
-package com.gurkhatech.mvppatterntest.githublisttest;
+package com.gurkhatech.mvppatterntest.githubUsersList;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
@@ -10,8 +10,8 @@ import android.view.View;
 
 import com.gurkhatech.mvppatterntest.R;
 import com.gurkhatech.mvppatterntest.databinding.ActivityGithubListBinding;
-import com.gurkhatech.mvppatterntest.githubList.components.adapters.GithubUserListAdapter;
-import com.gurkhatech.mvppatterntest.githubList.components.adapters.gurkha.lib.GurkhaComboDTO;
+import com.gurkhatech.mvppatterntest.githubUsersList.components.adapters.GithubUserListAdapter;
+import com.gurkhatech.mvppatterntest.githubUsersList.components.adapters.gurkha.lib.GurkhaComboDTO;
 import com.gurkhatech.mvppatterntest.utils.MyApplication;
 import com.gurkhatech.mvppatterntest.utils.di.AppDaggerComponent;
 import com.gurkhatech.mvppatterntest.utils.di.ContextModule;

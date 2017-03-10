@@ -33,6 +33,7 @@ class GithubPresenter implements GithubContract.Presenter {
     @Override
     public void searchUsers(String userName) {
         model.getUsersAndPromptPresenter(userName, this);
+        enableSearch(false);
     }
 
     @Override
@@ -55,10 +56,12 @@ class GithubPresenter implements GithubContract.Presenter {
         } else {
             alertGenericError(model.getGenericErrorTitle(), model.getGenericErrorBody(), model.getGenericErrorImage());
         }
+        enableSearch(true);
     }
 
     @Override
     public void cancelRequests() {
+        enableSearch(true);
         model.cancelRequests();
     }
 
@@ -70,16 +73,19 @@ class GithubPresenter implements GithubContract.Presenter {
     @Override
     public void alertGenericError(String title, String body, @DrawableRes int imageID) {
         view.displayGenericError(title, body, imageID);
+        enableSearch(true);
     }
 
     @Override
     public void alertNetworkError(String title, String body, @DrawableRes int imageID) {
         view.displayNetworkError(title, body, imageID);
+        enableSearch(true);
     }
 
     @Override
     public void alertNoInternetConnection(String title, String body, @DrawableRes int imageID) {
         view.displayNoInternetConnection(title, body, imageID);
+        enableSearch(true);
     }
 
 }

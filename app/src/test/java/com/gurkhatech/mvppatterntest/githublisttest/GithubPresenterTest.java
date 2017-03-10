@@ -1,5 +1,8 @@
 package com.gurkhatech.mvppatterntest.githublisttest;
 
+import android.support.annotation.DrawableRes;
+
+import com.gurkhatech.mvppatterntest.githubList.components.adapters.gurkha.lib.GurkhaComboDTO;
 import com.gurkhatech.mvppatterntest.githubList.components.dtos.GithubUserDTO;
 
 import org.junit.Assert;
@@ -18,70 +21,235 @@ import java.util.List;
  * gurkhatech.com
  */
 public class GithubPresenterTest {
-    //given
-    @Mock
-    GithubContract.View mockView;
-    @Mock
-    GithubContract.Model mockModel;
-    //when
-    
-    @Mock
-    GithubContract.Presenter mockPresenter;
-    
+
+
+
     @Test
-    public void shouldDisplayUsersToScreen ( ) {
+    public void shouldDisplayUsersToScreen() {
         //given
-        GithubContract.View view = new MockView ();
-        GithubContract.Model model = new GithubContract.Model () {
-            @Override
-            public List < GithubUserDTO > getUsers ( ) {
-                return Arrays.asList ( new GithubUserDTO (), new GithubUserDTO (), new GithubUserDTO () );
-            }
-        };
-        GithubContract.Presenter presenter = new GithubPresenter ( view, model );
-        presenter.loadUsers ();
-        //then
-        Assert.assertEquals ( true, ( (MockView) view ).called );
-        Assert.assertEquals ( true, ( (MockView) view ).enoughItems );
-        Assert.assertEquals ( false, ( (MockView) view ).error );
-    }
-    
-    
-    @Test
-    public void shouldHandleNoUsersFound ( ) {
-        //given
-        final GithubContract.View view = new MockView ();
-        GithubContract.Model model = new GithubContract.Model () {
-            @Override
-            public List < GithubUserDTO > getUsers ( ) {
-                return Collections.emptyList ();
-            }
-        };
-        
+        final GithubContract.View view = new MockView();
+        GithubContract.Model model = new MockModel(1);
+
         //when
-        GithubContract.Presenter presenter = new GithubPresenter ( view, model );
-        presenter.loadUsers ();
-        
+        GithubContract.Presenter presenter = new GithubPresenter(view, model);
+        presenter.searchUsers("");
+
         //then
-        Assert.assertEquals ( true, ( (MockView) ( view ) ).error );
-        
+        Assert.assertEquals(true, ((MockView) (view)).enoughItems);
     }
-    
+
+    @Test
+    public void shouldHandleNoUsersFound() {
+        //given
+        final GithubContract.View view = new MockView();
+        GithubContract.Model model = new MockModel(2);
+
+        //when
+        GithubContract.Presenter presenter = new GithubPresenter(view, model);
+        presenter.searchUsers("");
+
+        //then
+        Assert.assertEquals(true, ((MockView) (view)).emptyList);
+
+    }
+
+
+    @Test
+    public void shouldHandleNull() {
+        //given
+        final GithubContract.View view = new MockView();
+        GithubContract.Model model = new MockModel(3);
+
+        //when
+        GithubContract.Presenter presenter = new GithubPresenter(view, model);
+        presenter.searchUsers("");
+
+        //then
+        Assert.assertEquals(true, ((MockView) (view)).genericError);
+
+    }
+    @Test
+    public void shouldDisplayNoInternet() {
+        //given
+        GithubContract.View view = new MockView();
+        GithubContract.Model model = new MockModel(4);
+        GithubContract.Presenter presenter = new GithubPresenter(view, model);
+        presenter.searchUsers("");
+        //then
+        Assert.assertEquals(true, ((MockView) view).noInternet);
+    }
+
+
+    @Test
+    public void shouldHandleNetworkError() {
+        //given
+        final GithubContract.View view = new MockView();
+        GithubContract.Model model = new MockModel(5);
+
+        //when
+        GithubContract.Presenter presenter = new GithubPresenter(view, model);
+        presenter.searchUsers("");
+
+        //then
+        Assert.assertEquals(true, ((MockView) (view)).networkError);
+
+    }
+    @Test
+    public void shouldHandleGenericError() {
+        //given
+        final GithubContract.View view = new MockView();
+        GithubContract.Model model = new MockModel(6);
+
+        //when
+        GithubContract.Presenter presenter = new GithubPresenter(view, model);
+        presenter.searchUsers("");
+
+        //then
+        Assert.assertEquals(true, ((MockView) (view)).genericError);
+
+    }
+
+    private class MockModel implements GithubContract.Model {
+        int flags = 0;
+
+
+        /**
+         * 1- perfect return list of three user dtos
+         * 2- return empty list
+         * 3- return null
+         * 4- no internet connection
+         * 5- some network error
+         * 6- unknown error
+         */
+
+        MockModel(int flags) {
+            this.flags = flags;
+        }
+
+        @Override
+        public void getUsersAndPromptPresenter(String userName, GithubContract.Presenter presenter) {
+
+            switch (this.flags) {
+                case 1:
+                    presenter.loadUsers(Arrays.asList(new GithubUserDTO("jfalkdjfkjadjfadkl"), new GithubUserDTO("fda"), new GithubUserDTO(""),null));
+                case 2:
+                    presenter.loadUsers(Collections.<GithubUserDTO>emptyList());
+                case 3:
+                    presenter.loadUsers(null);
+                case 4:
+                    presenter.alertNoInternetConnection("", "", 0);
+                case 5:
+                    presenter.alertNetworkError("", "", 0);
+                case 6:
+                    presenter.alertGenericError("", "", 0);
+
+            }
+
+        }
+
+        @Override
+        public void cancelRequests() {
+
+        }
+
+        @Override
+        public String getNetworkErrorTitle() {
+            return null;
+        }
+
+        @Override
+        public String getNetworkErrorBody() {
+            return null;
+        }
+
+        @Override
+        public int getNetworkErrorImage() {
+            return 0;
+        }
+
+        @Override
+        public String getNoInternetErrorTitle() {
+            return null;
+        }
+
+        @Override
+        public String getNoInternetErrorBody() {
+            return null;
+        }
+
+        @Override
+        public int getNoInternetErrorImage() {
+            return 0;
+        }
+
+        @Override
+        public String getNoDataErrorTitle() {
+            return null;
+        }
+
+        @Override
+        public String getNoDataErrorBody() {
+            return null;
+        }
+
+        @Override
+        public int getNoDataErrorImage() {
+            return 0;
+        }
+
+        @Override
+        public String getGenericErrorTitle() {
+            return null;
+        }
+
+        @Override
+        public String getGenericErrorBody() {
+            return null;
+        }
+
+        @Override
+        public int getGenericErrorImage() {
+            return 0;
+        }
+    }
+
     private class MockView implements GithubContract.View {
-        boolean called;
-        boolean enoughItems;
-        boolean error;
-        
+        boolean enoughItems = false;
+        boolean genericError;
+        boolean networkError;
+        boolean noInternet;
+        boolean emptyList;
+        boolean searchEnabled;
+
+
         @Override
-        public void displayUsers ( List < GithubUserDTO > userList ) {
-            called = true;
-            if (userList.size () > 2) enoughItems = true;
+        public void displayUsers(List<GurkhaComboDTO> userList) {
+            enoughItems = true;
         }
-        
+
         @Override
-        public void displayNoUsers ( ) {
-            error = true;
+        public void enableSearch(boolean enable) {
+            searchEnabled = enable;
+        }
+
+        @Override
+        public void displayNoDataError(String title, String body, @DrawableRes int imageID) {
+            emptyList = true;
+        }
+
+        @Override
+        public void displayNoInternetConnection(String title, String body, @DrawableRes int imageID) {
+            noInternet = true;
+        }
+
+        @Override
+        public void displayNetworkError(String title, String body, @DrawableRes int imageID) {
+            networkError = true;
+        }
+
+        @Override
+        public void displayGenericError(String title, String body, @DrawableRes int imageID) {
+            genericError = true;
         }
     }
-    
 }

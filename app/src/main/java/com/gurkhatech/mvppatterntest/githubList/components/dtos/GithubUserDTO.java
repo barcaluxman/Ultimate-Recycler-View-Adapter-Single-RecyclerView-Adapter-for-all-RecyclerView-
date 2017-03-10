@@ -13,49 +13,52 @@ import com.gurkhatech.mvppatterntest.githubList.components.adapters.gurkha.lib.G
  * gurkhatech.com
  */
 
-public class GithubUserDTO implements GurkhaDTO{
+public class GithubUserDTO implements GurkhaDTO {
 
+    public GithubUserDTO(String userName) {
+        this.userName = userName;
+    }
 
-@SerializedName("login")
-private String userName;
+    @SerializedName("login")
+    private String userName;
 
-@SerializedName("name")
-private String FullName;
+    @SerializedName("name")
+    private String FullName;
 
-@SerializedName("html_url")
-private String profileUrl;
+    @SerializedName("html_url")
+    private String profileUrl;
 
-@SerializedName("avatar_url")
-private String avatarUrl;
+    @SerializedName("avatar_url")
+    private String avatarUrl;
 
-@SerializedName("email")
-private String email;
+    @SerializedName("email")
+    private String email;
 
-@SerializedName("repos_url")
-private String repoUrl;
+    @SerializedName("repos_url")
+    private String repoUrl;
 
-@NonNull
-public String getUserName ( ) {
-    return userName;
-}
+    @NonNull
+    public String getUserName() {
+        return userName;
+    }
 
-public String getFullName ( ) {
-    return FullName;
-}
+    public String getFullName() {
+        return FullName;
+    }
 
-public String getProfileUrl ( ) {
-    return profileUrl;
-}
+    public String getProfileUrl() {
+        return profileUrl;
+    }
 
-public String getAvatarUrl ( ) {
-    return avatarUrl;
-}
+    public String getAvatarUrl() {
+        return avatarUrl;
+    }
 
-public String getEmail ( ) {
-    return email;
-}
+    public String getEmail() {
+        return email;
+    }
 
-public String getRepoUrl ( ) {
-    return repoUrl;
-}
+    public String getRepoUrl() {
+        return repoUrl;
+    }
 }

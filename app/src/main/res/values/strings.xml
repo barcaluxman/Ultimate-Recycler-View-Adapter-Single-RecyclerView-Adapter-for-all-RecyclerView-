@@ -9,4 +9,5 @@
     <string name="default_log_filter">datatest</string>
     <string name="search">search</string>
     <string name="hint">Type UserName</string>
+    <string name="network_error_title">Network Problem</string>
 </resources>

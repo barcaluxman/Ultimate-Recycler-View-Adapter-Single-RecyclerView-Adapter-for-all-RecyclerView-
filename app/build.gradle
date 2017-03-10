@@ -29,6 +29,9 @@ android {
             return void
         }
     }
+    dataBinding {
+        enabled true
+    }
     return void
 }
 configurations.all {

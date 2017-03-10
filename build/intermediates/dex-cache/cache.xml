@@ -3,15 +3,6 @@
 
     <item
         is-multidex="true"
-        jar="/home/adventure/.android/build-cache/c6b22902aaa3f076751612dcf900e86bd6614201/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
-        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/transforms/dex/mock/debug/folders/1000/10/classes_e244be43b41257aac753b888d879608cc587b829/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/incremental-runtime-classes/mock/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
@@ -27,15 +18,6 @@
         revision="25.0.1"
         sha1="57f850a6b317e5582f1dbaff10a9e7d7e1fcdcfb">
         <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/mock/debug/rxjava-2.0.1_e79771e6991c3b73d094255982e003b5c2b73964.jar" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/adventure/.android/build-cache/55c61cfb1d3c76c511990daed07bb7b791b29169/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
-        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/transforms/dex/mock/debug/folders/1000/10/classes_13d9ace388c911146b584c1540ba51fad2f9f96d/classes.dex" />
     </item>
     <item
         is-multidex="false"
@@ -56,31 +38,40 @@
         <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/mock/debug/javax.inject-1_5bf406c0ed27e24e8f1467590705bbfd4dd1c4a8.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/adventure/.android/build-cache/04151f71d0127eb507a3bc66d6b33143e1208a9c/output/jars/classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/home/adventure/.android/build-cache/0d29a089bb6bf0f6ef93ce9aaa057ab6933dc010/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.1"
-        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
-        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/transforms/dex/mock/debug/folders/1000/10/classes_c0e572f3808cf81c4d0219479ad6af0da1056a02/classes.dex" />
+        sha1="e2719c102dca3a7a5b02ce07f769362da6ddb4ab">
+        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/mock/debug/classes_83ad4f9b84c01df5e3572c4f00bf919632973a1d.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/adventure/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.1.1/support-annotations-25.1.1.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/home/adventure/.gradle/caches/modules-2/files-2.1/com.android.databinding/baseLibrary/2.3.0/d63c4d23204cadf1390fd1bbca8c1b05396aed/baseLibrary-2.3.0.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.1"
-        sha1="b59b6ee8d6ecc03e672d253800430343493a6ed8">
-        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/transforms/dex/mock/debug/folders/1000/10/support-annotations-25.1.1_b63afe7bd29b3bb2f2040bbe5980c9bae1769510/classes.dex" />
+        sha1="00d63c4d23204cadf1390fd1bbca8c1b05396aed">
+        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/mock/debug/baseLibrary-2.3.0_c131e75915f8f89662ce20bdae44542cc34a7727.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/adventure/.android/build-cache/324588554ed36dc813ff9dbc27ec8a3dd7d3b821/output/jars/classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/home/adventure/.android/build-cache/1a501c2eee4f689e8b7c7f3c056c0f1b00ea7f94/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.1"
-        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
-        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/transforms/dex/mock/debug/folders/1000/10/classes_6b9d3b70f912832acb358a66a30ed35353ddcaa2/classes.dex" />
+        sha1="68956f5ba1517b7a3d513ba540548e257741cbae">
+        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/mock/debug/classes_b0075e29126a78ae858d38645150262f17327ef8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/adventure/.android/build-cache/874c9e0000edf42e643016f086889865737fe93b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/mock/debug/classes_2809815d58905d22218f74945f44332497aa3e61.jar" />
     </item>
     <item
         is-multidex="false"
@@ -92,22 +83,13 @@
         <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/mock/debug/support-annotations-25.1.1_b63afe7bd29b3bb2f2040bbe5980c9bae1769510.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/adventure/.android/build-cache/18f4140b2f113d301dd97026ce6d54b3a0bd8523/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
-        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/transforms/dex/mock/debug/folders/1000/10/classes_381c38f951484dc7820474a77b57835e3427541f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/adventure/.android/build-cache/af66b2267f865d53084fc065887acc198eb60bf5/output/jars/classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/home/adventure/.android/build-cache/cdde17fe5985e414a8d27d598b83366ef728b87f/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.1"
         sha1="a8ae156c2726ac9c56daaf4b49452ec2cdb7bba9">
-        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/transforms/dex/mock/debug/folders/1000/10/classes_6a2ea38ce6319c290af491a2656b47212685e43c/classes.dex" />
+        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/mock/debug/classes_d534bc4ba3052045ef40f453a2645f33ccc415f7.jar" />
     </item>
     <item
         is-multidex="false"
@@ -119,22 +101,13 @@
         <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/mock/debug/gson-2.8.0_82dd5ea6651bbd8ee9079fba98af4878c00eb9a3.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/adventure/.android/build-cache/5758fada6280eb5eef880dae9e6452d7b386123b/output/jars/classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/home/adventure/.android/build-cache/3f4ad28b1364012d745bbbded44689882048d0ba/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.1"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/transforms/dex/mock/debug/folders/1000/10/classes_c2de647bbd53d8892abe3d9daf94658a85a9f354/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/adventure/.android/build-cache/325210cac46f26046d7aa81e47f3968110f7dd3f/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
-        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/transforms/dex/mock/debug/folders/1000/10/classes_cff8ae7ac18fc4983be500806f54afb15c373476/classes.dex" />
+        sha1="7f2f348b830f292429db987f74ba3e67c6752322">
+        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/mock/debug/classes_29b72f2575392d3eb5b2916ad328bb919ef74063.jar" />
     </item>
     <item
         is-multidex="false"
@@ -155,13 +128,31 @@
         <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/mock/debug/converter-gson-2.1.0_ef1c7857f1cb8361fd324f931949b0c381b6629b.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/adventure/.android/build-cache/0dbedcb261789afcb779eb8c443bfce59fe7fdd7/output/jars/classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/home/adventure/.android/build-cache/ae96f76d0ab3c4171d7d6634bc758fb6d4ad352a/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.1"
         sha1="ecb496cc08dd52551fc5ec6db3bc0632e95a89bb">
-        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/transforms/dex/mock/debug/folders/1000/10/classes_f52b4b7dc517b5a270dcc2b69d816ceb239ec3d5/classes.dex" />
+        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/mock/debug/classes_c53bf2fab25147320255f82b539c78bd75e93404.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/adventure/.android/build-cache/fa94951e42fa7b4328e0c5ac2b374949bda1a17a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="0fb891e8f0cfba0513043a7bb357513d229ca2cd">
+        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/mock/debug/classes_fb507d9cc4e15c671c4719cc99664f435ce44b7d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/adventure/.android/build-cache/ff9c2a9a725479c68bfa2417906d7f6b1b55c0a6/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="4119ea97a7191ff9b8f33b534ea220448f62f491">
+        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/mock/debug/classes_81907c9b643e40dce9760394ce94e9904c8df07a.jar" />
     </item>
     <item
         is-multidex="true"
@@ -169,8 +160,44 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="9e22b0512dc69494910e80b43d20a2c98c26e948">
+        sha1="9bc19484304db324aac9d693cfcb6d75f4583e75">
         <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/transforms/dex/mock/debug/folders/1000/10000/instant-run-bootstrap_5198cde95ca99ffed3a94dab8c1a614c2535c25e/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/adventure/.android/build-cache/c39d6c9a3955c3d3c1f6dc1b391bc7b131c681ad/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="cd7951e04cfb9a8bf008d544a478d9a8d8192d38">
+        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/mock/debug/classes_6cc1977702bd78ec52c792dc69374f0efd1d1cfd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/adventure/.android/build-cache/dece6b786466efb0fafd3d452695cb85bada25a3/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="02741d05d4b697fba5e279e9881aaa1da0ca7c7f">
+        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/mock/debug/classes_c79836f8e9d77e5c2540f32f0a17f1706cece04f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/adventure/.android/build-cache/4cb04791fd538451ef8ac5aceb7c4981379336bb/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c03bf57f358aa10d253f21989e93bcf6014b3b17">
+        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/mock/debug/classes_2bea67cfe643ba769b1f5ca56c5d7e6c33cd43f0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/adventure/.android/build-cache/fc7d3cd7d9c3290bf38036cf2536379f1c5f9570/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="7bde4c34162092e0a77e7f12dc85ed77c484cf5c">
+        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/mock/debug/classes_777356dca235b56d7b1c340382245ca5bfc2680f.jar" />
     </item>
     <item
         is-multidex="false"
@@ -200,15 +227,6 @@
         <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/mock/debug/reactive-streams-1.0.0_a10164612e26648f80acf3e1237afab7d531d624.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/adventure/.android/build-cache/c4a89ddd8ba93a1ad325e028dd2cb5279ef4185d/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="c9649557905bf7a80fca9e0d54cbcb7662627860">
-        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/transforms/dex/mock/debug/folders/1000/10/classes_cfa26f3c956ab34f9f8d155ef9ffcc3a5af63e3e/classes.dex" />
-    </item>
-    <item
         is-multidex="false"
         jar="/home/adventure/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife-annotations/8.5.1/bb67dad90bab7cd77a8f7f1b8442b47e3a2326bc/butterknife-annotations-8.5.1.jar"
         jumboMode="false"
@@ -218,22 +236,22 @@
         <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/mock/debug/butterknife-annotations-8.5.1_f50b13c6ff8140551c29d88d6a77d839d74f9622.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/adventure/.android/build-cache/a14e2736729ed8075ad39c33cb89809a7eb51500/output/jars/classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/home/adventure/.android/build-cache/963a62bb52bfb87e1a114bc5c5b4040644022668/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3e04ac8ca644ea7baddf6fdcf72e15c79e9df94a">
+        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/mock/debug/classes_ba9d5cf34e6a53ad8ac25872868d230da0fdbc22.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/adventure/.android/build-cache/dd9f14ac61a879154f980761708cf1d2bea0568a/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.1"
         sha1="0d191c1a09e4892d059e5ce749e4ad4e08129e35">
-        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/transforms/dex/mock/debug/folders/1000/10/classes_1aacf8b44ec742631068eef5c26ad438e7111670/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/adventure/.android/build-cache/c5722b320e19a7b566571f56b2018f11f8642ea3/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="15b049fedbd8e3926bf99d9e45dfc9b2a1043bb9">
-        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/transforms/dex/mock/debug/folders/1000/10/classes_d6c2ea27e37c4980bc34fb1284944e9a9bb4e446/classes.dex" />
+        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/mock/debug/classes_eea5633b14222c92a00de0e105cbce988bf53e79.jar" />
     </item>
     <item
         is-multidex="false"
@@ -245,13 +263,31 @@
         <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/mock/debug/okhttp-3.6.0_46705ec9a61af89c88ac7d7a1bc32e7fc593ce49.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/adventure/.android/build-cache/0664fe47a8fb0233cd7e98119b77eaa140f7f521/output/jars/classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/home/adventure/.android/build-cache/b9c980e6065644d02a957e47898faf76faaffa01/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.1"
-        sha1="cd7951e04cfb9a8bf008d544a478d9a8d8192d38">
-        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/transforms/dex/mock/debug/folders/1000/10/classes_ef38d095008ef6efd7318914af54acb5ab078362/classes.dex" />
+        sha1="c9649557905bf7a80fca9e0d54cbcb7662627860">
+        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/mock/debug/classes_e4ca3765d7a5d5a3403c6a170b14089ac89d78a1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/adventure/.android/build-cache/2abc656b397a936455a70c63ace84a2924820051/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="15b049fedbd8e3926bf99d9e45dfc9b2a1043bb9">
+        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/mock/debug/classes_c920491039b394412e3d05cfa49c804eb7422eaa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/adventure/.android/build-cache/f580153c203baa441c1233868e8f95d94ca9219d/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.1"
+        sha1="19f281a785ca0eb5f6799fc7bf7ca199a9ca1e8b">
+        <dex dex="/media/adventure/Projects/Practice /androidtesting/MVPPatternTest/app/build/intermediates/pre-dexed/mock/debug/classes_316db0e3ef3893264a02761e9ac0aaa89e690c6a.jar" />
     </item>
 
 </items>

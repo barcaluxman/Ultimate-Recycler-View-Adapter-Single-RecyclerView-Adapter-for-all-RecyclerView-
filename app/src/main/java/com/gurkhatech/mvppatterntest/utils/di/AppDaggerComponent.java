@@ -4,6 +4,8 @@ import com.gurkhatech.mvppatterntest.githubList.GithubListActivity;
 import com.gurkhatech.mvppatterntest.githubList.GithubListModel;
 import com.gurkhatech.mvppatterntest.githubList.components.viewholders.GitHubUserListViewHolder;
 import com.gurkhatech.mvppatterntest.githubList.components.viewholders.GitHubUserListViewHolderAlter;
+import com.gurkhatech.mvppatterntest.githublisttest.GithubModel;
+import com.gurkhatech.mvppatterntest.githublisttest.GithubView;
 
 import dagger.Component;
 
@@ -15,10 +17,17 @@ import dagger.Component;
  * gurkhatech.com
  */
 @SuppressWarnings("WeakerAccess")
-@Component(modules = { ContextModule.class, GlideModule.class,GithubApiServiceModule.class,DTOModules.class })
+@Component(modules = {ContextModule.class, GlideModule.class, GithubApiServiceModule.class, DTOModules.class})
 public interface AppDaggerComponent {
-void injectGithubListActivity ( GithubListActivity activity );
-void injectGithubListModel( GithubListModel model);
-void injectUserViewHolder( GitHubUserListViewHolder viewHolder);
-void injectUserViewHolderAlter( GitHubUserListViewHolderAlter viewHolder);
+    void injectGithubListActivity(GithubListActivity activity);
+
+    void injectGithubView(GithubView view);
+
+    void injectGithubListModel(GithubListModel model);
+
+    void injectUserViewHolder(GitHubUserListViewHolder viewHolder);
+
+    void injectUserViewHolderAlter(GitHubUserListViewHolderAlter viewHolder);
+
+    void injectGithubModel(GithubModel githubModel);
 }

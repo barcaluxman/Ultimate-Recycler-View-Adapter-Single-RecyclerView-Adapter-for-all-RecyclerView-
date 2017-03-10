@@ -43,7 +43,7 @@ public class GithubListPresenterTest {
      
      @Test public void alertNetworkError ( ) throws Exception {
      presenter.alertNetworkError ();
-     verify ( view ).showNetworkError ();
+     verify ( view ).displayNetworkError ();
      }
      
      @Test public void disconnect ( ) throws Exception {
@@ -58,7 +58,7 @@ public class GithubListPresenterTest {
      
      @Test public void noDataFoundError ( ) throws Exception {
      presenter.alertNoDataFound ();
-     verify ( view ).showNoDataError ();
+     verify ( view ).displayNoDataError ();
      }
      
      @Test public void disableSearch ( ) throws Exception {

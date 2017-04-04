@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MVPPatternTest.iml" filepath="$PROJECT_DIR$/MVPPatternTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ultimate-Recycler-View-Adapter-Single-RecyclerView-Adapter-for-all-RecyclerView-.iml" filepath="$PROJECT_DIR$/Ultimate-Recycler-View-Adapter-Single-RecyclerView-Adapter-for-all-RecyclerView-.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 import com.bumptech.glide.RequestManager;
 import com.gurkhatech.mvppatterntest.R;
-import com.gurkhatech.mvppatterntest.githubList.GithubListActivity;
+import com.gurkhatech.mvppatterntest.githubUsersList.GithubView;
 import com.gurkhatech.mvppatterntest.githubUsersList.components.adapters.gurkha.lib.GurkhaDTO;
 import com.gurkhatech.mvppatterntest.githubUsersList.components.adapters.gurkha.lib.GurkhaViewHolder;
 import com.gurkhatech.mvppatterntest.githubUsersList.components.dtos.GithubUserDTO;
@@ -40,7 +40,7 @@ RequestManager requestManager;
 public GitHubUserListViewHolderAlter ( View itemView ) {
     super ( itemView );
     ButterKnife.bind ( this, itemView );
-    GithubListActivity.getDaggerComponent ().injectUserViewHolderAlter ( this );
+    GithubView.getDaggerComponent ().injectUserViewHolderAlter ( this );
 
 }
 

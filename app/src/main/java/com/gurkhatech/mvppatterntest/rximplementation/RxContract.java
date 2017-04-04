@@ -8,22 +8,24 @@ package com.gurkhatech.mvppatterntest.rximplementation;
  * gurkhatech.com
  */
 
-interface RxContract {
-interface View {
+public interface RxContract {
+    interface View {
 
-    void displayText ( String s );
-}
+        void displayText(String s);
+    }
 
 
-interface Presenter {
+    interface Presenter {
 
-    Runnable setUpRx ( );
+        Runnable setUpRx();
 
-    void callAMethod ( Runnable runnable );
+        void callAMethod(Runnable runnable);
 
-    Runnable sayHello ( );
+        Runnable sayHello();
 
-    Runnable sayHi ( );
-}
+        Runnable sayHi();
+
+        void unSubscribeRx();
+    }
 
 }

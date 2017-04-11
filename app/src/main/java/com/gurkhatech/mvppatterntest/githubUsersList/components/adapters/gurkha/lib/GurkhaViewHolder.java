@@ -3,6 +3,8 @@ package com.gurkhatech.mvppatterntest.githubUsersList.components.adapters.gurkha
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
+import com.gurkhatech.mvppatterntest.githubUsersList.components.adapters.GithubUserListAdapter;
+
 /**
  * Created by adventure on 2/14/17.
  * erlaxmanbhattarai@gmail.com
@@ -17,7 +19,7 @@ public GurkhaViewHolder ( View itemView ) {
 
 }
 
-public abstract void bindView ( GurkhaDTO data );
+public abstract void bindView (GurkhaDTO data , GithubUserListAdapter adapter);
 
 
 }

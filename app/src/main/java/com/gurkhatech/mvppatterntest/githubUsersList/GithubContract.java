@@ -2,7 +2,7 @@ package com.gurkhatech.mvppatterntest.githubUsersList;
 
 import android.support.annotation.DrawableRes;
 
-import com.gurkhatech.mvppatterntest.githubUsersList.components.adapters.gurkha.lib.GurkhaComboDTO;
+import com.gurkhatech.mvppatterntest.githubUsersList.components.adapters.gurkha.lib.GithubAdapterData;
 import com.gurkhatech.mvppatterntest.githubUsersList.components.dtos.GithubUserDTO;
 
 import java.util.List;
@@ -17,8 +17,7 @@ import java.util.List;
 
 interface GithubContract {
     interface View {
-        void displayUsers(List<GurkhaComboDTO> userList);
-
+        void displayUsers(List<GithubAdapterData>  userList);
         void enableSearch(boolean enable);
 
         void displayNoDataError(String title, String body, @DrawableRes int imageID);
@@ -72,8 +71,7 @@ interface GithubContract {
 
         void searchUsers(String userName);
 
-        void loadUsers(List<GithubUserDTO> userList);
-
+        void loadUsers(List<GithubUserDTO> adapterData);
         void cancelRequests();
 
         void enableSearch(boolean enable);

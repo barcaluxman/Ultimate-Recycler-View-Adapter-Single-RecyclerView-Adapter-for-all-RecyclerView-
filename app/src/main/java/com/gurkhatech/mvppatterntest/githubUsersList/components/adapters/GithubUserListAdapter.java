@@ -3,7 +3,7 @@ package com.gurkhatech.mvppatterntest.githubUsersList.components.adapters;
 import android.support.annotation.NonNull;
 import android.view.ViewGroup;
 
-import com.gurkhatech.mvppatterntest.githubUsersList.components.adapters.gurkha.lib.GurkhaComboDTO;
+import com.gurkhatech.mvppatterntest.githubUsersList.components.adapters.gurkha.lib.GithubAdapterData;
 import com.gurkhatech.mvppatterntest.githubUsersList.components.adapters.gurkha.lib.GurkhaRecyclerAdapter;
 import com.gurkhatech.mvppatterntest.githubUsersList.components.adapters.gurkha.lib.GurkhaViewHolder;
 
@@ -20,38 +20,38 @@ import javax.inject.Inject;
  */
 public class GithubUserListAdapter extends GurkhaRecyclerAdapter {
 
-private List < GurkhaComboDTO > data;
+    private List<GithubAdapterData> data;
 
-@SuppressWarnings("WeakerAccess")
-@Inject
-public GithubUserListAdapter ( List < GurkhaComboDTO > data ) {
-    this.data = data;
-}
+    @SuppressWarnings("WeakerAccess")
+    @Inject
+    public GithubUserListAdapter(List<GithubAdapterData> data) {
+        this.data = data;
+    }
 
-@Override
-public GurkhaViewHolder onCreateViewHolder ( ViewGroup parent, int viewType ) {
-    return getViewHolderFromResId ( viewType, parent, getViewHolderClassByLayoutID ( this.data, viewType ) );
-}
+    @Override
+    public GurkhaViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        return data.get(viewType).getViewHolder();
+    }
 
-@Override
-public void onBindViewHolder ( GurkhaViewHolder holder, int position ) {
-    holder.bindView ( this.data.get ( position ).getGurkhaDto () );
-}
+    @Override
+    public void onBindViewHolder(GurkhaViewHolder holder, int position) {
+        holder.bindView(this.data.get(position).getDto(),this);
+    }
 
-@Override
-public int getItemViewType ( int position ) {
-    return this.data.get ( position ).getResId ();
-}
+    @Override
+    public int getItemViewType(int position) {
+        return position;
+    }
 
-@Override
-public int getItemCount ( ) {
-    return ( this.data == null ) ? 0 : data.size ();
-}
+    @Override
+    public int getItemCount() {
+        return (this.data == null) ? 0 : data.size();
+    }
 
-@Override
-public void replaceData ( @NonNull List < GurkhaComboDTO > gurkhaMap ) {
-    this.data = gurkhaMap;
-    notifyDataSetChanged ();
+    @Override
+    public void replaceData(@NonNull List<GithubAdapterData> gurkhaMap) {
+        this.data = gurkhaMap;
+        notifyDataSetChanged();
 
-}
+    }
 }

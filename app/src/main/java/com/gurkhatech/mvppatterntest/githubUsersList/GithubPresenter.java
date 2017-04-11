@@ -1,9 +1,11 @@
 package com.gurkhatech.mvppatterntest.githubUsersList;
 
 import android.support.annotation.DrawableRes;
+import android.view.LayoutInflater;
+import android.view.ViewGroup;
 
 import com.gurkhatech.mvppatterntest.R;
-import com.gurkhatech.mvppatterntest.githubUsersList.components.adapters.gurkha.lib.GurkhaComboDTO;
+import com.gurkhatech.mvppatterntest.githubUsersList.components.adapters.gurkha.lib.GithubAdapterData;
 import com.gurkhatech.mvppatterntest.githubUsersList.components.dtos.GithubUserDTO;
 import com.gurkhatech.mvppatterntest.githubUsersList.components.viewholders.GitHubUserListViewHolder;
 import com.gurkhatech.mvppatterntest.githubUsersList.components.viewholders.GitHubUserListViewHolderAlter;
@@ -38,17 +40,21 @@ class GithubPresenter implements GithubContract.Presenter {
 
     @Override
     public void loadUsers(List<GithubUserDTO> data) {
+        ViewGroup parent = GithubView.binding.activityGithubList;
+        LayoutInflater inflater = LayoutInflater.from(parent.getContext());
 
         if (data != null) {  //Do not check userList.size directly coz it may return nullPointer
             if (!data.isEmpty()) {
-                List<GurkhaComboDTO> users = new ArrayList<>();
+                List<GithubAdapterData> users = new ArrayList<>();
                 for (int i = 0; i < data.size(); i++) {
-
                     try {
-                        users.add(new GurkhaComboDTO(data.get(i).getUserName().length() > 10 ?
-                                R.layout.item_github_use_list : R.layout.item_github_use_list_alter,
-                                data.get(i), data.get(i).getUserName().length() > 10 ?
-                                GitHubUserListViewHolder.class : GitHubUserListViewHolderAlter.class));
+                        users.add(new GithubAdapterData(data.get(i),
+                            data.get(i).getUserName().length() > 10 ?
+                                new GitHubUserListViewHolder(inflater.
+                                    inflate(R.layout.item_github_use_list, parent, false)) :
+                                new GitHubUserListViewHolderAlter(inflater.
+                                    inflate(R.layout.item_github_use_list_alter, parent, false))));
+
                     } catch (Exception ignored) {
                     }
                 }
@@ -60,7 +66,9 @@ class GithubPresenter implements GithubContract.Presenter {
             alertGenericError(model.getGenericErrorTitle(), model.getGenericErrorBody(), model.getGenericErrorImage());
         }
         enableSearch(true);
+
     }
+
 
     @Override
     public void cancelRequests() {

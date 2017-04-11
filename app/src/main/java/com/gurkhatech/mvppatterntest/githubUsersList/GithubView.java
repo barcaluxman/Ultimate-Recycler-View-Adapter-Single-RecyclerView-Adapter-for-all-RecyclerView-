@@ -11,7 +11,7 @@ import android.view.View;
 import com.gurkhatech.mvppatterntest.R;
 import com.gurkhatech.mvppatterntest.databinding.ActivityGithubListBinding;
 import com.gurkhatech.mvppatterntest.githubUsersList.components.adapters.GithubUserListAdapter;
-import com.gurkhatech.mvppatterntest.githubUsersList.components.adapters.gurkha.lib.GurkhaComboDTO;
+import com.gurkhatech.mvppatterntest.githubUsersList.components.adapters.gurkha.lib.GithubAdapterData;
 import com.gurkhatech.mvppatterntest.utils.MyApplication;
 import com.gurkhatech.mvppatterntest.utils.di.AppDaggerComponent;
 import com.gurkhatech.mvppatterntest.utils.di.ContextModule;
@@ -36,6 +36,8 @@ public class GithubView extends AppCompatActivity implements GithubContract.View
     LinearLayoutManager linearLayoutManager;
     @Inject
     GithubUserListAdapter userListAdapter;
+
+
     public static ActivityGithubListBinding binding;
     GithubPresenter presenter = new GithubPresenter(this, new GithubModel(this));
 
@@ -61,9 +63,10 @@ public class GithubView extends AppCompatActivity implements GithubContract.View
     }
 
     @Override
-    public void displayUsers(List<GurkhaComboDTO> userList) {
+    public void displayUsers(List<GithubAdapterData> userList) {
         userListAdapter.replaceData(userList);
     }
+
 
     @Override
     public void enableSearch(boolean enable) {

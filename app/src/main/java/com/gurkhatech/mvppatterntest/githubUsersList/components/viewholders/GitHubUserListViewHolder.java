@@ -8,6 +8,7 @@ import android.widget.TextView;
 import com.bumptech.glide.RequestManager;
 import com.gurkhatech.mvppatterntest.R;
 import com.gurkhatech.mvppatterntest.githubUsersList.GithubView;
+import com.gurkhatech.mvppatterntest.githubUsersList.components.adapters.GithubUserListAdapter;
 import com.gurkhatech.mvppatterntest.githubUsersList.components.adapters.gurkha.lib.GurkhaDTO;
 import com.gurkhatech.mvppatterntest.githubUsersList.components.adapters.gurkha.lib.GurkhaViewHolder;
 import com.gurkhatech.mvppatterntest.githubUsersList.components.dtos.GithubUserDTO;
@@ -47,7 +48,7 @@ public GitHubUserListViewHolder ( View itemView ) {
 }
 
 @Override
-public void bindView ( GurkhaDTO data ) {
+public void bindView (GurkhaDTO data, GithubUserListAdapter adapter) {
     GithubUserDTO userDTO = (GithubUserDTO) data;
     assert this.avatar != null;
     requestManager.load ( userDTO.getAvatarUrl () ).placeholder ( R.mipmap.ic_launcher ).thumbnail ( THUMBNIL_FACTOR ).into ( this.avatar );

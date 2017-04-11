@@ -3,7 +3,7 @@ package com.gurkhatech.mvppatterntest.githubUsersList.components.dtos;
 import android.support.annotation.NonNull;
 
 import com.google.gson.annotations.SerializedName;
-import com.gurkhatech.mvppatterntest.githubUsersList.components.adapters.gurkha.lib.GurkhaDTO;
+import com.gurkhatech.mvppatterntest.githubUsersList.components.adapters.gurkha.lib.GurkhaRecyclerAdapter;
 
 /**
  * Created by adventure on 2/9/17.
@@ -13,7 +13,7 @@ import com.gurkhatech.mvppatterntest.githubUsersList.components.adapters.gurkha.
  * gurkhatech.com
  */
 
-public class GithubUserDTO implements GurkhaDTO {
+public class GithubUserDTO implements GurkhaRecyclerAdapter.GurkhaDTO {
 
     public GithubUserDTO(String userName) {
         this.userName = userName;

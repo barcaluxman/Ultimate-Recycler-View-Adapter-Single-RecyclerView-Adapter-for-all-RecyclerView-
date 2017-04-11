@@ -8,18 +8,18 @@ package com.gurkhatech.mvppatterntest.githubUsersList.components.adapters.gurkha
  */
 
 public class GithubAdapterData {
-    private  GurkhaDTO dto;
-    private GurkhaViewHolder viewHolder;
+    private GurkhaRecyclerAdapter.GurkhaDTO dto;
+    private GurkhaRecyclerAdapter.GurkhaViewHolder viewHolder;
 
-    public GurkhaDTO getDto() {
+    GurkhaRecyclerAdapter.GurkhaDTO getDto() {
         return dto;
     }
 
-    public GurkhaViewHolder getViewHolder() {
+    GurkhaRecyclerAdapter.GurkhaViewHolder getViewHolder() {
         return viewHolder;
     }
 
-    public GithubAdapterData(GurkhaDTO dto, GurkhaViewHolder viewHolder) {
+    public GithubAdapterData(GurkhaRecyclerAdapter.GurkhaDTO dto, GurkhaRecyclerAdapter.GurkhaViewHolder viewHolder) {
         this.dto = dto;
         this.viewHolder = viewHolder;
     }

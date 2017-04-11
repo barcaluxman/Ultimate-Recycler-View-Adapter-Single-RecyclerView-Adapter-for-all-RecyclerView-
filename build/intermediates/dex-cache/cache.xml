@@ -16,7 +16,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="1e62e44e91fa8a73ad9cc29721aaaf9a806e215f">
+        sha1="e72e95bfab1fd6b8dd9d8765c2192b87e2728107">
         <dex dex="/media/adventure/projects/practice/Ultimate-Recycler-View-Adapter-Single-RecyclerView-Adapter-for-all-RecyclerView-/app/build/intermediates/transforms/dex/mock/debug/folders/1000/10000/instant-run-bootstrap_aa62fabf58e927a50ad415390d41f1a3b319f8b2/classes.dex" />
     </item>
 

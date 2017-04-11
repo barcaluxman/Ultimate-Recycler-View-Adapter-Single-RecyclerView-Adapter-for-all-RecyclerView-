@@ -8,9 +8,7 @@ import android.widget.TextView;
 import com.bumptech.glide.RequestManager;
 import com.gurkhatech.mvppatterntest.R;
 import com.gurkhatech.mvppatterntest.githubUsersList.GithubView;
-import com.gurkhatech.mvppatterntest.githubUsersList.components.adapters.GithubUserListAdapter;
-import com.gurkhatech.mvppatterntest.githubUsersList.components.adapters.gurkha.lib.GurkhaDTO;
-import com.gurkhatech.mvppatterntest.githubUsersList.components.adapters.gurkha.lib.GurkhaViewHolder;
+import com.gurkhatech.mvppatterntest.githubUsersList.components.adapters.gurkha.lib.GurkhaRecyclerAdapter;
 import com.gurkhatech.mvppatterntest.githubUsersList.components.dtos.GithubUserDTO;
 
 import javax.inject.Inject;
@@ -21,8 +19,7 @@ import butterknife.ButterKnife;
 import static com.gurkhatech.mvppatterntest.utils.GithubListConstants.THUMBNIL_FACTOR;
 
 
-public class GitHubUserListViewHolderAlter extends GurkhaViewHolder {
-
+public class GitHubUserListViewHolderAlter extends GurkhaRecyclerAdapter.GurkhaViewHolder {
     @Nullable
     @BindView(R.id.userName)
     TextView userName;
@@ -44,9 +41,8 @@ public class GitHubUserListViewHolderAlter extends GurkhaViewHolder {
         GithubView.getDaggerComponent().injectUserViewHolderAlter(this);
 
     }
-
     @Override
-    public void bindView(GurkhaDTO data, GithubUserListAdapter adapter) {
+    public void bindView(GurkhaRecyclerAdapter.GurkhaDTO data, GurkhaRecyclerAdapter adapter) {
         GithubUserDTO userDTO = (GithubUserDTO) data;
         assert this.avatar != null;
         requestManager.load(userDTO.getAvatarUrl()).thumbnail(THUMBNIL_FACTOR).into(this.avatar);
@@ -58,5 +54,4 @@ public class GitHubUserListViewHolderAlter extends GurkhaViewHolder {
         profileUrl.setText(userDTO.getProfileUrl());
 
     }
-
 }

@@ -1,7 +1,7 @@
 package com.gurkhatech.mvppatterntest.utils.di;
 
-import com.gurkhatech.mvppatterntest.utils.GithubAPIService;
-import com.gurkhatech.mvppatterntest.utils.GithubListConstants;
+import com.gurkhatech.mvppatterntest.githubUsersList.GithubAPIService;
+import com.gurkhatech.mvppatterntest.utils.commons.GithubListConstants;
 
 import dagger.Module;
 import dagger.Provides;

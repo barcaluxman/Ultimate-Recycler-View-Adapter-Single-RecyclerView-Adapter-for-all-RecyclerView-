@@ -1,6 +1,6 @@
 package com.gurkhatech.mvppatterntest.utils.di;
-import com.gurkhatech.mvppatterntest.githubUsersList.components.viewholders.GitHubUserListViewHolder;
-import com.gurkhatech.mvppatterntest.githubUsersList.components.viewholders.GitHubUserListViewHolderAlter;
+import com.gurkhatech.mvppatterntest.githubUsersList.viewholders.GitHubUserListViewHolder;
+import com.gurkhatech.mvppatterntest.githubUsersList.viewholders.GitHubUserListViewHolderAlter;
 import com.gurkhatech.mvppatterntest.githubUsersList.GithubModel;
 import com.gurkhatech.mvppatterntest.githubUsersList.GithubView;
 
@@ -18,7 +18,6 @@ import dagger.Component;
 public interface AppDaggerComponent {
 
     void injectGithubView(GithubView view);
-
 
     void injectUserViewHolder(GitHubUserListViewHolder viewHolder);
 

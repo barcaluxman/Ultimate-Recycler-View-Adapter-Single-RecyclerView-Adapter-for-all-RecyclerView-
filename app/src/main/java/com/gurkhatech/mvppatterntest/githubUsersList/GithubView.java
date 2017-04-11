@@ -10,8 +10,8 @@ import android.view.View;
 
 import com.gurkhatech.mvppatterntest.R;
 import com.gurkhatech.mvppatterntest.databinding.ActivityGithubListBinding;
-import com.gurkhatech.mvppatterntest.githubUsersList.components.adapters.GithubUserListAdapter;
-import com.gurkhatech.mvppatterntest.githubUsersList.components.adapters.gurkha.lib.GithubAdapterData;
+import com.gurkhatech.mvppatterntest.utils.commons.CommonAdapter;
+import com.gurkhatech.mvppatterntest.utils.lib.SwissKnifeRecyclerViewAdapter;
 import com.gurkhatech.mvppatterntest.utils.MyApplication;
 import com.gurkhatech.mvppatterntest.utils.di.AppDaggerComponent;
 import com.gurkhatech.mvppatterntest.utils.di.ContextModule;
@@ -34,8 +34,7 @@ public class GithubView extends AppCompatActivity implements GithubContract.View
     private static AppDaggerComponent appDaggerComponent;
     @Inject
     LinearLayoutManager linearLayoutManager;
-    @Inject
-    GithubUserListAdapter userListAdapter;
+    CommonAdapter userListAdapter = new CommonAdapter();
 
 
     public static ActivityGithubListBinding binding;
@@ -63,7 +62,7 @@ public class GithubView extends AppCompatActivity implements GithubContract.View
     }
 
     @Override
-    public void displayUsers(List<GithubAdapterData> userList) {
+    public void displayUsers(List<SwissKnifeRecyclerViewAdapter.SwissKnifeData> userList) {
         userListAdapter.replaceData(userList);
     }
 

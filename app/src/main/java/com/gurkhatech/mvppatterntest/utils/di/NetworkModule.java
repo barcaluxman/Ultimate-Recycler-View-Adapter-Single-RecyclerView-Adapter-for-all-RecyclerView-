@@ -2,7 +2,7 @@ package com.gurkhatech.mvppatterntest.utils.di;
 
 import android.content.Context;
 
-import com.gurkhatech.mvppatterntest.utils.GithubListConstants;
+import com.gurkhatech.mvppatterntest.utils.commons.GithubListConstants;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;

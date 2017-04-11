@@ -1,6 +1,7 @@
 package com.gurkhatech.mvppatterntest.utils.di;
 
-import com.gurkhatech.mvppatterntest.githubUsersList.components.adapters.gurkha.lib.GithubAdapterData;
+
+import com.gurkhatech.mvppatterntest.utils.lib.SwissKnifeRecyclerViewAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,10 +18,11 @@ import dagger.Provides;
  */
 
 @Module
-public class DTOModules {
+class DTOModules {
 
 
-@Provides List<GithubAdapterData>  adapterData(){
-    return new ArrayList<>();
-}
+    @Provides
+    List<SwissKnifeRecyclerViewAdapter.SwissKnifeData> adapterData() {
+        return new ArrayList<>();
+    }
 }

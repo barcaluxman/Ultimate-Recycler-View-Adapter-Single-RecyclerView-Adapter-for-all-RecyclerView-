@@ -2,8 +2,8 @@ package com.gurkhatech.mvppatterntest.githubUsersList;
 
 import android.support.annotation.DrawableRes;
 
-import com.gurkhatech.mvppatterntest.githubUsersList.components.adapters.gurkha.lib.GithubAdapterData;
-import com.gurkhatech.mvppatterntest.githubUsersList.components.dtos.GithubUserDTO;
+import com.gurkhatech.mvppatterntest.utils.lib.SwissKnifeRecyclerViewAdapter;
+import com.gurkhatech.mvppatterntest.githubUsersList.models.GithubUserData;
 
 import java.util.List;
 
@@ -17,7 +17,7 @@ import java.util.List;
 
 interface GithubContract {
     interface View {
-        void displayUsers(List<GithubAdapterData>  userList);
+        void displayUsers(List<SwissKnifeRecyclerViewAdapter.SwissKnifeData>  userList);
         void enableSearch(boolean enable);
 
         void displayNoDataError(String title, String body, @DrawableRes int imageID);
@@ -71,7 +71,7 @@ interface GithubContract {
 
         void searchUsers(String userName);
 
-        void loadUsers(List<GithubUserDTO> adapterData);
+        void loadUsers(List<GithubUserData> adapterData);
         void cancelRequests();
 
         void enableSearch(boolean enable);

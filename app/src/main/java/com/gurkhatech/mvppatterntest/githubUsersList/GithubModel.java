@@ -3,9 +3,8 @@ package com.gurkhatech.mvppatterntest.githubUsersList;
 import android.content.Context;
 
 import com.gurkhatech.mvppatterntest.R;
-import com.gurkhatech.mvppatterntest.githubUsersList.components.dtos.GithubUserListDTO;
+import com.gurkhatech.mvppatterntest.githubUsersList.models.GithubUserListDTO;
 import com.gurkhatech.mvppatterntest.githubUsersList.GithubContract.Model;
-import com.gurkhatech.mvppatterntest.utils.GithubAPIService;
 import com.gurkhatech.mvppatterntest.utils.Util;
 
 import javax.inject.Inject;

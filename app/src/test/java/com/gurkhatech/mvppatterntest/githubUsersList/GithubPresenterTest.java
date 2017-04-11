@@ -2,8 +2,8 @@ package com.gurkhatech.mvppatterntest.githubUsersList;
 
 import android.support.annotation.DrawableRes;
 
-import com.gurkhatech.mvppatterntest.githubUsersList.components.adapters.gurkha.lib.GurkhaComboDTO;
-import com.gurkhatech.mvppatterntest.githubUsersList.components.dtos.GithubUserDTO;
+import com.gurkhatech.mvppatterntest.utils.lib.GurkhaComboDTO;
+import com.gurkhatech.mvppatterntest.githubUsersList.models.GithubUserData;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -130,9 +130,9 @@ public class GithubPresenterTest {
 
             switch (this.flags) {
                 case 1:
-                    presenter.loadUsers(Arrays.asList(new GithubUserDTO("jfalkdjfkjadjfadkl"), new GithubUserDTO("fda"), new GithubUserDTO(""),null));
+                    presenter.loadUsers(Arrays.asList(new GithubUserData("jfalkdjfkjadjfadkl"), new GithubUserData("fda"), new GithubUserData(""),null));
                 case 2:
-                    presenter.loadUsers(Collections.<GithubUserDTO>emptyList());
+                    presenter.loadUsers(Collections.<GithubUserData>emptyList());
                 case 3:
                     presenter.loadUsers(null);
                 case 4:

@@ -45,7 +45,10 @@ class GithubPresenter implements GithubContract.Presenter {
                 for (int i = 0; i < data.size(); i++) {
 
                     try {
-                        users.add(new GurkhaComboDTO(data.get(i).getUserName().length() > 10 ? R.layout.item_github_use_list : R.layout.item_github_use_list_alter, data.get(i), data.get(i).getUserName().length() > 10 ? GitHubUserListViewHolder.class : GitHubUserListViewHolderAlter.class));
+                        users.add(new GurkhaComboDTO(data.get(i).getUserName().length() > 10 ?
+                                R.layout.item_github_use_list : R.layout.item_github_use_list_alter,
+                                data.get(i), data.get(i).getUserName().length() > 10 ?
+                                GitHubUserListViewHolder.class : GitHubUserListViewHolderAlter.class));
                     } catch (Exception ignored) {
                     }
                 }

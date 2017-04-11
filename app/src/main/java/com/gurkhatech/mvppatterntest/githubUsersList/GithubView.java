@@ -36,7 +36,7 @@ public class GithubView extends AppCompatActivity implements GithubContract.View
     LinearLayoutManager linearLayoutManager;
     @Inject
     GithubUserListAdapter userListAdapter;
-    ActivityGithubListBinding binding;
+    public static ActivityGithubListBinding binding;
     GithubPresenter presenter = new GithubPresenter(this, new GithubModel(this));
 
     public static AppDaggerComponent getDaggerComponent() {

@@ -20,21 +20,21 @@ public abstract class SwissKnifeRecyclerViewAdapter extends RecyclerView.Adapter
 
     public void replaceData(@NonNull List<SwissKnifeData> dtoList) {
         this.data = dtoList;
-        notifyDataSetChanged();
+        notifyItemRangeInserted(0,this.data.size()-1);
     }
+
 
     public void addDataItem(@NonNull SwissKnifeData dto) {
         this.data.add(dto);
         //notify only the last added item in the recycler view
-        notifyItemRangeChanged(this.data.size() - 2, this.data.size() - 1);
+        notifyItemInserted(this.data.size() - 1);
     }
 
     public void addDataList(@NonNull List<SwissKnifeData> dtoList) {
         this.data.addAll(dtoList);
         //notifies only the new data items that are changed
         // (-1) is used because size is one more than index
-
-        notifyItemRangeChanged(this.data.size() - 1 - dtoList.size(), this.data.size() - 1);
+        notifyItemRangeInserted(this.data.size() - 1 - dtoList.size(), this.data.size() - 1);
 
     }
 
@@ -42,6 +42,7 @@ public abstract class SwissKnifeRecyclerViewAdapter extends RecyclerView.Adapter
     public SwissKnifeViewHolder onCreateViewHolder(ViewGroup parent, int position) {
         return data.get(position).getViewHolder();
     }
+
 
     @Override
     public void onBindViewHolder(SwissKnifeViewHolder holder, int position) {

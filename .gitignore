@@ -25,3 +25,4 @@ captures/
 docs/
 gen/
 local.properties
+.idea/workspace.xml

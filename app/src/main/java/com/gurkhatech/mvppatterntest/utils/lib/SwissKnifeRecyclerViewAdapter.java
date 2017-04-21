@@ -18,6 +18,7 @@ public abstract class SwissKnifeRecyclerViewAdapter extends RecyclerView.Adapter
 
     private List<SwissKnifeData> data;
 
+
     public void replaceData(@NonNull List<SwissKnifeData> dtoList) {
         this.data = dtoList;
         notifyItemRangeInserted(0,this.data.size()-1);

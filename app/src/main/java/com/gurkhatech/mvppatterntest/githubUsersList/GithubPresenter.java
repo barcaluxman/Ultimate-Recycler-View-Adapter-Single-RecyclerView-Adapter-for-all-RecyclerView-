@@ -1,16 +1,9 @@
 package com.gurkhatech.mvppatterntest.githubUsersList;
 
 import android.support.annotation.DrawableRes;
-import android.view.LayoutInflater;
-import android.view.ViewGroup;
 
-import com.gurkhatech.mvppatterntest.R;
-import com.gurkhatech.mvppatterntest.utils.lib.SwissKnifeRecyclerViewAdapter;
 import com.gurkhatech.mvppatterntest.githubUsersList.models.GithubUserData;
-import com.gurkhatech.mvppatterntest.githubUsersList.viewholders.GitHubUserListViewHolder;
-import com.gurkhatech.mvppatterntest.githubUsersList.viewholders.GitHubUserListViewHolderAlter;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -40,27 +33,9 @@ class GithubPresenter implements GithubContract.Presenter {
 
     @Override
     public void loadUsers(List<GithubUserData> data) {
-        ViewGroup parent = GithubView.binding.activityGithubList;
-        LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        SwissKnifeRecyclerViewAdapter.SwissKnifeViewHolder viewHolder;
-
         if (data != null) {  //Do not check userList.size directly coz it may return nullPointer
             if (!data.isEmpty()) {
-                List<SwissKnifeRecyclerViewAdapter.SwissKnifeData> users = new ArrayList<>();
-                for (int i = 0; i < data.size(); i++) {
-                    try {
-                        viewHolder = data.get(i).getUserName().length() > 10 ?
-                            new GitHubUserListViewHolder(inflater.
-                                inflate(R.layout.item_github_use_list, parent, false)) :
-                            new GitHubUserListViewHolderAlter(inflater.
-                                inflate(R.layout.item_github_use_list_alter, parent, false));
-
-                        users.add(new SwissKnifeRecyclerViewAdapter.SwissKnifeData(data.get(i), viewHolder));
-
-                    } catch (Exception ignored) {
-                    }
-                }
-                view.displayUsers(users);
+                view.displayUsers(data);
             } else {
                 view.displayNoDataError(model.getNoDataErrorTitle(), model.getNoDataErrorBody(), model.getNoDataErrorImage());
             }

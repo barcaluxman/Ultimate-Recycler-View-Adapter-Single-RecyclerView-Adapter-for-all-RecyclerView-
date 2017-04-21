@@ -10,13 +10,15 @@ import android.view.View;
 
 import com.gurkhatech.mvppatterntest.R;
 import com.gurkhatech.mvppatterntest.databinding.ActivityGithubListBinding;
-import com.gurkhatech.mvppatterntest.utils.commons.CommonAdapter;
-import com.gurkhatech.mvppatterntest.utils.lib.SwissKnifeRecyclerViewAdapter;
+import com.gurkhatech.mvppatterntest.githubUsersList.models.GithubUserData;
 import com.gurkhatech.mvppatterntest.utils.MyApplication;
+import com.gurkhatech.mvppatterntest.utils.commons.CommonAdapter;
 import com.gurkhatech.mvppatterntest.utils.di.AppDaggerComponent;
 import com.gurkhatech.mvppatterntest.utils.di.ContextModule;
 import com.gurkhatech.mvppatterntest.utils.di.DaggerAppDaggerComponent;
+import com.gurkhatech.mvppatterntest.utils.lib.SwissKnifeRecyclerViewAdapter;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.inject.Inject;
@@ -62,8 +64,20 @@ public class GithubView extends AppCompatActivity implements GithubContract.View
     }
 
     @Override
-    public void displayUsers(List<SwissKnifeRecyclerViewAdapter.SwissKnifeData> userList) {
-        userListAdapter.replaceData(userList);
+    public void displayUsers(List<GithubUserData> userList) {
+       // userListAdapter.replaceData(userList);
+        List<SwissKnifeRecyclerViewAdapter.SwissKnifeModel> data = new ArrayList<>();
+        try {
+            for (int i = 0; i < userList.size(); i++) {
+                data.add(userList.get(i));
+            }
+
+           userListAdapter.replaceData(data);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
     }
 
 

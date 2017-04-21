@@ -22,7 +22,7 @@ class DTOModules {
 
 
     @Provides
-    List<SwissKnifeRecyclerViewAdapter.SwissKnifeData> adapterData() {
+    List<SwissKnifeRecyclerViewAdapter.SwissKnifeModel> adapterData() {
         return new ArrayList<>();
     }
 }

@@ -2,7 +2,6 @@ package com.gurkhatech.mvppatterntest.githubUsersList;
 
 import android.support.annotation.DrawableRes;
 
-import com.gurkhatech.mvppatterntest.utils.lib.SwissKnifeRecyclerViewAdapter;
 import com.gurkhatech.mvppatterntest.githubUsersList.models.GithubUserData;
 
 import java.util.List;
@@ -17,7 +16,7 @@ import java.util.List;
 
 interface GithubContract {
     interface View {
-        void displayUsers(List<SwissKnifeRecyclerViewAdapter.SwissKnifeData>  userList);
+        void displayUsers(List<GithubUserData>  userList);
         void enableSearch(boolean enable);
 
         void displayNoDataError(String title, String body, @DrawableRes int imageID);

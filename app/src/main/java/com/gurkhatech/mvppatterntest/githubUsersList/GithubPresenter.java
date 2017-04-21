@@ -14,7 +14,7 @@ import java.util.List;
  * gurkhatech.com
  */
 
-class GithubPresenter implements GithubContract.Presenter {
+    class GithubPresenter implements GithubContract.Presenter {
 
     private GithubContract.View view;
     private GithubContract.Model model;

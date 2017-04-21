@@ -23,6 +23,8 @@ import java.util.List;
 
 import javax.inject.Inject;
 
+import static com.gurkhatech.mvppatterntest.R.id.userList;
+
 /**
  * Created by adventure on 3/7/17.
  * erlaxmanbhattarai@gmail.com
@@ -63,7 +65,7 @@ public class GithubView extends AppCompatActivity implements GithubContract.View
         presenter.searchUsers(binding.userInput.getText().toString());
     }
 
-    @Override
+    /*@Override
     public void displayUsers(List<GithubUserData> userList) {
        // userListAdapter.replaceData(userList);
         List<SwissKnifeRecyclerViewAdapter.SwissKnifeModel> data = new ArrayList<>();
@@ -78,8 +80,14 @@ public class GithubView extends AppCompatActivity implements GithubContract.View
         }
 
 
-    }
+    }*/
 
+
+    @Override
+    public void displayUsers(List<GithubUserData> userList) {
+       // userListAdapter.replaceData(userList);
+        userListAdapter.replaceData( new ArrayList<SwissKnifeRecyclerViewAdapter.SwissKnifeModel>(userList));
+    }
 
     @Override
     public void enableSearch(boolean enable) {

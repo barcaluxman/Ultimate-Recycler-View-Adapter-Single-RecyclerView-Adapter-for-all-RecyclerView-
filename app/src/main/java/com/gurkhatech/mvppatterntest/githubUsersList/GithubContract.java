@@ -70,7 +70,7 @@ interface GithubContract {
 
         void searchUsers(String userName);
 
-        void loadUsers(List<GithubUserData> adapterData);
+        void loadUsers(List< GithubUserData> adapterData);
         void cancelRequests();
 
         void enableSearch(boolean enable);

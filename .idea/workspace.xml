@@ -10,20 +10,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bba50642-b713-499e-93de-aa9b62fc992c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/models/GithubUserDataCopy.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/lib/SwissKnifeRecyclerViewAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/lib/OmniAdapter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubAPIServiceKotlin.kt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/models/GithubUserDataKotlin.kt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubContract.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubContract.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubModel.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubModel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubPresenter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubView.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubView.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/models/GithubUserData.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/models/GithubUserData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/viewholders/GitHubUserListViewHolder.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/viewholders/GitHubUserListViewHolder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/viewholders/GitHubUserListViewHolderAlter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/viewholders/GitHubUserListViewHolderAlter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/commons/CommonAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/commons/CommonAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/di/DTOModules.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/di/DTOModules.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/Util.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/Util.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/di/AppDaggerComponent.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/di/AppDaggerComponent.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
     </list>
     <ignored path="MVPPatternTest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -97,19 +102,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GithubUserData.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/models/GithubUserData.java">
+      <file leaf-file-name="GithubAPIServiceKotlin.kt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubAPIServiceKotlin.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="545">
-              <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="docComment;class#GithubUserData#0" expanded="true" />
-                <element signature="method#GithubUserData#0;class#GithubUserData#0" expanded="true" />
-                <element signature="e#1330#1339#0" expanded="true" />
-                <element signature="method#getDefaultLayoutRes#0;class#GithubUserData#0" expanded="true" />
-                <element signature="method#getDefaultViewHolder#0;class#GithubUserData#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="336">
+              <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -191,6 +189,10 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="copyProdDebugUnitTestKotlinClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="incrementalMockDebugAndroidTestJavaCompilationSafeguard" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
@@ -219,6 +221,10 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="copyMockReleaseUnitTestKotlinClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="assembleProdDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
@@ -241,6 +247,10 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="transformNativeLibsWithMergeJniLibsForMockRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="copyProdReleaseUnitTestKotlinClasses" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -290,6 +300,11 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="processMockReleaseUnitTestJavaRes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles the prodDebugUnitTest kotlin." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileProdDebugUnitTestKotlin" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -497,6 +512,11 @@
                 <option name="name" value="mergeMockDebugShaders" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Compiles the prodDebug kotlin." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileProdDebugKotlin" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="mergeMockDebugResources" />
               </ExternalTaskPojo>
@@ -543,6 +563,11 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="compileLint" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles the prodRelease kotlin." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileProdReleaseKotlin" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -773,6 +798,10 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="copyMockDebugKotlinClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="compileMockReleaseRenderscript" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
@@ -792,6 +821,11 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="validateSigningProdDebugAndroidTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles the prodReleaseUnitTest kotlin." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileProdReleaseUnitTestKotlin" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -867,6 +901,10 @@
                 <option name="name" value="transformResourcesWithMergeJavaResForMockDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="copyMockDebugUnitTestKotlinClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Uninstalls the android (on device) tests for the MockDebug build." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="uninstallMockDebugAndroidTest" />
@@ -874,6 +912,10 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="compileMockDebugAndroidTestNdk" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="copyProdDebugKotlinClasses" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Installs the DebugProd build." />
@@ -944,6 +986,10 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="copyMockReleaseKotlinClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="preMockReleaseUnitTestBuild" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
@@ -986,6 +1032,11 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="transformResourcesWithMergeJavaResForMockReleaseUnitTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles the prodDebugAndroidTest kotlin." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileProdDebugAndroidTestKotlin" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -1120,6 +1171,11 @@
                 <option name="name" value="help" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Compiles the mockReleaseUnitTest kotlin." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileMockReleaseUnitTestKotlin" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Uninstalls the DebugMock build." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="uninstallMockDebug" />
@@ -1139,6 +1195,10 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="compileMockDebugAndroidTestShaders" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="copyProdDebugAndroidTestKotlinClasses" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -1169,6 +1229,11 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="compileMockDebugRenderscript" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles the mockDebugAndroidTest kotlin." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileMockDebugAndroidTestKotlin" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -1233,6 +1298,11 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="checkMockReleaseManifest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles the mockDebugUnitTest kotlin." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileMockDebugUnitTestKotlin" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -1300,6 +1370,10 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="copyProdReleaseKotlinClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="jarMockDebugClasses" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
@@ -1362,6 +1436,10 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="copyMockDebugAndroidTestKotlinClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="generateMockDebugResValues" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
@@ -1390,6 +1468,11 @@
                 <option name="description" value="Prepare com.android.support.test.espresso:espresso-intents:2.2.2" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="prepareComAndroidSupportTestEspressoEspressoIntents222Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles the mockRelease kotlin." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileMockReleaseKotlin" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -1436,6 +1519,11 @@
                 <option name="description" value="Assembles and tests this project." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
                 <option name="name" value="build" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles the mockDebug kotlin." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="compileMockDebugKotlin" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
@@ -1501,6 +1589,10 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="copyProdDebugUnitTestKotlinClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="incrementalMockDebugAndroidTestJavaCompilationSafeguard" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
@@ -1529,6 +1621,10 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="copyMockReleaseUnitTestKotlinClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="assembleProdDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
@@ -1551,6 +1647,10 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="transformNativeLibsWithMergeJniLibsForMockRelease" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="copyProdReleaseUnitTestKotlinClasses" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
@@ -1600,6 +1700,11 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="processMockReleaseUnitTestJavaRes" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles the prodDebugUnitTest kotlin." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="compileProdDebugUnitTestKotlin" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
@@ -1807,6 +1912,11 @@
                 <option name="name" value="mergeMockDebugShaders" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Compiles the prodDebug kotlin." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="compileProdDebugKotlin" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="mergeMockDebugResources" />
               </ExternalTaskPojo>
@@ -1853,6 +1963,11 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="compileLint" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles the prodRelease kotlin." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="compileProdReleaseKotlin" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
@@ -2083,6 +2198,10 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="copyMockDebugKotlinClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="compileMockReleaseRenderscript" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
@@ -2102,6 +2221,11 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="validateSigningProdDebugAndroidTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles the prodReleaseUnitTest kotlin." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="compileProdReleaseUnitTestKotlin" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
@@ -2177,6 +2301,10 @@
                 <option name="name" value="transformResourcesWithMergeJavaResForMockDebugAndroidTest" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="copyMockDebugUnitTestKotlinClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Uninstalls the android (on device) tests for the MockDebug build." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="uninstallMockDebugAndroidTest" />
@@ -2184,6 +2312,10 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="compileMockDebugAndroidTestNdk" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="copyProdDebugKotlinClasses" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="description" value="Installs the DebugProd build." />
@@ -2249,6 +2381,10 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="copyMockReleaseKotlinClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="preMockReleaseUnitTestBuild" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
@@ -2291,6 +2427,11 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="transformResourcesWithMergeJavaResForMockReleaseUnitTest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles the prodDebugAndroidTest kotlin." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="compileProdDebugAndroidTestKotlin" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
@@ -2420,6 +2561,11 @@
                 <option name="name" value="preProdDebugBuild" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Compiles the mockReleaseUnitTest kotlin." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="compileMockReleaseUnitTestKotlin" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="description" value="Displays a help message." />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="help" />
@@ -2444,6 +2590,10 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="compileMockDebugAndroidTestShaders" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="copyProdDebugAndroidTestKotlinClasses" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
@@ -2474,6 +2624,11 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="compileMockDebugRenderscript" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles the mockDebugAndroidTest kotlin." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="compileMockDebugAndroidTestKotlin" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
@@ -2533,6 +2688,11 @@
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="checkMockReleaseManifest" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles the mockDebugUnitTest kotlin." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="compileMockDebugUnitTestKotlin" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
@@ -2600,6 +2760,10 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="copyProdReleaseKotlinClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="jarMockDebugClasses" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
@@ -2662,6 +2826,10 @@
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="copyMockDebugAndroidTestKotlinClasses" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="generateMockDebugResValues" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
@@ -2690,6 +2858,11 @@
                 <option name="description" value="Prepare com.android.support.test.espresso:espresso-intents:2.2.2" />
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="prepareComAndroidSupportTestEspressoEspressoIntents222Library" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Compiles the mockRelease kotlin." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="compileMockReleaseKotlin" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
@@ -2739,6 +2912,11 @@
                 <option name="name" value="build" />
               </ExternalTaskPojo>
               <ExternalTaskPojo>
+                <option name="description" value="Compiles the mockDebug kotlin." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
+                <option name="name" value="compileMockDebugKotlin" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
                 <option name="linkedExternalProjectPath" value="$PROJECT_DIR$/app" />
                 <option name="name" value="mergeProdDebugAssets" />
               </ExternalTaskPojo>
@@ -2780,7 +2958,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4472283657031" />
+        <entry key="$PROJECT_DIR$" value="4475179490637" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -2796,7 +2974,24 @@
                         <option name="entries">
                           <list>
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/2.3.0/gradle-2.3.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin/1.1.1/e742de8adf25f631b39f74e2d6fd00cd9cdd609e/kotlin-gradle-plugin-1.1.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin/1.1.1/5e3d99580c70b67a07cd70481943362e4b29d8d3/kotlin-gradle-plugin-1.1.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.1.1/2c0ad82587d187f78c4063fa7867ed3c4dfa54ca/kotlin-android-extensions-1.1.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.1.1/56cfcc61bc91638ea52d13ce90b565f50be3d6f5/kotlin-android-extensions-1.1.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-core/2.3.0/gradle-core-2.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-io/commons-io/2.4/commons-io-2.4.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-lang/commons-lang/2.6/67313d715fbf0ea4fd0bdb69217fb77f807a8ce5/commons-lang-2.6-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-lang/commons-lang/2.6/ce1edb914c94ebc388f086c6827e8bdeec71ac2/commons-lang-2.6.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.1.1/a287944d92875a1f3c2161e5cddaede7720913d1/kotlin-stdlib-1.1.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.1.1/98e484e67f913e934559f7f55f0c94be5593f03c/kotlin-stdlib-1.1.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-api/1.1.1/e48aafb092d4c3ddd6927f38f9f17f7117e1ef47/kotlin-gradle-plugin-api-1.1.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-api/1.1.1/9083de2c98801f1fe058b6280234265269c1cad0/kotlin-gradle-plugin-api-1.1.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.1.1/b84662e33f8f44d33265e964f1329ce5644af35c/kotlin-compiler-embeddable-1.1.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.1.1/d975091bb224a04b3717505a55875608642cc8d3/kotlin-compiler-embeddable-1.1.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-runner/1.1.1/764b45d92a761810b29580aeae2fac3d614f9bf/kotlin-compiler-runner-1.1.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-runner/1.1.1/cad5c437ac58f7245673a6c4fd73a656dd259b26/kotlin-compiler-runner-1.1.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-annotation-processing/1.1.1/2756d002e8d1d1aa0d5a49e7c895b87514083fab/kotlin-annotation-processing-1.1.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-annotation-processing/1.1.1/9f7312cea58b39ce82368261cd227758df78eb32/kotlin-annotation-processing-1.1.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder/2.3.0/builder-2.3.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint/25.3.0/lint-25.3.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/transform-api/2.0.0-deprecated-use-gradle-api/transform-api-2.0.0-deprecated-use-gradle-api.jar" />
@@ -2810,6 +3005,8 @@
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/jacoco/org.jacoco.report/0.7.5.201505241946/org.jacoco.report-0.7.5.201505241946.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/jopt-simple/jopt-simple/4.9/jopt-simple-4.9.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/protobuf/protobuf-java/3.0.0/protobuf-java-3.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/5991ca87ef1fb5544943d9abc5a9a37583fabe03/annotations-13.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-model/2.3.0/builder-model-2.3.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-test-api/2.3.0/builder-test-api-2.3.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdklib/25.3.0/sdklib-25.3.0.jar" />
@@ -2831,7 +3028,6 @@
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/guava/guava/18.0/guava-18.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/databinding/baseLibrary/2.3.0/baseLibrary-2.3.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/antlr/antlr4/4.5.3/antlr4-4.5.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-io/commons-io/2.4/commons-io-2.4.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/googlecode/juniversalchardet/juniversalchardet/1.0.3/juniversalchardet-1.0.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/annotations/25.3.0/annotations-25.3.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-base/5.3.2/proguard-base-5.3.2.jar" />
@@ -2865,7 +3061,24 @@
                         <option name="entries">
                           <list>
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle/2.3.0/gradle-2.3.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin/1.1.1/e742de8adf25f631b39f74e2d6fd00cd9cdd609e/kotlin-gradle-plugin-1.1.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin/1.1.1/5e3d99580c70b67a07cd70481943362e4b29d8d3/kotlin-gradle-plugin-1.1.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.1.1/2c0ad82587d187f78c4063fa7867ed3c4dfa54ca/kotlin-android-extensions-1.1.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.1.1/56cfcc61bc91638ea52d13ce90b565f50be3d6f5/kotlin-android-extensions-1.1.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/gradle-core/2.3.0/gradle-core-2.3.0.jar" />
+                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-io/commons-io/2.4/commons-io-2.4.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-lang/commons-lang/2.6/67313d715fbf0ea4fd0bdb69217fb77f807a8ce5/commons-lang-2.6-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/commons-lang/commons-lang/2.6/ce1edb914c94ebc388f086c6827e8bdeec71ac2/commons-lang-2.6.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.1.1/a287944d92875a1f3c2161e5cddaede7720913d1/kotlin-stdlib-1.1.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.1.1/98e484e67f913e934559f7f55f0c94be5593f03c/kotlin-stdlib-1.1.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-api/1.1.1/e48aafb092d4c3ddd6927f38f9f17f7117e1ef47/kotlin-gradle-plugin-api-1.1.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-api/1.1.1/9083de2c98801f1fe058b6280234265269c1cad0/kotlin-gradle-plugin-api-1.1.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.1.1/b84662e33f8f44d33265e964f1329ce5644af35c/kotlin-compiler-embeddable-1.1.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.1.1/d975091bb224a04b3717505a55875608642cc8d3/kotlin-compiler-embeddable-1.1.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-runner/1.1.1/764b45d92a761810b29580aeae2fac3d614f9bf/kotlin-compiler-runner-1.1.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-runner/1.1.1/cad5c437ac58f7245673a6c4fd73a656dd259b26/kotlin-compiler-runner-1.1.1.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-annotation-processing/1.1.1/2756d002e8d1d1aa0d5a49e7c895b87514083fab/kotlin-annotation-processing-1.1.1-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-annotation-processing/1.1.1/9f7312cea58b39ce82368261cd227758df78eb32/kotlin-annotation-processing-1.1.1.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder/2.3.0/builder-2.3.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/lint/lint/25.3.0/lint-25.3.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/transform-api/2.0.0-deprecated-use-gradle-api/transform-api-2.0.0-deprecated-use-gradle-api.jar" />
@@ -2879,6 +3092,8 @@
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/jacoco/org.jacoco.report/0.7.5.201505241946/org.jacoco.report-0.7.5.201505241946.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/jopt-simple/jopt-simple/4.9/jopt-simple-4.9.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/protobuf/protobuf-java/3.0.0/protobuf-java-3.0.0.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/5991ca87ef1fb5544943d9abc5a9a37583fabe03/annotations-13.0-sources.jar" />
+                            <option value="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-model/2.3.0/builder-model-2.3.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/build/builder-test-api/2.3.0/builder-test-api-2.3.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/sdklib/25.3.0/sdklib-25.3.0.jar" />
@@ -2900,7 +3115,6 @@
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/google/guava/guava/18.0/guava-18.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/databinding/baseLibrary/2.3.0/baseLibrary-2.3.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/org/antlr/antlr4/4.5.3/antlr4-4.5.3.jar" />
-                            <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/commons-io/commons-io/2.4/commons-io-2.4.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/googlecode/juniversalchardet/juniversalchardet/1.0.3/juniversalchardet-1.0.3.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/com/android/tools/annotations/25.3.0/annotations-25.3.0.jar" />
                             <option value="$APPLICATION_HOME_DIR$/gradle/m2repository/net/sf/proguard/proguard-base/5.3.2/proguard-base-5.3.2.jar" />
@@ -3084,21 +3298,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githublisttest/GithubVieww.java" />
-        <option value="$PROJECT_DIR$/app/src/test/java/com/gurkhatech/mvppatterntest/githubList/GithubListPresenterTest.java" />
-        <option value="$PROJECT_DIR$/app/build/intermediates/data-binding-layout-out/mock/debug/layout/activity_github_list.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/GithubListContract.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_github_list.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githublisttest/GithubContract.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githublisttest/GithubView.java" />
-        <option value="$PROJECT_DIR$/app/src/test/java/com/gurkhatech/mvppatterntest/githublisttest/sometest.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/others/Sometest.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/components/dtos/GithubUserDTO.java" />
         <option value="$PROJECT_DIR$/app/src/test/java/com/gurkhatech/mvppatterntest/githublisttest/GithubPresenterTest.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githublisttest/GithubModel.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githublisttest/GithubPresenter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/rxjava/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/rxjava/RxTest.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/rximplementation/RxActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/rximplementation/RxContract.java" />
@@ -3122,19 +3325,30 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/commons/CommonAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/oldrefrences/others/OkHttpSynchronous.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/oldrefrences/OkHttpSynchronous.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/di/AppDaggerComponent.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/commons/GithubListConstants.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/viewholders/GitHubUserListViewHolderAlter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/viewholders/GitHubUserListViewHolder.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/commons/CommonAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/di/DTOModules.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubPresenter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubContract.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubView.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/lib/SwissKnifeRecyclerViewAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/lib/OmniAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/models/GithubUserDataCopy.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/Util.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubModel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubPresenter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubView.java" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/models/GithubUserDataKotlin.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/models/GithubUserData.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/models/GithubUserData.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/models/GithubUserDataKotlin.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubAPIServiceKotlin.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubAPIServiceKotlin.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/di/AppDaggerComponent.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubContract.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubModelKotlin.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubModelKotlin.java" />
       </list>
     </option>
   </component>
@@ -3170,7 +3384,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="AndroidView" proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -3184,15 +3398,22 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane />
-      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="AndroidView">
         <subPane />
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Ultimate-Recycler-View-Adapter-Single-RecyclerView-Adapter-for-all-RecyclerView-" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -3217,15 +3438,16 @@
       <recent name="com.gurkhatech.mvppatterntest.utils" />
       <recent name="com.gurkhatech.mvppatterntest" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/components/adapters/gurkha/lib" />
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.gurkhatech.mvppatterntest.githubUsersList" />
       <recent name="com.gurkhatech.mvppatterntest.githubUsersList.models" />
       <recent name="com.gurkhatech.mvppatterntest.githubUsersList.components.adapters" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/components/adapters/gurkha/lib" />
     </key>
   </component>
   <component name="RunManager" selected="Android App.app">
@@ -3761,6 +3983,14 @@
       <option name="presentableId" value="Default" />
       <updated>1487220222190</updated>
     </task>
+    <task id="LOCAL-00001" summary="update to get default layout and view holder">
+      <created>1492838847804</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1492838847804</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -3806,23 +4036,22 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="30" width="1920" height="1050" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299285" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4888889" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4882353" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24509804" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26078433" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39590445" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.07777778" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12941177" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23489584" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23489584" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992464" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -3836,10 +4065,12 @@
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -3887,6 +4118,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update to get default layout and view holder" />
+    <option name="LAST_COMMIT_MESSAGE" value="update to get default layout and view holder" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <option name="time" value="15" />
@@ -3894,13 +4129,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/test/java/com/gurkhatech/mvppatterntest/githubList/GithubListPresenterTest.java" />
-    <entry file="file://$PROJECT_DIR$/app/build/outputs/apk/app-mock-debug.apk">
-      <provider selected="true" editor-type-id="apk-viewer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/rxjava/MainActivity.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/rxjava/RxTest.java" />
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.reactivex.rxjava2/rxjava/2.0.1/194434fed571c2038f2d78baad1acd0d86394c3b/rxjava-2.0.1-sources.jar!/io/reactivex/Observable.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -3991,13 +4219,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_github_list.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="229">
           <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
         </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/components/adapters/GithubUserListAdapterNew.java" />
@@ -4054,20 +4282,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/di/AppDaggerComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/MyApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/oldrefrences/GitHubRestClientStandAlone.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -4086,13 +4300,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="643">
           <caret line="48" column="114" selection-start-line="48" selection-start-column="114" selection-end-line="48" selection-end-column="114" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -4117,202 +4324,136 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="963">
-          <caret line="51" column="1" selection-start-line="23" selection-start-column="0" selection-end-line="51" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="65" column="3" selection-start-line="64" selection-start-column="3" selection-end-line="65" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/models/GithubUserListDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubAPIService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
-          <folding>
-            <marker date="1492797184372" expanded="false" signature="63:390" ph="..." />
-            <marker date="1492797184372" expanded="false" signature="392:533" ph="/**...*/" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/di/DTOModules.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
-          <caret line="24" column="54" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
-          <folding />
+          <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubContract.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/MyApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="631">
-          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-          <folding>
-            <marker date="1492800180829" expanded="true" signature="63:203" ph="..." />
-            <marker date="1492800180829" expanded="false" signature="205:346" ph="/**...*/" />
-            <marker date="1492800180829" expanded="true" signature="394:862" ph="{...}" />
-            <marker date="1492800180829" expanded="true" signature="884:1586" ph="{...}" />
-            <marker date="1492800180829" expanded="true" signature="1612:2064" ph="{...}" />
-          </folding>
+        <state relative-caret-position="168">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="49" column="47" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubPresenter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding>
-            <marker date="1492800180825" expanded="false" signature="63:203" ph="..." />
-            <marker date="1492800180825" expanded="false" signature="205:346" ph="/**...*/" />
-            <marker date="1492800180825" expanded="false" signature="566:628" ph="{...}" />
-            <marker date="1492800180825" expanded="true" signature="689:783" ph="{...}" />
-            <marker date="1492800180825" expanded="true" signature="852:1370" ph="{...}" />
-            <marker date="1492800180825" expanded="false" signature="1420:1487" ph="{...}" />
-            <marker date="1492800180825" expanded="false" signature="1548:1590" ph="{...}" />
-            <marker date="1492800180825" expanded="false" signature="1693:1784" ph="{...}" />
-            <marker date="1492800180825" expanded="false" signature="1887:1978" ph="{...}" />
-            <marker date="1492800180825" expanded="false" signature="2089:2188" ph="{...}" />
-          </folding>
+        <state relative-caret-position="461">
+          <caret line="71" column="18" selection-start-line="71" selection-start-column="18" selection-end-line="71" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubModel.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        <state relative-caret-position="1176">
+          <caret line="70" column="45" selection-start-line="70" selection-start-column="45" selection-end-line="70" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="45" column="30" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
           <folding>
-            <marker date="1492790232616" expanded="false" signature="63:438" ph="..." />
-            <marker date="1492790232616" expanded="false" signature="440:581" ph="/**...*/" />
-            <marker date="1492790232616" expanded="false" signature="787:892" ph="{...}" />
-            <marker date="1492790232616" expanded="true" signature="1016:2125" ph="{...}" />
-            <marker date="1492790232616" expanded="false" signature="1196:1964" ph="{...}" />
-            <marker date="1492790232616" expanded="false" signature="1331:1702" ph="{...}" />
-            <marker date="1492790232616" expanded="false" signature="1811:1950" ph="{...}" />
-            <marker date="1492790232616" expanded="false" signature="2174:2212" ph="{...}" />
-            <marker date="1492790232616" expanded="false" signature="2269:2340" ph="{...}" />
-            <marker date="1492790232616" expanded="false" signature="2286:2333" ph="&quot;Network Problem&quot;" />
-            <marker date="1492790232616" expanded="false" signature="2396:2424" ph="{...}" />
-            <marker date="1492790232616" expanded="false" signature="2478:2503" ph="{...}" />
-            <marker date="1492790232616" expanded="false" signature="2563:2591" ph="{...}" />
-            <marker date="1492790232616" expanded="false" signature="2650:2678" ph="{...}" />
-            <marker date="1492790232616" expanded="false" signature="2735:2760" ph="{...}" />
-            <marker date="1492790232616" expanded="false" signature="2816:2844" ph="{...}" />
-            <marker date="1492790232616" expanded="false" signature="2899:2927" ph="{...}" />
-            <marker date="1492790232616" expanded="false" signature="2980:3005" ph="{...}" />
-            <marker date="1492790232616" expanded="false" signature="3062:3090" ph="{...}" />
-            <marker date="1492790232616" expanded="false" signature="3146:3174" ph="{...}" />
-            <marker date="1492790232616" expanded="false" signature="3228:3253" ph="{...}" />
+            <marker date="1492847528463" expanded="true" signature="113:538" ph="{...}" />
+            <marker date="1492847528463" expanded="true" signature="132:180" ph="{...}" />
+            <marker date="1492847528463" expanded="true" signature="198:536" ph="{...}" />
+            <marker date="1492847528463" expanded="true" signature="406:530" ph="..." />
+            <marker date="1492847528463" expanded="false" signature="552:598" ph="{...}" />
+            <marker date="1492847528463" expanded="false" signature="571:581" ph="{" />
+            <marker date="1492847528463" expanded="false" signature="590:596" ph="}" />
+            <marker date="1492847528463" expanded="false" signature="625:631" ph="{" />
+            <marker date="1492847528463" expanded="false" signature="658:660" ph="}" />
+            <marker date="1492847528463" expanded="true" signature="665:1374" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/lib/OmniAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="896">
-          <caret line="132" column="59" selection-start-line="132" selection-start-column="59" selection-end-line="132" selection-end-column="59" />
-          <folding>
-            <marker date="1492838600752" expanded="false" signature="57:391" ph="..." />
-            <marker date="1492838600752" expanded="false" signature="393:516" ph="/**...*/" />
-            <marker date="1492838600752" expanded="false" signature="518:545" ph="/unused/" />
-            <marker date="1492838600752" expanded="true" signature="740:834" ph="{...}" />
-            <marker date="1492838600752" expanded="false" signature="889:1037" ph="{...}" />
-            <marker date="1492838600752" expanded="false" signature="1102:1359" ph="{...}" />
-            <marker date="1492838600752" expanded="true" signature="1147:1258" ph="//..." />
-            <marker date="1492838600752" expanded="true" signature="1452:1530" ph="{...}" />
-            <marker date="1492838600752" expanded="true" signature="1616:1674" ph="{...}" />
-            <marker date="1492838600752" expanded="false" signature="1735:1767" ph="{...}" />
-            <marker date="1492838600752" expanded="true" signature="1813:1872" ph="{...}" />
-            <marker date="1492838600752" expanded="true" signature="1878:1922" ph="/TryWithIdenticalCatches/" />
-            <marker date="1492838600752" expanded="true" signature="2018:2899" ph="{...}" />
-            <marker date="1492838600752" expanded="true" signature="2933:3373" ph="{...}" />
-            <marker date="1492838600752" expanded="true" signature="3440:4503" ph="{...}" />
-            <marker date="1492838600752" expanded="true" signature="3451:3731" ph="//..." />
-            <marker date="1492838600752" expanded="true" signature="3865:3954" ph="{...}" />
-            <marker date="1492838600752" expanded="true" signature="3999:4099" ph="{...}" />
-            <marker date="1492838600752" expanded="true" signature="4151:4204" ph="{...}" />
-            <marker date="1492838600752" expanded="true" signature="4270:4335" ph="{...}" />
-            <marker date="1492838600752" expanded="true" signature="4373:4497" ph="{...}" />
-            <marker date="1492838600752" expanded="true" signature="4585:4935" ph="{...}" />
-            <marker date="1492838600752" expanded="true" signature="4595:4764" ph="//..." />
-            <marker date="1492838600752" expanded="true" signature="4811:4851" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1120">
-          <caret line="71" column="45" selection-start-line="71" selection-start-column="45" selection-end-line="71" selection-end-column="45" />
-          <folding>
-            <marker date="1492838514512" expanded="false" signature="63:1002" ph="..." />
-            <marker date="1492838514512" expanded="false" signature="1004:1145" ph="/**...*/" />
-            <marker date="1492838514512" expanded="false" signature="1599:1717" ph="{...}" />
-            <marker date="1492838514512" expanded="true" signature="1798:2217" ph="{...}" />
-            <marker date="1492838514512" expanded="true" signature="2250:2328" ph="{...}" />
-            <marker date="1492838514512" expanded="true" signature="2404:2498" ph="{...}" />
-            <marker date="1492838514512" expanded="true" signature="2559:2761" ph="{...}" />
-            <marker date="1492838514512" expanded="true" signature="2865:2873" ph="{...}" />
-            <marker date="1492838514512" expanded="true" signature="2986:2994" ph="{...}" />
-            <marker date="1492838514512" expanded="true" signature="3099:3107" ph="{...}" />
-            <marker date="1492838514512" expanded="true" signature="3212:3220" ph="{...}" />
-            <marker date="1492838514512" expanded="true" signature="3266:3334" ph="{...}" />
-            <marker date="1492838514512" expanded="true" signature="3380:3451" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/models/GithubUserDataCopy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-          <folding>
-            <marker date="1492838600744" expanded="false" signature="70:393" ph="..." />
-            <marker date="1492838600744" expanded="false" signature="395:536" ph="/**...*/" />
-            <marker date="1492838600744" expanded="false" signature="807:848" ph="{...}" />
-            <marker date="1492838600744" expanded="false" signature="1259:1291" ph="{...}" />
-            <marker date="1492838600744" expanded="false" signature="1325:1357" ph="{...}" />
-            <marker date="1492838600744" expanded="false" signature="1393:1427" ph="{...}" />
-            <marker date="1492838600744" expanded="false" signature="1462:1495" ph="{...}" />
-            <marker date="1492838600744" expanded="false" signature="1526:1555" ph="{...}" />
-            <marker date="1492838600744" expanded="false" signature="1588:1619" ph="{...}" />
-            <marker date="1492838600744" expanded="true" signature="1652:1720" ph="{...}" />
-            <marker date="1492838600744" expanded="true" signature="1761:1845" ph="{...}" />
-            <marker date="1492838600744" expanded="false" signature="1850:1874" ph="@{...}" />
-            <marker date="1492838600744" expanded="true" signature="1912:2028" ph="{...}" />
-            <marker date="1492838600744" expanded="true" signature="2083:2195" ph="{...}" />
-            <marker date="1492838600744" expanded="true" signature="2244:2354" ph="{...}" />
-            <marker date="1492838600744" expanded="true" signature="2400:2443" ph="{...}" />
-            <marker date="1492838600744" expanded="false" signature="2503:2558" ph="{...}" />
-          </folding>
+        <state relative-caret-position="339">
+          <caret line="102" column="33" selection-start-line="102" selection-start-column="33" selection-end-line="102" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/models/GithubUserData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;class#GithubUserData#0" expanded="true" />
-            <element signature="method#GithubUserData#0;class#GithubUserData#0" expanded="true" />
-            <element signature="e#1330#1339#0" expanded="true" />
-            <element signature="method#getDefaultLayoutRes#0;class#GithubUserData#0" expanded="true" />
-            <element signature="method#getDefaultViewHolder#0;class#GithubUserData#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="557">
+          <caret line="65" column="1" selection-start-line="65" selection-start-column="1" selection-end-line="65" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/models/GithubUserDataKotlin.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/models/GithubUserDataCopy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1040">
+          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/models/GithubUserListDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1092">
+          <caret line="56" column="32" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/di/AppDaggerComponent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubContract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="61" column="4" selection-start-line="61" selection-start-column="4" selection-end-line="61" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubModelKotlin.java" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubAPIService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubAPIServiceKotlin.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>

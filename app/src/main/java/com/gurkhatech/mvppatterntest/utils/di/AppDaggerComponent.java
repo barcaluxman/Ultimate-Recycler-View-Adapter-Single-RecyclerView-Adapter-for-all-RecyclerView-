@@ -1,8 +1,11 @@
 package com.gurkhatech.mvppatterntest.utils.di;
+import com.gurkhatech.mvppatterntest.githubUsersList.GithubModelKotlin;
 import com.gurkhatech.mvppatterntest.githubUsersList.viewholders.GitHubUserListViewHolder;
 import com.gurkhatech.mvppatterntest.githubUsersList.viewholders.GitHubUserListViewHolderAlter;
 import com.gurkhatech.mvppatterntest.githubUsersList.GithubModel;
 import com.gurkhatech.mvppatterntest.githubUsersList.GithubView;
+
+import org.jetbrains.annotations.NotNull;
 
 import dagger.Component;
 
@@ -24,4 +27,5 @@ public interface AppDaggerComponent {
     void injectUserViewHolderAlter(GitHubUserListViewHolderAlter viewHolder);
 
     void injectGithubModel(GithubModel githubModel);
+    void injectGithubModelKotlin(@NotNull GithubModelKotlin githubModelKotlin);
 }

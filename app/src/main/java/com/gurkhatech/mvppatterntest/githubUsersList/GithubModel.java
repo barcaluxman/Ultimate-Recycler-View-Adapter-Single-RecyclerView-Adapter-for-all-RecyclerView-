@@ -38,7 +38,7 @@ public class GithubModel implements Model {
     @Override
     public void getUsersAndPromptPresenter(final String userName, final GithubContract.Presenter presenter) {
         userListCall = apiService.searchGitHubUsers(userName);
-        if(Util.isInternetConnected(context)) {
+        if(Util.isInternetConnected()) {
             userListCall.enqueue(new Callback<GithubUserListDTO>() {
                 @Override
                 public void onResponse(Call<GithubUserListDTO> call, Response<GithubUserListDTO> response) {

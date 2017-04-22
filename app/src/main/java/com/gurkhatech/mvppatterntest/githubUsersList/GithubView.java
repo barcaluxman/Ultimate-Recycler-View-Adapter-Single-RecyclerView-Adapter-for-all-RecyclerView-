@@ -12,6 +12,7 @@ import com.gurkhatech.mvppatterntest.R;
 import com.gurkhatech.mvppatterntest.databinding.ActivityGithubListBinding;
 import com.gurkhatech.mvppatterntest.githubUsersList.models.GithubUserData;
 import com.gurkhatech.mvppatterntest.utils.MyApplication;
+import com.gurkhatech.mvppatterntest.utils.Util;
 import com.gurkhatech.mvppatterntest.utils.commons.CommonAdapter;
 import com.gurkhatech.mvppatterntest.utils.di.AppDaggerComponent;
 import com.gurkhatech.mvppatterntest.utils.di.ContextModule;
@@ -33,30 +34,25 @@ import javax.inject.Inject;
 
 public class GithubView extends AppCompatActivity implements GithubContract.View {
 
+    public static ActivityGithubListBinding binding;
     private static AppDaggerComponent appDaggerComponent;
     @Inject
     LinearLayoutManager linearLayoutManager;
     CommonAdapter userListAdapter = new CommonAdapter();
-
-
-    public static ActivityGithubListBinding binding;
     GithubPresenter presenter = new GithubPresenter(this, new GithubModel(this));
 
     public static AppDaggerComponent getDaggerComponent() {
-
         return appDaggerComponent == null ? MyApplication.getInstance().getComponent() : appDaggerComponent;
-
     }
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding =DataBindingUtil.setContentView(this, R.layout.activity_github_list);
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_github_list);
         appDaggerComponent = DaggerAppDaggerComponent.builder().contextModule(new ContextModule(this)).build();
         appDaggerComponent.injectGithubView(this);
         binding.userList.setLayoutManager(linearLayoutManager);
         binding.userList.setAdapter(userListAdapter);
-
     }
 
     public void search(View v) {
@@ -65,38 +61,23 @@ public class GithubView extends AppCompatActivity implements GithubContract.View
 
     @Override
     public void displayUsers(List<GithubUserData> userList) {
-        userListAdapter.replaceData( new ArrayList<OmniAdapter.IOmniModel>(userList));
+        userListAdapter.replaceData(new ArrayList<OmniAdapter.IOmniModel>(userList));
     }
 
     @Override
     public void enableSearch(boolean enable) {
-        binding.userInput.setClickable ( enable );
-        binding.search.setClickable ( enable );
-        binding.userInput.setEnabled ( enable );
-        binding.search.setEnabled ( enable );
+        binding.userInput.setClickable(enable);
+        binding.search.setClickable(enable);
+        binding.userInput.setEnabled(enable);
+        binding.search.setEnabled(enable);
 
     }
 
     @Override
-    public void displayNoDataError(String title, String body, @DrawableRes int imageID) {
-
+    public void showDialogue(String title, String body, @DrawableRes int imageID) {
+        Util.toast("should popup "+title + "  "+body+" ");
+        enableSearch(true);
     }
-
-    @Override
-    public void displayNoInternetConnection(String title, String body, @DrawableRes int imageID) {
-
-    }
-
-    @Override
-    public void displayNetworkError(String title, String body, @DrawableRes int imageID) {
-
-    }
-
-    @Override
-    public void displayGenericError(String title, String body, @DrawableRes int imageID) {
-
-    }
-
 
     @Override
     protected void onPause() {

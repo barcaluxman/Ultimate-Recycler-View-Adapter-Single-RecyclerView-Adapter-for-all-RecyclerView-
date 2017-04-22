@@ -14,13 +14,12 @@ import java.util.List;
  * gurkhatech.com
  */
 
-    class GithubPresenter implements GithubContract.Presenter {
+class GithubPresenter implements GithubContract.Presenter {
 
     private GithubContract.View view;
     private GithubContract.Model model;
 
     GithubPresenter(GithubContract.View view, GithubContract.Model model) {
-
         this.view = view;
         this.model = model;
     }
@@ -37,10 +36,10 @@ import java.util.List;
             if (!data.isEmpty()) {
                 view.displayUsers(data);
             } else {
-                view.displayNoDataError(model.getNoDataErrorTitle(), model.getNoDataErrorBody(), model.getNoDataErrorImage());
+                view.showDialogue(model.getNoDataErrorTitle(), model.getNoDataErrorBody(), model.getNoDataErrorImage());
             }
         } else {
-            alertGenericError(model.getGenericErrorTitle(), model.getGenericErrorBody(), model.getGenericErrorImage());
+            view.showDialogue(model.getGenericErrorTitle(), model.getGenericErrorBody(), model.getGenericErrorImage());
         }
         enableSearch(true);
 
@@ -60,20 +59,18 @@ import java.util.List;
 
     @Override
     public void alertGenericError(String title, String body, @DrawableRes int imageID) {
-        view.displayGenericError(title, body, imageID);
-        enableSearch(true);
+        view.showDialogue(title, body, imageID);
     }
 
     @Override
     public void alertNetworkError(String title, String body, @DrawableRes int imageID) {
-        view.displayNetworkError(title, body, imageID);
-        enableSearch(true);
+        view.showDialogue(title, body, imageID);
     }
 
     @Override
     public void alertNoInternetConnection(String title, String body, @DrawableRes int imageID) {
-        view.displayNoInternetConnection(title, body, imageID);
-        enableSearch(true);
+        view.showDialogue(title, body, imageID);
     }
+
 
 }

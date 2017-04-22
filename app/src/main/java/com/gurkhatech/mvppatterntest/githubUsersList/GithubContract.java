@@ -18,14 +18,7 @@ interface GithubContract {
     interface View {
         void displayUsers(List<GithubUserData>  userList);
         void enableSearch(boolean enable);
-
-        void displayNoDataError(String title, String body, @DrawableRes int imageID);
-
-        void displayNoInternetConnection(String title, String body, @DrawableRes int imageID);
-
-        void displayNetworkError(String title, String body, @DrawableRes int imageID);
-
-        void displayGenericError(String title, String body, @DrawableRes int imageID);
+        void showDialogue(String title, String body, @DrawableRes int imageID);
     }
 
     interface Model {

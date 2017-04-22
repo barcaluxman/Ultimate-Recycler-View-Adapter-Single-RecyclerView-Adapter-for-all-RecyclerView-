@@ -3,6 +3,15 @@
 
     <item
         is-multidex="true"
+        jar="/home/adventure/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="919f0dfe192fb4e063e7dacadee7f8bb9a2672a9">
+        <dex dex="/media/adventure/projects/practice/Ultimate-Recycler-View-Adapter-Single-RecyclerView-Adapter-for-all-RecyclerView-/app/build/intermediates/transforms/dex/mock/debug/folders/1000/10/annotations-13.0_3dddbab95c3fbccc57aab46e7c665739323aa158/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/media/adventure/projects/practice/Ultimate-Recycler-View-Adapter-Single-RecyclerView-Adapter-for-all-RecyclerView-/app/build/intermediates/incremental-runtime-classes/mock/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
@@ -12,11 +21,20 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/adventure/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.1.1/98e484e67f913e934559f7f55f0c94be5593f03c/kotlin-stdlib-1.1.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="98e484e67f913e934559f7f55f0c94be5593f03c">
+        <dex dex="/media/adventure/projects/practice/Ultimate-Recycler-View-Adapter-Single-RecyclerView-Adapter-for-all-RecyclerView-/app/build/intermediates/transforms/dex/mock/debug/folders/1000/10/kotlin-stdlib-1.1.1_c49ff19b3bede9a8aeda25f36ddb9efd04e1cc72/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/media/adventure/projects/practice/Ultimate-Recycler-View-Adapter-Single-RecyclerView-Adapter-for-all-RecyclerView-/app/build/intermediates/incremental-classes/mock/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="e72e95bfab1fd6b8dd9d8765c2192b87e2728107">
+        sha1="e582b1e32c7e9055b6433b3f4d7a562c7da07950">
         <dex dex="/media/adventure/projects/practice/Ultimate-Recycler-View-Adapter-Single-RecyclerView-Adapter-for-all-RecyclerView-/app/build/intermediates/transforms/dex/mock/debug/folders/1000/10000/instant-run-bootstrap_aa62fabf58e927a50ad415390d41f1a3b319f8b2/classes.dex" />
     </item>
 

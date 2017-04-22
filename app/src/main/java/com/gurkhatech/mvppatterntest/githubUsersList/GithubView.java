@@ -16,14 +16,12 @@ import com.gurkhatech.mvppatterntest.utils.commons.CommonAdapter;
 import com.gurkhatech.mvppatterntest.utils.di.AppDaggerComponent;
 import com.gurkhatech.mvppatterntest.utils.di.ContextModule;
 import com.gurkhatech.mvppatterntest.utils.di.DaggerAppDaggerComponent;
-import com.gurkhatech.mvppatterntest.utils.lib.SwissKnifeRecyclerViewAdapter;
+import com.gurkhatech.mvppatterntest.utils.lib.OmniAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.inject.Inject;
-
-import static com.gurkhatech.mvppatterntest.R.id.userList;
 
 /**
  * Created by adventure on 3/7/17.
@@ -65,28 +63,9 @@ public class GithubView extends AppCompatActivity implements GithubContract.View
         presenter.searchUsers(binding.userInput.getText().toString());
     }
 
-    /*@Override
-    public void displayUsers(List<GithubUserData> userList) {
-       // userListAdapter.replaceData(userList);
-        List<SwissKnifeRecyclerViewAdapter.SwissKnifeModel> data = new ArrayList<>();
-        try {
-            for (int i = 0; i < userList.size(); i++) {
-                data.add(userList.get(i));
-            }
-
-           userListAdapter.replaceData(data);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-
-    }*/
-
-
     @Override
     public void displayUsers(List<GithubUserData> userList) {
-       // userListAdapter.replaceData(userList);
-        userListAdapter.replaceData( new ArrayList<SwissKnifeRecyclerViewAdapter.SwissKnifeModel>(userList));
+        userListAdapter.replaceData( new ArrayList<OmniAdapter.IOmniModel>(userList));
     }
 
     @Override

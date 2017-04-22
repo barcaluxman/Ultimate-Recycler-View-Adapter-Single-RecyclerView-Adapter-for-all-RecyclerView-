@@ -1,7 +1,7 @@
 package com.gurkhatech.mvppatterntest.utils.di;
 
 
-import com.gurkhatech.mvppatterntest.utils.lib.SwissKnifeRecyclerViewAdapter;
+import com.gurkhatech.mvppatterntest.utils.lib.OmniAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +22,7 @@ class DTOModules {
 
 
     @Provides
-    List<SwissKnifeRecyclerViewAdapter.SwissKnifeModel> adapterData() {
+    List<OmniAdapter.IOmniModel> adapterData() {
         return new ArrayList<>();
     }
 }

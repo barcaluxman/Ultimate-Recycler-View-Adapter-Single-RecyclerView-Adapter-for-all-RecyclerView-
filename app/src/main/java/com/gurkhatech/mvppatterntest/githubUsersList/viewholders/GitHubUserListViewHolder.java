@@ -8,7 +8,7 @@ import android.widget.TextView;
 import com.bumptech.glide.RequestManager;
 import com.gurkhatech.mvppatterntest.R;
 import com.gurkhatech.mvppatterntest.githubUsersList.GithubView;
-import com.gurkhatech.mvppatterntest.utils.lib.SwissKnifeRecyclerViewAdapter;
+import com.gurkhatech.mvppatterntest.utils.lib.OmniAdapter;
 import com.gurkhatech.mvppatterntest.githubUsersList.models.GithubUserData;
 
 import javax.inject.Inject;
@@ -19,7 +19,7 @@ import butterknife.ButterKnife;
 import static com.gurkhatech.mvppatterntest.utils.commons.GithubListConstants.THUMBNIL_FACTOR;
 
 
-public class GitHubUserListViewHolder extends SwissKnifeRecyclerViewAdapter.SwissKnifeViewHolder {
+public class GitHubUserListViewHolder extends OmniAdapter.OmniViewHolder {
 
     @Nullable
     @BindView(R.id.avatar)
@@ -46,7 +46,7 @@ public class GitHubUserListViewHolder extends SwissKnifeRecyclerViewAdapter.Swis
     }
 
     @Override
-    public void bindView(SwissKnifeRecyclerViewAdapter.SwissKnifeModel data, SwissKnifeRecyclerViewAdapter adapter) {
+    public void bindView(OmniAdapter.IOmniModel data, OmniAdapter adapter) {
         GithubUserData userDTO = (GithubUserData) data;
         assert this.avatar != null;
         requestManager.load(userDTO.getAvatarUrl()).placeholder(R.mipmap.ic_launcher).thumbnail(THUMBNIL_FACTOR).into(this.avatar);

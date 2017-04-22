@@ -6,19 +6,24 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="datatest" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bba50642-b713-499e-93de-aa9b62fc992c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/models/GithubUserDataCopy.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/lib/SwissKnifeRecyclerViewAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/lib/OmniAdapter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubContract.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubContract.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubPresenter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubPresenter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubView.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/models/GithubUserData.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/models/GithubUserData.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/viewholders/GitHubUserListViewHolder.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/viewholders/GitHubUserListViewHolder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/viewholders/GitHubUserListViewHolderAlter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/viewholders/GitHubUserListViewHolderAlter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/commons/CommonAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/commons/CommonAdapter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/di/DTOModules.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/di/DTOModules.java" />
     </list>
     <ignored path="MVPPatternTest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -92,15 +97,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GithubContract.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubContract.java">
+      <file leaf-file-name="GithubUserData.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/models/GithubUserData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="72" column="28" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
+            <state relative-caret-position="545">
+              <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="class#View#0;class#GithubContract#0" expanded="true" />
-                <element signature="class#Model#0;class#GithubContract#0" expanded="true" />
+                <element signature="docComment;class#GithubUserData#0" expanded="true" />
+                <element signature="method#GithubUserData#0;class#GithubUserData#0" expanded="true" />
+                <element signature="e#1330#1339#0" expanded="true" />
+                <element signature="method#getDefaultLayoutRes#0;class#GithubUserData#0" expanded="true" />
+                <element signature="method#getDefaultViewHolder#0;class#GithubUserData#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -3076,8 +3084,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/GithubListPresenter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githublisttest/GithubVieww.java" />
         <option value="$PROJECT_DIR$/app/src/test/java/com/gurkhatech/mvppatterntest/githubList/GithubListPresenterTest.java" />
         <option value="$PROJECT_DIR$/app/build/intermediates/data-binding-layout-out/mock/debug/layout/activity_github_list.xml" />
@@ -3121,18 +3127,21 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/viewholders/GitHubUserListViewHolderAlter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/viewholders/GitHubUserListViewHolder.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/commons/CommonAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/models/GithubUserData.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/di/DTOModules.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/lib/SwissKnifeRecyclerViewAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubView.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubPresenter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubContract.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubView.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/lib/SwissKnifeRecyclerViewAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/lib/OmniAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/models/GithubUserDataCopy.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/models/GithubUserData.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="y" value="30" />
     <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -3179,132 +3188,7 @@
         <subPane />
       </pane>
       <pane id="AndroidView">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Ultimate-Recycler-View-Adapter-Single-RecyclerView-Adapter-for-all-RecyclerView-" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Gradle Scripts" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidBuildScriptsGroupNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Ultimate-Recycler-View-Adapter-Single-RecyclerView-Adapter-for-all-RecyclerView-" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Ultimate-Recycler-View-Adapter-Single-RecyclerView-Adapter-for-all-RecyclerView-" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Ultimate-Recycler-View-Adapter-Single-RecyclerView-Adapter-for-all-RecyclerView-" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gurkhatech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mvppatterntest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Ultimate-Recycler-View-Adapter-Single-RecyclerView-Adapter-for-all-RecyclerView-" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gurkhatech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mvppatterntest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="githubUsersList" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Ultimate-Recycler-View-Adapter-Single-RecyclerView-Adapter-for-all-RecyclerView-" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gurkhatech" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mvppatterntest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="githubUsersList" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
+        <subPane />
       </pane>
       <pane id="Scope" />
       <pane id="Scratches" />
@@ -3327,20 +3211,21 @@
       <recent name="com.gurkhatech.mvppatterntest.githublisttest" />
       <recent name="com.gurkhatech.mvppatterntest.githubList" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.gurkhatech.mvppatterntest.githubUsersList.components.adapters" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.gurkhatech.mvppatterntest.githubUsersList" />
       <recent name="com.gurkhatech.mvppatterntest.utils.di" />
       <recent name="com.gurkhatech.mvppatterntest.utils" />
       <recent name="com.gurkhatech.mvppatterntest" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubList/components/adapters/gurkha/lib" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.gurkhatech.mvppatterntest.githubUsersList.models" />
+      <recent name="com.gurkhatech.mvppatterntest.githubUsersList.components.adapters" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
   </component>
   <component name="RunManager" selected="Android App.app">
@@ -3920,7 +3805,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
+    <frame x="0" y="30" width="1920" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299285" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -3929,14 +3814,15 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32962963" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24509804" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39590445" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2537037" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.07777778" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23489584" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23489584" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992464" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -3954,7 +3840,6 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295129" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -4009,7 +3894,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githublisttest/GithubPresenter.java" />
     <entry file="file://$PROJECT_DIR$/app/src/test/java/com/gurkhatech/mvppatterntest/githubList/GithubListPresenterTest.java" />
     <entry file="file://$PROJECT_DIR$/app/build/outputs/apk/app-mock-debug.apk">
       <provider selected="true" editor-type-id="apk-viewer">
@@ -4097,23 +3981,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="588">
           <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_github_list.xml">
-      <provider selected="true" editor-type-id="android-designer2">
+      <provider editor-type-id="android-manifest">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_github_list.xml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="229">
           <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/components/adapters/GithubUserListAdapterNew.java" />
@@ -4251,12 +4135,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="392">
           <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <marker date="1492790232616" expanded="false" signature="70:209" ph="..." />
-            <marker date="1492790232616" expanded="false" signature="211:352" ph="/**...*/" />
-            <marker date="1492790232616" expanded="false" signature="388:421" ph="@{...}" />
-            <marker date="1492790232616" expanded="false" signature="531:556" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -4271,99 +4149,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/models/GithubUserData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-          <folding>
-            <marker date="1492798904664" expanded="false" signature="70:411" ph="..." />
-            <marker date="1492798904664" expanded="true" signature="413:554" ph="/**...*/" />
-            <marker date="1492798904664" expanded="true" signature="840:881" ph="{...}" />
-            <marker date="1492798904664" expanded="false" signature="1292:1324" ph="{...}" />
-            <marker date="1492798904664" expanded="false" signature="1358:1390" ph="{...}" />
-            <marker date="1492798904664" expanded="false" signature="1426:1460" ph="{...}" />
-            <marker date="1492798904664" expanded="false" signature="1495:1528" ph="{...}" />
-            <marker date="1492798904664" expanded="false" signature="1559:1588" ph="{...}" />
-            <marker date="1492798904664" expanded="false" signature="1621:1652" ph="{...}" />
-            <marker date="1492798904664" expanded="true" signature="1698:1770" ph="{...}" />
-            <marker date="1492798904664" expanded="true" signature="1824:1914" ph="{...}" />
-            <marker date="1492798904664" expanded="true" signature="1919:1943" ph="@{...}" />
-            <marker date="1492798904664" expanded="true" signature="1981:2097" ph="{...}" />
-            <marker date="1492798904664" expanded="true" signature="2152:2264" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/di/DTOModules.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="24" column="54" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubContract.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="631">
+          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
           <folding>
-            <marker date="1492799294176" expanded="false" signature="57:226" ph="..." />
-            <marker date="1492799294176" expanded="false" signature="228:370" ph="/**...*/" />
-            <marker date="1492799294176" expanded="true" signature="485:526" ph="{...}" />
+            <marker date="1492800180829" expanded="true" signature="63:203" ph="..." />
+            <marker date="1492800180829" expanded="false" signature="205:346" ph="/**...*/" />
+            <marker date="1492800180829" expanded="true" signature="394:862" ph="{...}" />
+            <marker date="1492800180829" expanded="true" signature="884:1586" ph="{...}" />
+            <marker date="1492800180829" expanded="true" signature="1612:2064" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/lib/SwissKnifeRecyclerViewAdapter.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubPresenter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="24" column="4" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="4" />
+        <state relative-caret-position="62">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
-            <marker date="1492799507324" expanded="false" signature="57:391" ph="..." />
-            <marker date="1492799507324" expanded="false" signature="393:516" ph="/**...*/" />
-            <marker date="1492799507324" expanded="false" signature="518:545" ph="/unused/" />
-            <marker date="1492799507324" expanded="true" signature="792:886" ph="{...}" />
-            <marker date="1492799507324" expanded="false" signature="946:1094" ph="{...}" />
-            <marker date="1492799507324" expanded="false" signature="1164:1421" ph="{...}" />
-            <marker date="1492799507324" expanded="true" signature="1209:1320" ph="//..." />
-            <marker date="1492799507324" expanded="true" signature="1520:1598" ph="{...}" />
-            <marker date="1492799507324" expanded="true" signature="1690:1748" ph="{...}" />
-            <marker date="1492799507324" expanded="false" signature="1809:1841" ph="{...}" />
-            <marker date="1492799507324" expanded="true" signature="1887:1946" ph="{...}" />
-            <marker date="1492799507324" expanded="true" signature="1952:1996" ph="/TryWithIdenticalCatches/" />
-            <marker date="1492799507324" expanded="true" signature="2108:2974" ph="{...}" />
-            <marker date="1492799507324" expanded="true" signature="3013:3420" ph="{...}" />
-            <marker date="1492799507324" expanded="true" signature="3198:3413" ph="//..." />
-            <marker date="1492799507324" expanded="true" signature="3508:3887" ph="{...}" />
-            <marker date="1492799507324" expanded="true" signature="3518:3687" ph="//..." />
-            <marker date="1492799507324" expanded="true" signature="3740:3780" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="86" column="48" selection-start-line="86" selection-start-column="34" selection-end-line="86" selection-end-column="48" />
-          <folding>
-            <marker date="1492800153369" expanded="false" signature="63:1080" ph="..." />
-            <marker date="1492800153369" expanded="false" signature="1082:1223" ph="/**...*/" />
-            <marker date="1492800153369" expanded="false" signature="1677:1795" ph="{...}" />
-            <marker date="1492800153369" expanded="true" signature="1876:2295" ph="{...}" />
-            <marker date="1492800153369" expanded="false" signature="2328:2406" ph="{...}" />
-            <marker date="1492800153369" expanded="true" signature="2956:3122" ph="{...}" />
-            <marker date="1492800153369" expanded="false" signature="3183:3385" ph="{...}" />
-            <marker date="1492800153369" expanded="false" signature="3489:3497" ph="{...}" />
-            <marker date="1492800153369" expanded="false" signature="3610:3618" ph="{...}" />
-            <marker date="1492800153369" expanded="false" signature="3723:3731" ph="{...}" />
-            <marker date="1492800153369" expanded="false" signature="3836:3844" ph="{...}" />
-            <marker date="1492800153369" expanded="false" signature="3890:3958" ph="{...}" />
-            <marker date="1492800153369" expanded="false" signature="4004:4075" ph="{...}" />
+            <marker date="1492800180825" expanded="false" signature="63:203" ph="..." />
+            <marker date="1492800180825" expanded="false" signature="205:346" ph="/**...*/" />
+            <marker date="1492800180825" expanded="false" signature="566:628" ph="{...}" />
+            <marker date="1492800180825" expanded="true" signature="689:783" ph="{...}" />
+            <marker date="1492800180825" expanded="true" signature="852:1370" ph="{...}" />
+            <marker date="1492800180825" expanded="false" signature="1420:1487" ph="{...}" />
+            <marker date="1492800180825" expanded="false" signature="1548:1590" ph="{...}" />
+            <marker date="1492800180825" expanded="false" signature="1693:1784" ph="{...}" />
+            <marker date="1492800180825" expanded="false" signature="1887:1978" ph="{...}" />
+            <marker date="1492800180825" expanded="false" signature="2089:2188" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-84">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="57">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding>
             <marker date="1492790232616" expanded="false" signature="63:438" ph="..." />
             <marker date="1492790232616" expanded="false" signature="440:581" ph="/**...*/" />
             <marker date="1492790232616" expanded="false" signature="787:892" ph="{...}" />
-            <marker date="1492790232616" expanded="false" signature="1016:2125" ph="{...}" />
+            <marker date="1492790232616" expanded="true" signature="1016:2125" ph="{...}" />
             <marker date="1492790232616" expanded="false" signature="1196:1964" ph="{...}" />
             <marker date="1492790232616" expanded="false" signature="1331:1702" ph="{...}" />
             <marker date="1492790232616" expanded="false" signature="1811:1950" ph="{...}" />
@@ -4385,33 +4220,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubPresenter.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/utils/lib/OmniAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+        <state relative-caret-position="896">
+          <caret line="132" column="59" selection-start-line="132" selection-start-column="59" selection-end-line="132" selection-end-column="59" />
           <folding>
-            <marker date="1492800180825" expanded="false" signature="63:203" ph="..." />
-            <marker date="1492800180825" expanded="false" signature="205:346" ph="/**...*/" />
-            <marker date="1492800180825" expanded="false" signature="566:628" ph="{...}" />
-            <marker date="1492800180825" expanded="false" signature="689:783" ph="{...}" />
-            <marker date="1492800180825" expanded="true" signature="852:1370" ph="{...}" />
-            <marker date="1492800180825" expanded="false" signature="1420:1487" ph="{...}" />
-            <marker date="1492800180825" expanded="false" signature="1548:1590" ph="{...}" />
-            <marker date="1492800180825" expanded="false" signature="1693:1784" ph="{...}" />
-            <marker date="1492800180825" expanded="false" signature="1887:1978" ph="{...}" />
-            <marker date="1492800180825" expanded="false" signature="2089:2188" ph="{...}" />
+            <marker date="1492838600752" expanded="false" signature="57:391" ph="..." />
+            <marker date="1492838600752" expanded="false" signature="393:516" ph="/**...*/" />
+            <marker date="1492838600752" expanded="false" signature="518:545" ph="/unused/" />
+            <marker date="1492838600752" expanded="true" signature="740:834" ph="{...}" />
+            <marker date="1492838600752" expanded="false" signature="889:1037" ph="{...}" />
+            <marker date="1492838600752" expanded="false" signature="1102:1359" ph="{...}" />
+            <marker date="1492838600752" expanded="true" signature="1147:1258" ph="//..." />
+            <marker date="1492838600752" expanded="true" signature="1452:1530" ph="{...}" />
+            <marker date="1492838600752" expanded="true" signature="1616:1674" ph="{...}" />
+            <marker date="1492838600752" expanded="false" signature="1735:1767" ph="{...}" />
+            <marker date="1492838600752" expanded="true" signature="1813:1872" ph="{...}" />
+            <marker date="1492838600752" expanded="true" signature="1878:1922" ph="/TryWithIdenticalCatches/" />
+            <marker date="1492838600752" expanded="true" signature="2018:2899" ph="{...}" />
+            <marker date="1492838600752" expanded="true" signature="2933:3373" ph="{...}" />
+            <marker date="1492838600752" expanded="true" signature="3440:4503" ph="{...}" />
+            <marker date="1492838600752" expanded="true" signature="3451:3731" ph="//..." />
+            <marker date="1492838600752" expanded="true" signature="3865:3954" ph="{...}" />
+            <marker date="1492838600752" expanded="true" signature="3999:4099" ph="{...}" />
+            <marker date="1492838600752" expanded="true" signature="4151:4204" ph="{...}" />
+            <marker date="1492838600752" expanded="true" signature="4270:4335" ph="{...}" />
+            <marker date="1492838600752" expanded="true" signature="4373:4497" ph="{...}" />
+            <marker date="1492838600752" expanded="true" signature="4585:4935" ph="{...}" />
+            <marker date="1492838600752" expanded="true" signature="4595:4764" ph="//..." />
+            <marker date="1492838600752" expanded="true" signature="4811:4851" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubContract.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/GithubView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="72" column="28" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
+        <state relative-caret-position="1120">
+          <caret line="71" column="45" selection-start-line="71" selection-start-column="45" selection-end-line="71" selection-end-column="45" />
+          <folding>
+            <marker date="1492838514512" expanded="false" signature="63:1002" ph="..." />
+            <marker date="1492838514512" expanded="false" signature="1004:1145" ph="/**...*/" />
+            <marker date="1492838514512" expanded="false" signature="1599:1717" ph="{...}" />
+            <marker date="1492838514512" expanded="true" signature="1798:2217" ph="{...}" />
+            <marker date="1492838514512" expanded="true" signature="2250:2328" ph="{...}" />
+            <marker date="1492838514512" expanded="true" signature="2404:2498" ph="{...}" />
+            <marker date="1492838514512" expanded="true" signature="2559:2761" ph="{...}" />
+            <marker date="1492838514512" expanded="true" signature="2865:2873" ph="{...}" />
+            <marker date="1492838514512" expanded="true" signature="2986:2994" ph="{...}" />
+            <marker date="1492838514512" expanded="true" signature="3099:3107" ph="{...}" />
+            <marker date="1492838514512" expanded="true" signature="3212:3220" ph="{...}" />
+            <marker date="1492838514512" expanded="true" signature="3266:3334" ph="{...}" />
+            <marker date="1492838514512" expanded="true" signature="3380:3451" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/models/GithubUserDataCopy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="72" column="0" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+          <folding>
+            <marker date="1492838600744" expanded="false" signature="70:393" ph="..." />
+            <marker date="1492838600744" expanded="false" signature="395:536" ph="/**...*/" />
+            <marker date="1492838600744" expanded="false" signature="807:848" ph="{...}" />
+            <marker date="1492838600744" expanded="false" signature="1259:1291" ph="{...}" />
+            <marker date="1492838600744" expanded="false" signature="1325:1357" ph="{...}" />
+            <marker date="1492838600744" expanded="false" signature="1393:1427" ph="{...}" />
+            <marker date="1492838600744" expanded="false" signature="1462:1495" ph="{...}" />
+            <marker date="1492838600744" expanded="false" signature="1526:1555" ph="{...}" />
+            <marker date="1492838600744" expanded="false" signature="1588:1619" ph="{...}" />
+            <marker date="1492838600744" expanded="true" signature="1652:1720" ph="{...}" />
+            <marker date="1492838600744" expanded="true" signature="1761:1845" ph="{...}" />
+            <marker date="1492838600744" expanded="false" signature="1850:1874" ph="@{...}" />
+            <marker date="1492838600744" expanded="true" signature="1912:2028" ph="{...}" />
+            <marker date="1492838600744" expanded="true" signature="2083:2195" ph="{...}" />
+            <marker date="1492838600744" expanded="true" signature="2244:2354" ph="{...}" />
+            <marker date="1492838600744" expanded="true" signature="2400:2443" ph="{...}" />
+            <marker date="1492838600744" expanded="false" signature="2503:2558" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/gurkhatech/mvppatterntest/githubUsersList/models/GithubUserData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="class#View#0;class#GithubContract#0" expanded="true" />
-            <element signature="class#Model#0;class#GithubContract#0" expanded="true" />
+            <element signature="docComment;class#GithubUserData#0" expanded="true" />
+            <element signature="method#GithubUserData#0;class#GithubUserData#0" expanded="true" />
+            <element signature="e#1330#1339#0" expanded="true" />
+            <element signature="method#getDefaultLayoutRes#0;class#GithubUserData#0" expanded="true" />
+            <element signature="method#getDefaultViewHolder#0;class#GithubUserData#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,6 +1,6 @@
 package com.gurkhatech.mvppatterntest.utils.commons;
 
-import com.gurkhatech.mvppatterntest.utils.lib.SwissKnifeRecyclerViewAdapter;
+import com.gurkhatech.mvppatterntest.utils.lib.OmniAdapter;
 
 /**
  * Created by adventure on 2/10/17.
@@ -9,6 +9,6 @@ import com.gurkhatech.mvppatterntest.utils.lib.SwissKnifeRecyclerViewAdapter;
  * copyright reserved
  * gurkhatech.com
  */
-public class CommonAdapter extends SwissKnifeRecyclerViewAdapter {
+public class CommonAdapter extends OmniAdapter {
 
 }

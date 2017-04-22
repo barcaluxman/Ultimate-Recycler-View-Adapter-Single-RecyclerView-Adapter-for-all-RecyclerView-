@@ -64,15 +64,15 @@ public abstract class OmniAdapter extends RecyclerView.Adapter<OmniAdapter.OmniV
 
     @SuppressWarnings("TryWithIdenticalCatches")
     private OmniViewHolder getViewHolderFromOmniModel(IOmniModel IOmniModel, ViewGroup parent) {
-        //Class < ? > c = dataIdAndViewHolder.get ( _layoutRes );
+        //Class < ? > c = dataIdAndViewHolder.get ( layout );
         Constructor<?> constructor = null;
         try {
-            constructor = ((Class<?>) IOmniModel.get_viewHolderClass()).getConstructor(View.class);
+            constructor = ((Class<?>) IOmniModel.getViewHolder()).getConstructor(View.class);
         } catch (NoSuchMethodException e) {
             e.printStackTrace();
         }
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        View v = inflater.inflate(IOmniModel.get_layoutRes(), parent, false);
+        View v = inflater.inflate(IOmniModel.getLayout(), parent, false);
         Object object = null;
         try {
             object = constructor != null ? constructor.newInstance(v) : null;
@@ -91,12 +91,12 @@ public abstract class OmniAdapter extends RecyclerView.Adapter<OmniAdapter.OmniV
         //Every POJO / DTO / MODEL that will be used to set data in a row (generally by data.get(position).getFieldName())
         //should implement this interface so that they can use the swiss knife recyclerView Adapter.
         @LayoutRes
-        int get_layoutRes();
-        Class get_viewHolderClass();
-        @LayoutRes
-        int getDefaultLayoutRes();
-        Class getDefaultViewHolder();
+        int getLayout();
+        Class getViewHolder();
         void resetToDefault();
+        @LayoutRes
+        int getDefaultLayout();
+        Class getDefaultViewHolder();
 
     }
 
@@ -104,34 +104,39 @@ public abstract class OmniAdapter extends RecyclerView.Adapter<OmniAdapter.OmniV
 
         //Extend OmniModel if you do not want to extend model class from other classes like RealmObject
         //If you extend this instead of implementing IOmniModel you will have to implement only two methods
-        //int getDefaultLayoutRes();
+        //int getDefaultLayout();
         //Class getDefaultViewHolder();
 
         @LayoutRes
-        private int _layoutRes = 0;
+        private int layout = 0;
 
-        private Class _viewHolderClass;
+        private Class viewHolder;
 
-        public int get_layoutRes() {
-            return this._layoutRes == 0 ? getDefaultLayoutRes() : _layoutRes;
+        @Override
+        public int getLayout() {
+            return this.layout == 0 ? getDefaultLayout() : layout;
         }
 
-        public Class get_viewHolderClass() {
-            return _viewHolderClass == null ? getDefaultViewHolder() : _viewHolderClass;
+        @Override
+        public Class getViewHolder() {
+            return viewHolder == null ? getDefaultViewHolder() : viewHolder;
         }
 
-        public void set_layoutRes(int _layoutRes) {
-            this._layoutRes = _layoutRes;
+        @Override
+        public void resetToDefault() {
+            this.layout = getDefaultLayout();
+            this.viewHolder = getDefaultViewHolder();
         }
 
-        public void set_viewHolderClass(Class _viewHolderClass) {
-            this._viewHolderClass = _viewHolderClass;
+        public void setLayout(int layout) {
+            this.layout = layout;
         }
 
-        public void resetToDefault(){
-            this._layoutRes = getDefaultLayoutRes();
-            this._viewHolderClass = getDefaultViewHolder();
+        public void setViewHolder(Class viewHolder) {
+            this.viewHolder = viewHolder;
         }
+
+
     }
 
     public static abstract class OmniViewHolder extends RecyclerView.ViewHolder {

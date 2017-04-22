@@ -55,7 +55,7 @@ public class GithubUserData extends OmniAdapter.OmniModel {
 
     @Override
     @LayoutRes
-    public int getDefaultLayoutRes() {
+    public int getDefaultLayout() {
         return getUserName().length() > 10 ? R.layout.item_github_use_list : R.layout.item_github_use_list_alter;
     }
 
